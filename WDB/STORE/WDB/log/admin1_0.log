@@ -1,0 +1,1395 @@
+2015-12-16 23:18:16.652 UTC INFO [admin1] Initializing PRIMARY Admin for store: WDB
+2015-12-16 23:18:16.654 UTC INFO [admin1] Created new admin environment dir: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env
+2015-12-16 23:18:16.654 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 119537664
+2015-12-16 23:18:16.870 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-16 23:18:16.919 UTC INFO [admin1] DataChannelFactory: basic
+2015-12-16 23:18:16.968 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2015-12-16 23:18:18.166 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-16 23:18:18.207 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2015-12-16 23:18:18.251 UTC INFO [admin1] JE recovery: CKPT
+2015-12-16 23:18:18.290 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2015-12-16 23:18:18.550 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-16 23:18:18.550 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-16 23:18:18.844 UTC INFO [admin1] JE: Current group size: 0
+2015-12-16 23:18:18.845 UTC INFO [admin1] JE: New node 1(-1) unknown to rep group
+2015-12-16 23:18:18.846 UTC INFO [admin1] JE: Master changed to 1
+2015-12-16 23:18:18.846 UTC INFO [admin1] JE: Nascent group. 1 is master by virtue of being the first node.
+2015-12-16 23:18:18.860 UTC INFO [admin1] JE: Successfully added node:1(1) HostPort = localhost: 5010 [ELECTABLE]
+2015-12-16 23:18:18.863 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-16 23:18:18.867 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2015-12-16 23:18:18.868 UTC INFO [admin1] JE: Node 1 started
+2015-12-16 23:18:18.869 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2015-12-16 23:18:18.870 UTC INFO [admin1] JE: Joining group as master
+2015-12-16 23:18:18.871 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-16 23:18:18.872 UTC INFO [admin1] State change event: Wed Dec 16 17:18:18 CST 2015, State: MASTER, Type: PRIMARY, Master: 1
+2015-12-16 23:18:18.872 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2015-12-16 23:18:18.884 UTC INFO [admin1] Initializing Admin Schema to schema version 4/NoSQL DB 12cR1.3.4.7 2015-10-01 04:48:39 UTC  Build id: 44f8b0e7d93a
+2015-12-16 23:18:19.096 UTC INFO [admin1] Open Admin entity DB: AdminPlanDatabase
+2015-12-16 23:18:19.096 UTC INFO [admin1] Admin plan database initialized
+2015-12-16 23:18:19.096 UTC INFO [admin1] Initialized plan store to PlanDatabaseStore
+2015-12-16 23:18:19.106 UTC INFO [admin1] Shutting down monitor collector
+2015-12-16 23:18:19.209 UTC INFO [admin1] Initializing Admin database
+2015-12-16 23:18:19.320 UTC INFO [admin1] Admin database initialized
+2015-12-16 23:18:19.338 UTC INFO [admin1] Replicated environment handle established. Cache size: 71722598, State: MASTER
+2015-12-16 23:18:19.339 UTC INFO [admin1] Configured Admin for store: WDB
+2015-12-16 23:18:19.342 UTC INFO [admin1] Starting Web service on port 5001
+2015-12-16 23:18:19.476 UTC INFO [admin1] jetty-7.4.0.v20110414
+2015-12-16 23:18:19.577 UTC INFO [admin1] Extract jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI/ to /Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp
+2015-12-16 23:18:20.608 UTC INFO [admin1] NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2015-12-16 23:18:20.680 UTC INFO [admin1] started o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-16 23:18:20.759 UTC INFO [admin1] Started SelectChannelConnector@0.0.0.0:5001 STARTING
+2015-12-16 23:18:20.869 UTC INFO [admin1] Plan 1[Deploy Zone (1)] approved
+2015-12-16 23:18:20.876 UTC INFO [admin1] Plan 1[Deploy Zone (1)]: started, 1 tasks
+2015-12-16 23:18:20.912 UTC INFO [admin1] Plan 1[Deploy Zone (1)]: task 1 [DeployDatacenter zone=WDB_zone] started
+2015-12-16 23:18:20.917 UTC INFO [admin1] Plan 1[Deploy Zone (1)]: task 1 [DeployDatacenter zone=WDB_zone] ended, state=SUCCEEDED
+2015-12-16 23:18:20.922 UTC INFO [admin1] Plan 1[Deploy Zone (1)]: ended, state=SUCCEEDED
+2015-12-16 23:18:20.924 UTC INFO [admin1] Waiting for Plan 1[Deploy Zone (1)] ended, state=SUCCEEDED
+2015-12-16 23:18:20.950 UTC INFO [admin1] Plan 2[Deploy Storage Node (2)] approved
+2015-12-16 23:18:20.953 UTC INFO [admin1] Plan 2[Deploy Storage Node (2)]: started, 1 tasks
+2015-12-16 23:18:20.962 UTC INFO [admin1] Plan 2[Deploy Storage Node (2)]: task 1 [DeploySN sn1(localhost:5000)] started
+2015-12-16 23:18:21.237 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2015-12-16 23:18:21.241 UTC INFO [admin1] Plan 2[Deploy Storage Node (2)]: task 1 [DeploySN sn1(localhost:5000)] ended, state=SUCCEEDED
+2015-12-16 23:18:21.245 UTC INFO [admin1] Plan 2[Deploy Storage Node (2)]: ended, state=SUCCEEDED
+2015-12-16 23:18:21.246 UTC INFO [admin1] Waiting for Plan 2[Deploy Storage Node (2)] ended, state=SUCCEEDED
+2015-12-16 23:18:21.292 UTC INFO [admin1] Plan 3[Deploy Admin Service (3)] approved
+2015-12-16 23:18:21.294 UTC INFO [admin1] Plan 3[Deploy Admin Service (3)]: started, 2 tasks
+2015-12-16 23:18:21.376 UTC INFO [admin1] [sn1] Service status: RUNNING 2015-12-16 23:18:21 UTC
+2015-12-16 23:18:21.406 UTC INFO [admin1] Plan 3[Deploy Admin Service (3)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] started
+2015-12-16 23:18:21.449 UTC INFO [admin1] newParameters called for Monitor
+2015-12-16 23:18:21.454 UTC INFO [admin1] Plan 3[Deploy Admin Service (3)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] ended, state=SUCCEEDED
+2015-12-16 23:18:21.454 UTC INFO [admin1] Plan 3[Deploy Admin Service (3)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] started
+2015-12-16 23:18:21.470 UTC INFO [admin1] Plan 3[Deploy Admin Service (3)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] ended, state=SUCCEEDED
+2015-12-16 23:18:21.476 UTC INFO [admin1] Plan 3[Deploy Admin Service (3)]: ended, state=SUCCEEDED
+2015-12-16 23:18:21.477 UTC INFO [admin1] Waiting for Plan 3[Deploy Admin Service (3)] ended, state=SUCCEEDED
+2015-12-16 23:18:21.484 UTC INFO [admin1] Created Storage Node Pool: WDBPool
+2015-12-16 23:18:21.522 UTC INFO [admin1] Added Storage Node sn1 to pool: WDBPool
+2015-12-16 23:18:21.546 UTC INFO [admin1] oracle.kv.impl.admin.topo.TopologyCandidate@7c9616b5 has nothing to rebalance
+2015-12-16 23:18:21.678 UTC INFO [admin1] Plan 4[Deploy Topo (4)] approved
+2015-12-16 23:18:21.683 UTC INFO [admin1] Plan 4[Deploy Topo (4)] deploying topology candidate WDBTopology.
+2015-12-16 23:18:21.687 UTC INFO [admin1] Current topology: store=WDB  numPartitions=0 sequence=2
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+
+
+2015-12-16 23:18:21.688 UTC INFO [admin1] Preview of changes to be executed by Plan 4[Deploy Topo (4)]:
+Topology transformation from current deployed topology to WDBTopology:
+Create 1 shard 
+Create 1 RN 
+Create 10 partitions 
+
+shard rg1
+  1 new RN : rg1-rn1 
+  10 new partitions 
+
+2015-12-16 23:18:21.689 UTC INFO [admin1] Target topology candidate: WDBTopology
+store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-16 23:18:21.692 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: started, 8 tasks
+2015-12-16 23:18:21.714 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 1 [UpdateDatacenterV2 zone=zn1] started
+2015-12-16 23:18:21.718 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 1 [UpdateDatacenterV2 zone=zn1] ended, state=SUCCEEDED
+2015-12-16 23:18:21.719 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 2 [DeployShard on [sn1] zn:[id=zn1 name=WDB_zone] localhost:5000 ] started
+2015-12-16 23:18:21.730 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 2 [DeployShard rg1 on [sn1] zn:[id=zn1 name=WDB_zone] localhost:5000 ] ended, state=SUCCEEDED
+2015-12-16 23:18:21.731 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 3 [DeployNewRN on sn1(localhost:5000)] started
+2015-12-16 23:18:21.736 UTC INFO [admin1] Creating rg1-rn1 on sn1 haPort=localhost:5,011 helpers=localhost:5011 storage directory=/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store heapMB=13,926 cacheSize=10,222,022,164 -XX:ParallelGCThreads=4
+2015-12-16 23:18:25.305 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2015-12-16 23:18:25.314 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 3 [DeployNewRN rg1-rn1 on sn1(localhost:5000)] ended, state=SUCCEEDED
+2015-12-16 23:18:25.315 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 4 [UpdateNthRNHelperHost] started
+2015-12-16 23:18:25.321 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 4 [UpdateNthRNHelperHost] ended, state=SUCCEEDED
+2015-12-16 23:18:25.322 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 5 [NewNthRNParameters] started
+2015-12-16 23:18:25.337 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2015-12-16 23:18:24 UTC
+2015-12-16 23:18:25.395 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 5 [NewNthRNParameters] ended, state=SUCCEEDED
+2015-12-16 23:18:25.396 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 6 [BroadcastTopo] started
+2015-12-16 23:18:25.397 UTC INFO [admin1] Broadcasting topology seq# 4, changes for BroadcastTopo
+2015-12-16 23:18:25.413 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 6 [BroadcastTopo] ended, state=SUCCEEDED
+2015-12-16 23:18:25.414 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 7 [BroadcastMetadata] started
+2015-12-16 23:18:25.420 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 7 [BroadcastMetadata] ended, state=SUCCEEDED
+2015-12-16 23:18:25.421 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 8 [AddPartitions totalPartitions = 10] started
+2015-12-16 23:18:25.467 UTC INFO [admin1] Broadcasting topology seq# 14, changes for Initializing new partitions
+2015-12-16 23:18:25.558 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: task 8 [AddPartitions totalPartitions = 10] ended, state=SUCCEEDED
+2015-12-16 23:18:25.560 UTC INFO [admin1] Plan 4[Deploy Topo (4)]: ended, state=SUCCEEDED
+2015-12-16 23:18:25.560 UTC INFO [admin1] Waiting for Plan 4[Deploy Topo (4)] ended, state=SUCCEEDED
+2015-12-16 23:18:26.980 UTC INFO [admin1] Plan 5[CreateTable:ClassDef] approved
+2015-12-16 23:18:26.980 UTC INFO [admin1] Plan 5[CreateTable:ClassDef]: started, 1 tasks
+2015-12-16 23:18:26.989 UTC INFO [admin1] Plan 5[CreateTable:ClassDef]: task 1 [AddTable:ClassDef] started
+2015-12-16 23:18:27.010 UTC INFO [admin1] About to broadcast TableMetadata[1, 1, 1]
+2015-12-16 23:18:27.012 UTC INFO [admin1] Broadcasting TableMetadata[1, 1, 1] for AddTable:ClassDef
+2015-12-16 23:18:27.336 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 1, for AddTable:ClassDef, attempts=1
+2015-12-16 23:18:27.360 UTC INFO [admin1] Plan 5[CreateTable:ClassDef]: task 1 [AddTable:ClassDef] ended, state=SUCCEEDED
+2015-12-16 23:18:27.362 UTC INFO [admin1] Plan 5[CreateTable:ClassDef]: ended, state=SUCCEEDED
+2015-12-16 23:18:29.401 UTC INFO [admin1] Plan 6[CreateTable:WDBObject] approved
+2015-12-16 23:18:29.405 UTC INFO [admin1] Plan 6[CreateTable:WDBObject]: started, 1 tasks
+2015-12-16 23:18:29.408 UTC INFO [admin1] Plan 6[CreateTable:WDBObject]: task 1 [AddTable:WDBObject] started
+2015-12-16 23:18:29.421 UTC INFO [admin1] About to broadcast TableMetadata[2, 2, 2]
+2015-12-16 23:18:29.422 UTC INFO [admin1] Broadcasting TableMetadata[2, 2, 2] for AddTable:WDBObject
+2015-12-16 23:18:29.443 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 2, for AddTable:WDBObject, attempts=1
+2015-12-16 23:18:29.449 UTC INFO [admin1] Plan 6[CreateTable:WDBObject]: task 1 [AddTable:WDBObject] ended, state=SUCCEEDED
+2015-12-16 23:18:29.451 UTC INFO [admin1] Plan 6[CreateTable:WDBObject]: ended, state=SUCCEEDED
+2015-12-16 23:18:34.766 UTC INFO [admin1] Shutting down AdminService instance
+2015-12-16 23:18:34.766 UTC INFO [admin1] Unbinding CommandService
+2015-12-16 23:18:34.767 UTC INFO [admin1] Unbinding ClientAdminService
+2015-12-16 23:18:34.767 UTC INFO [admin1] Shutting down WebService
+2015-12-16 23:18:34.782 UTC INFO [admin1] stopped o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-16 23:18:34.833 UTC INFO [admin1] Stopped Jetty
+2015-12-16 23:18:34.834 UTC INFO [admin1] Shutting down Admin
+2015-12-16 23:18:34.835 UTC INFO [admin1] Shutting down monitor collector
+2015-12-16 23:18:34.836 UTC INFO [admin1] Closing admin entity DB: AdminPlanDatabase
+2015-12-16 23:18:34.864 UTC INFO [admin1] JE: Shutting down node 1(1)
+2015-12-16 23:18:34.865 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-16 23:18:34.866 UTC INFO [admin1] JE: Elections shutdown initiated
+2015-12-16 23:18:34.870 UTC INFO [admin1] JE: Acceptor Thread 1 soft shutdown initiated.
+2015-12-16 23:18:34.872 UTC INFO [admin1] JE: Learner Thread 1 soft shutdown initiated.
+2015-12-16 23:18:34.873 UTC INFO [admin1] JE: Elections shutdown completed
+2015-12-16 23:18:34.873 UTC INFO [admin1] JE: Feeder manager soft shutdown.
+2015-12-16 23:18:34.874 UTC INFO [admin1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 210
+2015-12-16 23:18:34.876 UTC INFO [admin1] JE: UNKNOWN 1(1) soft shutdown initiated.
+2015-12-16 23:18:34.876 UTC INFO [admin1] JE: RepNode main thread shutting down.
+2015-12-16 23:18:34.877 UTC INFO [admin1] JE: RepNode main thread: DETACHED 1(1) exited.
+2015-12-16 23:18:34.880 UTC INFO [admin1] JE: Feeder Manager node: 1 soft shutdown initiated.
+2015-12-16 23:18:34.880 UTC INFO [admin1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-16 23:18:34.880 UTC INFO [admin1] JE: ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-16 23:18:34.882 UTC INFO [admin1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-16 23:18:34.882 UTC INFO [admin1] JE: 1(1) shutdown completed.
+2015-12-17 00:00:09.961 UTC INFO [admin1] Starting service process: admin1, Java command line arguments: [-XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc]
+2015-12-17 00:00:10.080 UTC INFO [admin1] Starting AdminService
+2015-12-17 00:00:10.324 UTC INFO [admin1] Initializing PRIMARY Admin for store: WDB
+2015-12-17 00:00:10.326 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 119537664
+2015-12-17 00:00:10.337 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 00:00:10.359 UTC INFO [admin1] DataChannelFactory: basic
+2015-12-17 00:00:10.362 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2015-12-17 00:00:10.847 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2015-12-17 00:00:11.047 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2015-12-17 00:00:11.053 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2015-12-17 00:00:11.074 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 00:00:11.077 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 00:00:11.087 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2015-12-17 00:00:11.114 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 00:00:11.117 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 00:00:11.122 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 00:00:11.135 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 00:00:11.250 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2015-12-17 00:00:11.301 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 00:00:11.301 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 00:00:11.387 UTC INFO [admin1] JE: Current group size: 1
+2015-12-17 00:00:11.387 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2015-12-17 00:00:11.591 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2015-12-17 00:00:11.592 UTC INFO [admin1] JE: Node 1 started
+2015-12-17 00:00:11.593 UTC INFO [admin1] JE: Election initiated; election #1
+2015-12-17 00:00:11.595 UTC INFO [admin1] JE: Started election thread Wed Dec 16 18:00:11 CST 2015
+2015-12-17 00:00:13.607 UTC INFO [admin1] JE: Winning proposal: Proposal(00000151ad3cad1d:57af5cde1f0d5f8df1972a0ecdf79c61:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 00:00:13.609 UTC INFO [admin1] JE: Master changed to 1
+2015-12-17 00:00:13.610 UTC INFO [admin1] JE: Election finished. Elapsed time: 2018ms
+2015-12-17 00:00:13.611 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2015-12-17 00:00:13.614 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2015-12-17 00:00:13.624 UTC INFO [admin1] JE: Joining group as master
+2015-12-17 00:00:13.627 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-17 00:00:13.629 UTC INFO [admin1] State change event: Wed Dec 16 18:00:13 CST 2015, State: MASTER, Type: PRIMARY, Master: 1
+2015-12-17 00:00:13.630 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2015-12-17 00:00:13.900 UTC INFO [admin1] Open Admin entity DB: AdminPlanDatabase
+2015-12-17 00:00:13.900 UTC INFO [admin1] Admin plan database initialized
+2015-12-17 00:00:13.901 UTC INFO [admin1] Initialized plan store to PlanDatabaseStore
+2015-12-17 00:00:13.905 UTC INFO [admin1] Shutting down monitor collector
+2015-12-17 00:00:13.950 UTC INFO [admin1] Using existing Admin database
+2015-12-17 00:00:13.989 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2015-12-17 00:00:14.023 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2015-12-17 00:00:14.070 UTC INFO [admin1] [sn1] Service status: RUNNING 2015-12-17 00:00:09 UTC
+2015-12-17 00:00:14.084 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2015-12-17 00:00:14 UTC
+2015-12-17 00:00:14.238 UTC INFO [admin1] Replicated environment handle established. Cache size: 71722598, State: MASTER
+2015-12-17 00:00:14.239 UTC INFO [admin1] Starting commandService on rmi://localhost:5000/commandService
+2015-12-17 00:00:14.365 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2015-12-17 00:00:14.501 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://localhost:5000/admin:CLIENT_ADMIN
+2015-12-17 00:00:14.506 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2015-12-17 00:00:14.537 UTC INFO [admin1] Starting Web service on port 5001
+2015-12-17 00:00:14.649 UTC INFO [admin1] jetty-7.4.0.v20110414
+2015-12-17 00:00:14.731 UTC INFO [admin1] Extract jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI/ to /Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp
+2015-12-17 00:00:15.461 UTC INFO [admin1] NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2015-12-17 00:00:15.490 UTC INFO [admin1] started o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-17 00:00:15.568 UTC INFO [admin1] Started SelectChannelConnector@0.0.0.0:5001 STARTING
+2015-12-17 00:00:15.570 UTC INFO [admin1] Started AdminService
+2015-12-17 00:00:20.383 UTC INFO [admin1] Plan 7[Deploy Zone (7)] approved
+2015-12-17 00:00:20.392 UTC INFO [admin1] Plan 7[Deploy Zone (7)]: started, 1 tasks
+2015-12-17 00:00:20.400 UTC INFO [admin1] Plan 7[Deploy Zone (7)]: task 1 [DeployDatacenter zone=WDB_zone] started
+2015-12-17 00:00:20.404 UTC INFO [admin1] Plan 7[Deploy Zone (7)]: task 1 [DeployDatacenter zone=WDB_zone] ended, state=SUCCEEDED
+2015-12-17 00:00:20.411 UTC INFO [admin1] Plan 7[Deploy Zone (7)]: ended, state=SUCCEEDED
+2015-12-17 00:00:20.413 UTC INFO [admin1] Waiting for Plan 7[Deploy Zone (7)] ended, state=SUCCEEDED
+2015-12-17 00:00:20.440 UTC INFO [admin1] Plan 8[Deploy Storage Node (8)] approved
+2015-12-17 00:00:20.445 UTC INFO [admin1] Plan 8[Deploy Storage Node (8)]: started, 1 tasks
+2015-12-17 00:00:20.449 UTC INFO [admin1] Plan 8[Deploy Storage Node (8)]: task 1 [DeploySN sn1(localhost:5000)] started
+2015-12-17 00:00:20.481 UTC INFO [admin1] DeploySN sn1(localhost:5000): SNA already deployed, had status of RUNNING
+2015-12-17 00:00:20.484 UTC INFO [admin1] Plan 8[Deploy Storage Node (8)]: task 1 [DeploySN sn1(localhost:5000)] ended, state=SUCCEEDED
+2015-12-17 00:00:20.488 UTC INFO [admin1] Plan 8[Deploy Storage Node (8)]: ended, state=SUCCEEDED
+2015-12-17 00:00:20.489 UTC INFO [admin1] Waiting for Plan 8[Deploy Storage Node (8)] ended, state=SUCCEEDED
+2015-12-17 00:00:20.515 UTC INFO [admin1] Plan 9[Deploy Admin Service (9)] approved
+2015-12-17 00:00:20.516 UTC INFO [admin1] Plan 9[Deploy Admin Service (9)]: started, 4 tasks
+2015-12-17 00:00:20.520 UTC INFO [admin1] Plan 9[Deploy Admin Service (9)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] started
+2015-12-17 00:00:20.571 UTC INFO [admin1] Plan 9[Deploy Admin Service (9)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] ended, state=SUCCEEDED
+2015-12-17 00:00:20.571 UTC INFO [admin1] Plan 9[Deploy Admin Service (9)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] started
+2015-12-17 00:00:20.582 UTC INFO [admin1] Plan 9[Deploy Admin Service (9)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] ended, state=SUCCEEDED
+2015-12-17 00:00:20.583 UTC INFO [admin1] Plan 9[Deploy Admin Service (9)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] started
+2015-12-17 00:00:20.596 UTC INFO [admin1] Changed helperHost for admin1 to localhost:5010
+2015-12-17 00:00:20.649 UTC INFO [admin1] Plan 9[Deploy Admin Service (9)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] ended, state=SUCCEEDED
+2015-12-17 00:00:20.650 UTC INFO [admin1] Plan 9[Deploy Admin Service (9)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] started
+2015-12-17 00:00:20.663 UTC INFO [admin1] Plan 9[Deploy Admin Service (9)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] ended, state=SUCCEEDED
+2015-12-17 00:00:20.666 UTC INFO [admin1] Plan 9[Deploy Admin Service (9)]: ended, state=SUCCEEDED
+2015-12-17 00:00:20.667 UTC INFO [admin1] Waiting for Plan 9[Deploy Admin Service (9)] ended, state=SUCCEEDED
+2015-12-17 00:00:20.730 UTC INFO [admin1] Added Storage Node sn1 to pool: WDBPool
+2015-12-17 00:00:20.773 UTC INFO [admin1] oracle.kv.impl.admin.topo.TopologyCandidate@4f8e177f has nothing to rebalance
+2015-12-17 00:00:20.781 UTC INFO [admin1] Couldn't improve topology. Store can only support 1 shards.
+Shard calculation based on smallest zone: zn id=zn1 maximum shards= 1
+
+2015-12-17 00:00:20.828 UTC INFO [admin1] Plan 10[Deploy Topo (10)] approved
+2015-12-17 00:00:20.834 UTC INFO [admin1] Plan 10[Deploy Topo (10)] deploying topology candidate WDBTopology.
+2015-12-17 00:00:20.839 UTC INFO [admin1] Current topology: store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-17 00:00:20.839 UTC INFO [admin1] Preview of changes to be executed by Plan 10[Deploy Topo (10)]:
+No differences in topologies.
+2015-12-17 00:00:20.840 UTC INFO [admin1] Target topology candidate: WDBTopology
+store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-17 00:00:20.845 UTC INFO [admin1] Plan 10[Deploy Topo (10)]: started, 3 tasks
+2015-12-17 00:00:20.847 UTC INFO [admin1] Plan 10[Deploy Topo (10)]: task 1 [UpdateDatacenterV2 zone=zn1] started
+2015-12-17 00:00:20.852 UTC INFO [admin1] Plan 10[Deploy Topo (10)]: task 1 [UpdateDatacenterV2 zone=zn1] ended, state=SUCCEEDED
+2015-12-17 00:00:20.853 UTC INFO [admin1] Plan 10[Deploy Topo (10)]: task 2 [BroadcastTopo] started
+2015-12-17 00:00:20.854 UTC INFO [admin1] Broadcasting topology seq# 14, changes for BroadcastTopo
+2015-12-17 00:00:20.896 UTC INFO [admin1] Plan 10[Deploy Topo (10)]: task 2 [BroadcastTopo] ended, state=SUCCEEDED
+2015-12-17 00:00:20.897 UTC INFO [admin1] Plan 10[Deploy Topo (10)]: task 3 [BroadcastMetadata] started
+2015-12-17 00:00:20.904 UTC INFO [admin1] Plan 10[Deploy Topo (10)]: task 3 [BroadcastMetadata] ended, state=SUCCEEDED
+2015-12-17 00:00:20.906 UTC INFO [admin1] Plan 10[Deploy Topo (10)]: ended, state=SUCCEEDED
+2015-12-17 00:00:20.909 UTC INFO [admin1] Waiting for Plan 10[Deploy Topo (10)] ended, state=SUCCEEDED
+2015-12-17 00:00:34.026 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2015-12-17 00:00:14 UTC
+2015-12-17 00:04:34.618 UTC INFO [admin1] Plan 11[DropTable:ClassDef] approved
+2015-12-17 00:04:34.622 UTC INFO [admin1] Plan 11[DropTable:ClassDef]: started, 3 tasks
+2015-12-17 00:04:34.624 UTC INFO [admin1] Plan 11[DropTable:ClassDef]: task 1 [RemoveTable:ClassDef] started
+2015-12-17 00:04:34.634 UTC INFO [admin1] About to broadcast TableMetadata[3, 2, 3]
+2015-12-17 00:04:34.636 UTC INFO [admin1] Broadcasting TableMetadata[3, 2, 3] for RemoveTable:ClassDef
+2015-12-17 00:04:34.690 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 3, for RemoveTable:ClassDef, attempts=1
+2015-12-17 00:04:34.694 UTC INFO [admin1] Plan 11[DropTable:ClassDef]: task 1 [RemoveTable:ClassDef] ended, state=SUCCEEDED
+2015-12-17 00:04:34.695 UTC INFO [admin1] Plan 11[DropTable:ClassDef]: task 2 [WaitForRemoveTableData:ClassDef] started
+2015-12-17 00:04:34.720 UTC INFO [admin1] Wait for remove table ClassDef data for rg1
+2015-12-17 00:04:34.731 UTC INFO [admin1] Remove table ClassDef on rg1 done=false
+2015-12-17 00:04:44.750 UTC INFO [admin1] Remove table ClassDef on rg1 done=true
+2015-12-17 00:04:44.757 UTC INFO [admin1] Plan 11[DropTable:ClassDef]: task 2 [WaitForRemoveTableData:ClassDef] ended, state=SUCCEEDED
+2015-12-17 00:04:44.757 UTC INFO [admin1] Plan 11[DropTable:ClassDef]: task 3 [RemoveTable:ClassDef] started
+2015-12-17 00:04:44.763 UTC INFO [admin1] About to broadcast TableMetadata[4, 1, 4]
+2015-12-17 00:04:44.764 UTC INFO [admin1] Broadcasting TableMetadata[4, 1, 4] for RemoveTable:ClassDef
+2015-12-17 00:04:44.779 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 4, for RemoveTable:ClassDef, attempts=1
+2015-12-17 00:04:44.781 UTC INFO [admin1] Plan 11[DropTable:ClassDef]: task 3 [RemoveTable:ClassDef] ended, state=SUCCEEDED
+2015-12-17 00:04:44.784 UTC INFO [admin1] Plan 11[DropTable:ClassDef]: ended, state=SUCCEEDED
+2015-12-17 00:04:46.723 UTC INFO [admin1] Plan 12[DropTable:WDBObject] approved
+2015-12-17 00:04:46.726 UTC INFO [admin1] Plan 12[DropTable:WDBObject]: started, 3 tasks
+2015-12-17 00:04:46.731 UTC INFO [admin1] Plan 12[DropTable:WDBObject]: task 1 [RemoveTable:WDBObject] started
+2015-12-17 00:04:46.737 UTC INFO [admin1] About to broadcast TableMetadata[5, 1, 5]
+2015-12-17 00:04:46.738 UTC INFO [admin1] Broadcasting TableMetadata[5, 1, 5] for RemoveTable:WDBObject
+2015-12-17 00:04:46.751 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 5, for RemoveTable:WDBObject, attempts=1
+2015-12-17 00:04:46.754 UTC INFO [admin1] Plan 12[DropTable:WDBObject]: task 1 [RemoveTable:WDBObject] ended, state=SUCCEEDED
+2015-12-17 00:04:46.754 UTC INFO [admin1] Plan 12[DropTable:WDBObject]: task 2 [WaitForRemoveTableData:WDBObject] started
+2015-12-17 00:04:46.761 UTC INFO [admin1] Wait for remove table WDBObject data for rg1
+2015-12-17 00:04:46.772 UTC INFO [admin1] Remove table WDBObject on rg1 done=false
+2015-12-17 00:04:56.783 UTC INFO [admin1] Remove table WDBObject on rg1 done=true
+2015-12-17 00:04:56.792 UTC INFO [admin1] Plan 12[DropTable:WDBObject]: task 2 [WaitForRemoveTableData:WDBObject] ended, state=SUCCEEDED
+2015-12-17 00:04:56.792 UTC INFO [admin1] Plan 12[DropTable:WDBObject]: task 3 [RemoveTable:WDBObject] started
+2015-12-17 00:04:56.800 UTC INFO [admin1] About to broadcast TableMetadata[6, 0, 6]
+2015-12-17 00:04:56.801 UTC INFO [admin1] Broadcasting TableMetadata[6, 0, 6] for RemoveTable:WDBObject
+2015-12-17 00:04:56.815 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 6, for RemoveTable:WDBObject, attempts=1
+2015-12-17 00:04:56.820 UTC INFO [admin1] Plan 12[DropTable:WDBObject]: task 3 [RemoveTable:WDBObject] ended, state=SUCCEEDED
+2015-12-17 00:04:56.822 UTC INFO [admin1] Plan 12[DropTable:WDBObject]: ended, state=SUCCEEDED
+2015-12-17 00:04:58.765 UTC INFO [admin1] Plan 13[CreateTable:ClassDef] approved
+2015-12-17 00:04:58.766 UTC INFO [admin1] Plan 13[CreateTable:ClassDef]: started, 1 tasks
+2015-12-17 00:04:58.768 UTC INFO [admin1] Plan 13[CreateTable:ClassDef]: task 1 [AddTable:ClassDef] started
+2015-12-17 00:04:58.774 UTC INFO [admin1] About to broadcast TableMetadata[7, 1, 7]
+2015-12-17 00:04:58.774 UTC INFO [admin1] Broadcasting TableMetadata[7, 1, 7] for AddTable:ClassDef
+2015-12-17 00:04:58.790 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 7, for AddTable:ClassDef, attempts=1
+2015-12-17 00:04:58.794 UTC INFO [admin1] Plan 13[CreateTable:ClassDef]: task 1 [AddTable:ClassDef] ended, state=SUCCEEDED
+2015-12-17 00:04:58.797 UTC INFO [admin1] Plan 13[CreateTable:ClassDef]: ended, state=SUCCEEDED
+2015-12-17 00:05:00.790 UTC INFO [admin1] Plan 14[CreateTable:WDBObject] approved
+2015-12-17 00:05:00.791 UTC INFO [admin1] Plan 14[CreateTable:WDBObject]: started, 1 tasks
+2015-12-17 00:05:00.794 UTC INFO [admin1] Plan 14[CreateTable:WDBObject]: task 1 [AddTable:WDBObject] started
+2015-12-17 00:05:00.800 UTC INFO [admin1] About to broadcast TableMetadata[8, 2, 8]
+2015-12-17 00:05:00.801 UTC INFO [admin1] Broadcasting TableMetadata[8, 2, 8] for AddTable:WDBObject
+2015-12-17 00:05:00.810 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 8, for AddTable:WDBObject, attempts=1
+2015-12-17 00:05:00.814 UTC INFO [admin1] Plan 14[CreateTable:WDBObject]: task 1 [AddTable:WDBObject] ended, state=SUCCEEDED
+2015-12-17 00:05:00.816 UTC INFO [admin1] Plan 14[CreateTable:WDBObject]: ended, state=SUCCEEDED
+2015-12-17 00:05:33.940 UTC INFO [admin1] Plan 15[DropTable:ClassDef] approved
+2015-12-17 00:05:33.943 UTC INFO [admin1] Plan 15[DropTable:ClassDef]: started, 3 tasks
+2015-12-17 00:05:33.946 UTC INFO [admin1] Plan 15[DropTable:ClassDef]: task 1 [RemoveTable:ClassDef] started
+2015-12-17 00:05:33.953 UTC INFO [admin1] About to broadcast TableMetadata[9, 2, 9]
+2015-12-17 00:05:33.953 UTC INFO [admin1] Broadcasting TableMetadata[9, 2, 9] for RemoveTable:ClassDef
+2015-12-17 00:05:33.972 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 9, for RemoveTable:ClassDef, attempts=1
+2015-12-17 00:05:33.975 UTC INFO [admin1] Plan 15[DropTable:ClassDef]: task 1 [RemoveTable:ClassDef] ended, state=SUCCEEDED
+2015-12-17 00:05:33.975 UTC INFO [admin1] Plan 15[DropTable:ClassDef]: task 2 [WaitForRemoveTableData:ClassDef] started
+2015-12-17 00:05:33.993 UTC INFO [admin1] Wait for remove table ClassDef data for rg1
+2015-12-17 00:05:34.030 UTC INFO [admin1] Remove table ClassDef on rg1 done=false
+2015-12-17 00:05:44.039 UTC INFO [admin1] Remove table ClassDef on rg1 done=true
+2015-12-17 00:05:44.045 UTC INFO [admin1] Plan 15[DropTable:ClassDef]: task 2 [WaitForRemoveTableData:ClassDef] ended, state=SUCCEEDED
+2015-12-17 00:05:44.045 UTC INFO [admin1] Plan 15[DropTable:ClassDef]: task 3 [RemoveTable:ClassDef] started
+2015-12-17 00:05:44.050 UTC INFO [admin1] About to broadcast TableMetadata[10, 1, 10]
+2015-12-17 00:05:44.050 UTC INFO [admin1] Broadcasting TableMetadata[10, 1, 10] for RemoveTable:ClassDef
+2015-12-17 00:05:44.060 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 10, for RemoveTable:ClassDef, attempts=1
+2015-12-17 00:05:44.062 UTC INFO [admin1] Plan 15[DropTable:ClassDef]: task 3 [RemoveTable:ClassDef] ended, state=SUCCEEDED
+2015-12-17 00:05:44.064 UTC INFO [admin1] Plan 15[DropTable:ClassDef]: ended, state=SUCCEEDED
+2015-12-17 00:05:45.970 UTC INFO [admin1] Plan 16[DropTable:WDBObject] approved
+2015-12-17 00:05:45.978 UTC INFO [admin1] Plan 16[DropTable:WDBObject]: started, 3 tasks
+2015-12-17 00:05:45.981 UTC INFO [admin1] Plan 16[DropTable:WDBObject]: task 1 [RemoveTable:WDBObject] started
+2015-12-17 00:05:45.989 UTC INFO [admin1] About to broadcast TableMetadata[11, 1, 11]
+2015-12-17 00:05:45.989 UTC INFO [admin1] Broadcasting TableMetadata[11, 1, 11] for RemoveTable:WDBObject
+2015-12-17 00:05:45.998 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 11, for RemoveTable:WDBObject, attempts=1
+2015-12-17 00:05:46.002 UTC INFO [admin1] Plan 16[DropTable:WDBObject]: task 1 [RemoveTable:WDBObject] ended, state=SUCCEEDED
+2015-12-17 00:05:46.002 UTC INFO [admin1] Plan 16[DropTable:WDBObject]: task 2 [WaitForRemoveTableData:WDBObject] started
+2015-12-17 00:05:46.014 UTC INFO [admin1] Wait for remove table WDBObject data for rg1
+2015-12-17 00:05:46.022 UTC INFO [admin1] Remove table WDBObject on rg1 done=true
+2015-12-17 00:05:46.031 UTC INFO [admin1] Plan 16[DropTable:WDBObject]: task 2 [WaitForRemoveTableData:WDBObject] ended, state=SUCCEEDED
+2015-12-17 00:05:46.031 UTC INFO [admin1] Plan 16[DropTable:WDBObject]: task 3 [RemoveTable:WDBObject] started
+2015-12-17 00:05:46.046 UTC INFO [admin1] About to broadcast TableMetadata[12, 0, 12]
+2015-12-17 00:05:46.047 UTC INFO [admin1] Broadcasting TableMetadata[12, 0, 12] for RemoveTable:WDBObject
+2015-12-17 00:05:46.059 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 12, for RemoveTable:WDBObject, attempts=1
+2015-12-17 00:05:46.063 UTC INFO [admin1] Plan 16[DropTable:WDBObject]: task 3 [RemoveTable:WDBObject] ended, state=SUCCEEDED
+2015-12-17 00:05:46.065 UTC INFO [admin1] Plan 16[DropTable:WDBObject]: ended, state=SUCCEEDED
+2015-12-17 00:05:47.997 UTC INFO [admin1] Plan 17[CreateTable:ClassDef] approved
+2015-12-17 00:05:48.005 UTC INFO [admin1] Plan 17[CreateTable:ClassDef]: started, 1 tasks
+2015-12-17 00:05:48.009 UTC INFO [admin1] Plan 17[CreateTable:ClassDef]: task 1 [AddTable:ClassDef] started
+2015-12-17 00:05:48.017 UTC INFO [admin1] About to broadcast TableMetadata[13, 1, 13]
+2015-12-17 00:05:48.018 UTC INFO [admin1] Broadcasting TableMetadata[13, 1, 13] for AddTable:ClassDef
+2015-12-17 00:05:48.030 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 13, for AddTable:ClassDef, attempts=1
+2015-12-17 00:05:48.031 UTC INFO [admin1] Plan 17[CreateTable:ClassDef]: task 1 [AddTable:ClassDef] ended, state=SUCCEEDED
+2015-12-17 00:05:48.033 UTC INFO [admin1] Plan 17[CreateTable:ClassDef]: ended, state=SUCCEEDED
+2015-12-17 00:05:50.030 UTC INFO [admin1] Plan 18[CreateTable:WDBObject] approved
+2015-12-17 00:05:50.032 UTC INFO [admin1] Plan 18[CreateTable:WDBObject]: started, 1 tasks
+2015-12-17 00:05:50.034 UTC INFO [admin1] Plan 18[CreateTable:WDBObject]: task 1 [AddTable:WDBObject] started
+2015-12-17 00:05:50.039 UTC INFO [admin1] About to broadcast TableMetadata[14, 2, 14]
+2015-12-17 00:05:50.040 UTC INFO [admin1] Broadcasting TableMetadata[14, 2, 14] for AddTable:WDBObject
+2015-12-17 00:05:50.049 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 14, for AddTable:WDBObject, attempts=1
+2015-12-17 00:05:50.051 UTC INFO [admin1] Plan 18[CreateTable:WDBObject]: task 1 [AddTable:WDBObject] ended, state=SUCCEEDED
+2015-12-17 00:05:50.052 UTC INFO [admin1] Plan 18[CreateTable:WDBObject]: ended, state=SUCCEEDED
+2015-12-17 00:07:17.788 UTC INFO [admin1] Plan 19[DropTable:ClassDef] approved
+2015-12-17 00:07:17.792 UTC INFO [admin1] Plan 19[DropTable:ClassDef]: started, 3 tasks
+2015-12-17 00:07:17.794 UTC INFO [admin1] Plan 19[DropTable:ClassDef]: task 1 [RemoveTable:ClassDef] started
+2015-12-17 00:07:17.799 UTC INFO [admin1] About to broadcast TableMetadata[15, 2, 15]
+2015-12-17 00:07:17.800 UTC INFO [admin1] Broadcasting TableMetadata[15, 2, 15] for RemoveTable:ClassDef
+2015-12-17 00:07:17.828 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 15, for RemoveTable:ClassDef, attempts=1
+2015-12-17 00:07:17.830 UTC INFO [admin1] Plan 19[DropTable:ClassDef]: task 1 [RemoveTable:ClassDef] ended, state=SUCCEEDED
+2015-12-17 00:07:17.830 UTC INFO [admin1] Plan 19[DropTable:ClassDef]: task 2 [WaitForRemoveTableData:ClassDef] started
+2015-12-17 00:07:17.860 UTC INFO [admin1] Wait for remove table ClassDef data for rg1
+2015-12-17 00:07:17.876 UTC INFO [admin1] Remove table ClassDef on rg1 done=true
+2015-12-17 00:07:17.879 UTC INFO [admin1] Plan 19[DropTable:ClassDef]: task 2 [WaitForRemoveTableData:ClassDef] ended, state=SUCCEEDED
+2015-12-17 00:07:17.879 UTC INFO [admin1] Plan 19[DropTable:ClassDef]: task 3 [RemoveTable:ClassDef] started
+2015-12-17 00:07:17.884 UTC INFO [admin1] About to broadcast TableMetadata[16, 1, 16]
+2015-12-17 00:07:17.885 UTC INFO [admin1] Broadcasting TableMetadata[16, 1, 16] for RemoveTable:ClassDef
+2015-12-17 00:07:17.894 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 16, for RemoveTable:ClassDef, attempts=1
+2015-12-17 00:07:17.897 UTC INFO [admin1] Plan 19[DropTable:ClassDef]: task 3 [RemoveTable:ClassDef] ended, state=SUCCEEDED
+2015-12-17 00:07:17.898 UTC INFO [admin1] Plan 19[DropTable:ClassDef]: ended, state=SUCCEEDED
+2015-12-17 00:07:19.809 UTC INFO [admin1] Plan 20[DropTable:WDBObject] approved
+2015-12-17 00:07:19.811 UTC INFO [admin1] Plan 20[DropTable:WDBObject]: started, 3 tasks
+2015-12-17 00:07:19.812 UTC INFO [admin1] Plan 20[DropTable:WDBObject]: task 1 [RemoveTable:WDBObject] started
+2015-12-17 00:07:19.817 UTC INFO [admin1] About to broadcast TableMetadata[17, 1, 17]
+2015-12-17 00:07:19.817 UTC INFO [admin1] Broadcasting TableMetadata[17, 1, 17] for RemoveTable:WDBObject
+2015-12-17 00:07:19.827 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 17, for RemoveTable:WDBObject, attempts=1
+2015-12-17 00:07:19.829 UTC INFO [admin1] Plan 20[DropTable:WDBObject]: task 1 [RemoveTable:WDBObject] ended, state=SUCCEEDED
+2015-12-17 00:07:19.829 UTC INFO [admin1] Plan 20[DropTable:WDBObject]: task 2 [WaitForRemoveTableData:WDBObject] started
+2015-12-17 00:07:19.848 UTC INFO [admin1] Wait for remove table WDBObject data for rg1
+2015-12-17 00:07:19.860 UTC INFO [admin1] Remove table WDBObject on rg1 done=true
+2015-12-17 00:07:19.864 UTC INFO [admin1] Plan 20[DropTable:WDBObject]: task 2 [WaitForRemoveTableData:WDBObject] ended, state=SUCCEEDED
+2015-12-17 00:07:19.864 UTC INFO [admin1] Plan 20[DropTable:WDBObject]: task 3 [RemoveTable:WDBObject] started
+2015-12-17 00:07:19.869 UTC INFO [admin1] About to broadcast TableMetadata[18, 0, 18]
+2015-12-17 00:07:19.870 UTC INFO [admin1] Broadcasting TableMetadata[18, 0, 18] for RemoveTable:WDBObject
+2015-12-17 00:07:19.880 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 18, for RemoveTable:WDBObject, attempts=1
+2015-12-17 00:07:19.884 UTC INFO [admin1] Plan 20[DropTable:WDBObject]: task 3 [RemoveTable:WDBObject] ended, state=SUCCEEDED
+2015-12-17 00:07:19.887 UTC INFO [admin1] Plan 20[DropTable:WDBObject]: ended, state=SUCCEEDED
+2015-12-17 00:07:21.829 UTC INFO [admin1] Plan 21[CreateTable:ClassDef] approved
+2015-12-17 00:07:21.830 UTC INFO [admin1] Plan 21[CreateTable:ClassDef]: started, 1 tasks
+2015-12-17 00:07:21.834 UTC INFO [admin1] Plan 21[CreateTable:ClassDef]: task 1 [AddTable:ClassDef] started
+2015-12-17 00:07:21.839 UTC INFO [admin1] About to broadcast TableMetadata[19, 1, 19]
+2015-12-17 00:07:21.840 UTC INFO [admin1] Broadcasting TableMetadata[19, 1, 19] for AddTable:ClassDef
+2015-12-17 00:07:21.848 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 19, for AddTable:ClassDef, attempts=1
+2015-12-17 00:07:21.850 UTC INFO [admin1] Plan 21[CreateTable:ClassDef]: task 1 [AddTable:ClassDef] ended, state=SUCCEEDED
+2015-12-17 00:07:21.852 UTC INFO [admin1] Plan 21[CreateTable:ClassDef]: ended, state=SUCCEEDED
+2015-12-17 00:07:23.853 UTC INFO [admin1] Plan 22[CreateTable:WDBObject] approved
+2015-12-17 00:07:23.855 UTC INFO [admin1] Plan 22[CreateTable:WDBObject]: started, 1 tasks
+2015-12-17 00:07:23.856 UTC INFO [admin1] Plan 22[CreateTable:WDBObject]: task 1 [AddTable:WDBObject] started
+2015-12-17 00:07:23.861 UTC INFO [admin1] About to broadcast TableMetadata[20, 2, 20]
+2015-12-17 00:07:23.862 UTC INFO [admin1] Broadcasting TableMetadata[20, 2, 20] for AddTable:WDBObject
+2015-12-17 00:07:23.871 UTC INFO [admin1] Successful broadcast to all groups of TABLE metadata seq# 20, for AddTable:WDBObject, attempts=1
+2015-12-17 00:07:23.873 UTC INFO [admin1] Plan 22[CreateTable:WDBObject]: task 1 [AddTable:WDBObject] ended, state=SUCCEEDED
+2015-12-17 00:07:23.875 UTC INFO [admin1] Plan 22[CreateTable:WDBObject]: ended, state=SUCCEEDED
+2015-12-17 00:26:11.607 UTC INFO [admin1] Shutting down AdminService instance
+2015-12-17 00:26:11.610 UTC INFO [admin1] Unbinding CommandService
+2015-12-17 00:26:11.620 UTC INFO [admin1] Unbinding ClientAdminService
+2015-12-17 00:26:11.621 UTC INFO [admin1] Shutting down WebService
+2015-12-17 00:26:11.635 UTC INFO [admin1] stopped o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-17 00:26:11.688 UTC INFO [admin1] Stopped Jetty
+2015-12-17 00:26:11.688 UTC INFO [admin1] Shutting down Admin
+2015-12-17 00:26:11.702 UTC INFO [admin1] Shutting down monitor collector
+2015-12-17 00:26:11.703 UTC INFO [admin1] Closing admin entity DB: AdminPlanDatabase
+2015-12-17 00:26:11.707 UTC INFO [admin1] JE: Shutting down node 1(1)
+2015-12-17 00:26:11.710 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-17 00:26:11.711 UTC INFO [admin1] JE: Elections shutdown initiated
+2015-12-17 00:26:11.712 UTC INFO [admin1] JE: Acceptor Thread 1 soft shutdown initiated.
+2015-12-17 00:26:11.713 UTC INFO [admin1] JE: Learner Thread 1 soft shutdown initiated.
+2015-12-17 00:26:11.713 UTC INFO [admin1] JE: ElectionThread_1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env soft shutdown initiated.
+2015-12-17 00:26:11.713 UTC INFO [admin1] JE: Elections shutdown completed
+2015-12-17 00:26:11.713 UTC INFO [admin1] JE: Feeder manager soft shutdown.
+2015-12-17 00:26:11.714 UTC INFO [admin1] JE: MASTER 1(1) soft shutdown initiated.
+2015-12-17 00:26:11.714 UTC INFO [admin1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 523
+2015-12-17 00:26:11.714 UTC INFO [admin1] JE: RepNode main thread shutting down.
+2015-12-17 00:26:11.715 UTC INFO [admin1] JE: RepNode main thread: DETACHED 1(1) exited.
+2015-12-17 00:26:11.715 UTC INFO [admin1] JE: Feeder Manager node: 1 soft shutdown initiated.
+2015-12-17 00:26:11.716 UTC INFO [admin1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-17 00:26:11.716 UTC INFO [admin1] JE: ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-17 00:26:11.717 UTC INFO [admin1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-17 00:26:11.717 UTC INFO [admin1] JE: 1(1) shutdown completed.
+2015-12-17 00:26:44.024 UTC INFO [admin1] Starting service process: admin1, Java command line arguments: [-XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc]
+2015-12-17 00:26:44.126 UTC INFO [admin1] Starting AdminService
+2015-12-17 00:26:44.348 UTC INFO [admin1] Initializing PRIMARY Admin for store: WDB
+2015-12-17 00:26:44.350 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 119537664
+2015-12-17 00:26:44.355 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 00:26:44.375 UTC INFO [admin1] DataChannelFactory: basic
+2015-12-17 00:26:44.379 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2015-12-17 00:26:44.806 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2015-12-17 00:26:44.912 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2015-12-17 00:26:44.925 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2015-12-17 00:26:44.944 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 00:26:44.948 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 00:26:44.963 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2015-12-17 00:26:44.988 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 00:26:44.990 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 00:26:44.996 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 00:26:45.008 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 00:26:45.089 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2015-12-17 00:26:45.126 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 00:26:45.127 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 00:26:45.199 UTC INFO [admin1] JE: Current group size: 1
+2015-12-17 00:26:45.200 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2015-12-17 00:26:45.313 UTC INFO [admin1] JE: Node 1 started
+2015-12-17 00:26:45.313 UTC INFO [admin1] JE: Election initiated; election #1
+2015-12-17 00:26:45.314 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2015-12-17 00:26:45.316 UTC INFO [admin1] JE: Started election thread Wed Dec 16 18:26:45 CST 2015
+2015-12-17 00:26:47.323 UTC INFO [admin1] JE: Winning proposal: Proposal(00000151ad54fe95:7b08a33d394c6b82a5922581086e9104:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 00:26:47.326 UTC INFO [admin1] JE: Master changed to 1
+2015-12-17 00:26:47.326 UTC INFO [admin1] JE: Election finished. Elapsed time: 2013ms
+2015-12-17 00:26:47.326 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2015-12-17 00:26:47.327 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2015-12-17 00:26:47.339 UTC INFO [admin1] JE: Joining group as master
+2015-12-17 00:26:47.341 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-17 00:26:47.343 UTC INFO [admin1] State change event: Wed Dec 16 18:26:47 CST 2015, State: MASTER, Type: PRIMARY, Master: 1
+2015-12-17 00:26:47.343 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2015-12-17 00:26:47.513 UTC INFO [admin1] Open Admin entity DB: AdminPlanDatabase
+2015-12-17 00:26:47.513 UTC INFO [admin1] Admin plan database initialized
+2015-12-17 00:26:47.514 UTC INFO [admin1] Initialized plan store to PlanDatabaseStore
+2015-12-17 00:26:47.515 UTC INFO [admin1] Shutting down monitor collector
+2015-12-17 00:26:47.542 UTC INFO [admin1] Using existing Admin database
+2015-12-17 00:26:47.547 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2015-12-17 00:26:47.549 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2015-12-17 00:26:47.629 UTC INFO [admin1] [sn1] Service status: RUNNING 2015-12-17 00:26:43 UTC
+2015-12-17 00:26:47.629 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2015-12-17 00:26:47 UTC
+2015-12-17 00:26:47.799 UTC INFO [admin1] Replicated environment handle established. Cache size: 71722598, State: MASTER
+2015-12-17 00:26:47.801 UTC INFO [admin1] Starting commandService on rmi://localhost:5000/commandService
+2015-12-17 00:26:47.968 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2015-12-17 00:26:48.105 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://localhost:5000/admin:CLIENT_ADMIN
+2015-12-17 00:26:48.112 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2015-12-17 00:26:48.133 UTC INFO [admin1] Starting Web service on port 5001
+2015-12-17 00:26:48.853 UTC INFO [admin1] Plan 23[Deploy Zone (23)] approved
+2015-12-17 00:26:48.861 UTC INFO [admin1] Plan 23[Deploy Zone (23)]: started, 1 tasks
+2015-12-17 00:26:48.868 UTC INFO [admin1] jetty-7.4.0.v20110414
+2015-12-17 00:26:48.870 UTC INFO [admin1] Plan 23[Deploy Zone (23)]: task 1 [DeployDatacenter zone=WDB_zone] started
+2015-12-17 00:26:48.876 UTC INFO [admin1] Plan 23[Deploy Zone (23)]: task 1 [DeployDatacenter zone=WDB_zone] ended, state=SUCCEEDED
+2015-12-17 00:26:48.883 UTC INFO [admin1] Plan 23[Deploy Zone (23)]: ended, state=SUCCEEDED
+2015-12-17 00:26:48.884 UTC INFO [admin1] Waiting for Plan 23[Deploy Zone (23)] ended, state=SUCCEEDED
+2015-12-17 00:26:48.911 UTC INFO [admin1] Plan 24[Deploy Storage Node (24)] approved
+2015-12-17 00:26:48.913 UTC INFO [admin1] Plan 24[Deploy Storage Node (24)]: started, 1 tasks
+2015-12-17 00:26:48.916 UTC INFO [admin1] Plan 24[Deploy Storage Node (24)]: task 1 [DeploySN sn1(localhost:5000)] started
+2015-12-17 00:26:48.950 UTC INFO [admin1] DeploySN sn1(localhost:5000): SNA already deployed, had status of RUNNING
+2015-12-17 00:26:48.955 UTC INFO [admin1] Plan 24[Deploy Storage Node (24)]: task 1 [DeploySN sn1(localhost:5000)] ended, state=SUCCEEDED
+2015-12-17 00:26:48.960 UTC INFO [admin1] Plan 24[Deploy Storage Node (24)]: ended, state=SUCCEEDED
+2015-12-17 00:26:48.961 UTC INFO [admin1] Waiting for Plan 24[Deploy Storage Node (24)] ended, state=SUCCEEDED
+2015-12-17 00:26:48.972 UTC INFO [admin1] Extract jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI/ to /Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp
+2015-12-17 00:26:48.997 UTC INFO [admin1] Plan 25[Deploy Admin Service (25)] approved
+2015-12-17 00:26:48.998 UTC INFO [admin1] Plan 25[Deploy Admin Service (25)]: started, 4 tasks
+2015-12-17 00:26:49.002 UTC INFO [admin1] Plan 25[Deploy Admin Service (25)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] started
+2015-12-17 00:26:49.078 UTC INFO [admin1] Plan 25[Deploy Admin Service (25)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] ended, state=SUCCEEDED
+2015-12-17 00:26:49.079 UTC INFO [admin1] Plan 25[Deploy Admin Service (25)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] started
+2015-12-17 00:26:49.093 UTC INFO [admin1] Plan 25[Deploy Admin Service (25)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] ended, state=SUCCEEDED
+2015-12-17 00:26:49.094 UTC INFO [admin1] Plan 25[Deploy Admin Service (25)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] started
+2015-12-17 00:26:49.105 UTC INFO [admin1] Changed helperHost for admin1 to localhost:5010
+2015-12-17 00:26:49.161 UTC INFO [admin1] Plan 25[Deploy Admin Service (25)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] ended, state=SUCCEEDED
+2015-12-17 00:26:49.162 UTC INFO [admin1] Plan 25[Deploy Admin Service (25)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] started
+2015-12-17 00:26:49.182 UTC INFO [admin1] Plan 25[Deploy Admin Service (25)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] ended, state=SUCCEEDED
+2015-12-17 00:26:49.188 UTC INFO [admin1] Plan 25[Deploy Admin Service (25)]: ended, state=SUCCEEDED
+2015-12-17 00:26:49.189 UTC INFO [admin1] Waiting for Plan 25[Deploy Admin Service (25)] ended, state=SUCCEEDED
+2015-12-17 00:26:49.311 UTC INFO [admin1] Added Storage Node sn1 to pool: WDBPool
+2015-12-17 00:26:49.344 UTC INFO [admin1] oracle.kv.impl.admin.topo.TopologyCandidate@6f578932 has nothing to rebalance
+2015-12-17 00:26:49.354 UTC INFO [admin1] Couldn't improve topology. Store can only support 1 shards.
+Shard calculation based on smallest zone: zn id=zn1 maximum shards= 1
+
+2015-12-17 00:26:49.513 UTC INFO [admin1] Plan 26[Deploy Topo (26)] approved
+2015-12-17 00:26:49.517 UTC INFO [admin1] Plan 26[Deploy Topo (26)] deploying topology candidate WDBTopology.
+2015-12-17 00:26:49.522 UTC INFO [admin1] Current topology: store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-17 00:26:49.523 UTC INFO [admin1] Preview of changes to be executed by Plan 26[Deploy Topo (26)]:
+No differences in topologies.
+2015-12-17 00:26:49.523 UTC INFO [admin1] Target topology candidate: WDBTopology
+store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-17 00:26:49.525 UTC INFO [admin1] Plan 26[Deploy Topo (26)]: started, 3 tasks
+2015-12-17 00:26:49.529 UTC INFO [admin1] Plan 26[Deploy Topo (26)]: task 1 [UpdateDatacenterV2 zone=zn1] started
+2015-12-17 00:26:49.536 UTC INFO [admin1] Plan 26[Deploy Topo (26)]: task 1 [UpdateDatacenterV2 zone=zn1] ended, state=SUCCEEDED
+2015-12-17 00:26:49.536 UTC INFO [admin1] Plan 26[Deploy Topo (26)]: task 2 [BroadcastTopo] started
+2015-12-17 00:26:49.537 UTC INFO [admin1] Broadcasting topology seq# 14, changes for BroadcastTopo
+2015-12-17 00:26:49.571 UTC INFO [admin1] Plan 26[Deploy Topo (26)]: task 2 [BroadcastTopo] ended, state=SUCCEEDED
+2015-12-17 00:26:49.572 UTC INFO [admin1] Plan 26[Deploy Topo (26)]: task 3 [BroadcastMetadata] started
+2015-12-17 00:26:49.580 UTC INFO [admin1] Plan 26[Deploy Topo (26)]: task 3 [BroadcastMetadata] ended, state=SUCCEEDED
+2015-12-17 00:26:49.618 UTC INFO [admin1] Plan 26[Deploy Topo (26)]: ended, state=SUCCEEDED
+2015-12-17 00:26:49.619 UTC INFO [admin1] Waiting for Plan 26[Deploy Topo (26)] ended, state=SUCCEEDED
+2015-12-17 00:26:50.340 UTC INFO [admin1] NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2015-12-17 00:26:50.391 UTC INFO [admin1] started o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-17 00:26:50.519 UTC INFO [admin1] Started SelectChannelConnector@0.0.0.0:5001 STARTING
+2015-12-17 00:26:50.525 UTC INFO [admin1] Started AdminService
+2015-12-17 00:27:07.652 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2015-12-17 00:26:48 UTC
+2015-12-17 00:35:24.212 UTC INFO [admin1] Shutting down AdminService instance
+2015-12-17 00:35:24.212 UTC INFO [admin1] Unbinding CommandService
+2015-12-17 00:35:24.215 UTC INFO [admin1] Unbinding ClientAdminService
+2015-12-17 00:35:24.217 UTC INFO [admin1] Shutting down WebService
+2015-12-17 00:35:24.245 UTC INFO [admin1] stopped o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-17 00:35:24.301 UTC INFO [admin1] Stopped Jetty
+2015-12-17 00:35:24.302 UTC INFO [admin1] Shutting down Admin
+2015-12-17 00:35:24.302 UTC INFO [admin1] Shutting down monitor collector
+2015-12-17 00:35:24.303 UTC INFO [admin1] Closing admin entity DB: AdminPlanDatabase
+2015-12-17 00:35:24.307 UTC INFO [admin1] JE: Shutting down node 1(1)
+2015-12-17 00:35:24.308 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-17 00:35:24.308 UTC INFO [admin1] JE: Elections shutdown initiated
+2015-12-17 00:35:24.309 UTC INFO [admin1] JE: Acceptor Thread 1 soft shutdown initiated.
+2015-12-17 00:35:24.310 UTC INFO [admin1] JE: Learner Thread 1 soft shutdown initiated.
+2015-12-17 00:35:24.310 UTC INFO [admin1] JE: ElectionThread_1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env soft shutdown initiated.
+2015-12-17 00:35:24.310 UTC INFO [admin1] JE: Elections shutdown completed
+2015-12-17 00:35:24.311 UTC INFO [admin1] JE: MASTER 1(1) soft shutdown initiated.
+2015-12-17 00:35:24.311 UTC INFO [admin1] JE: Feeder manager soft shutdown.
+2015-12-17 00:35:24.311 UTC INFO [admin1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 596
+2015-12-17 00:35:24.312 UTC INFO [admin1] JE: RepNode main thread shutting down.
+2015-12-17 00:35:24.313 UTC INFO [admin1] JE: RepNode main thread: DETACHED 1(1) exited.
+2015-12-17 00:35:24.314 UTC INFO [admin1] JE: Feeder Manager node: 1 soft shutdown initiated.
+2015-12-17 00:35:24.314 UTC INFO [admin1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-17 00:35:24.314 UTC INFO [admin1] JE: ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-17 00:35:24.316 UTC INFO [admin1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-17 00:35:24.316 UTC INFO [admin1] JE: 1(1) shutdown completed.
+2015-12-17 00:36:42.142 UTC INFO [admin1] Starting service process: admin1, Java command line arguments: [-XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc]
+2015-12-17 00:36:42.244 UTC INFO [admin1] Starting AdminService
+2015-12-17 00:36:42.483 UTC INFO [admin1] Initializing PRIMARY Admin for store: WDB
+2015-12-17 00:36:42.485 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 119537664
+2015-12-17 00:36:42.493 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 00:36:42.509 UTC INFO [admin1] DataChannelFactory: basic
+2015-12-17 00:36:42.513 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2015-12-17 00:36:42.938 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2015-12-17 00:36:43.042 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2015-12-17 00:36:43.052 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2015-12-17 00:36:43.082 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 00:36:43.085 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 00:36:43.091 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2015-12-17 00:36:43.118 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 00:36:43.121 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 00:36:43.125 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 00:36:43.140 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 00:36:43.202 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2015-12-17 00:36:43.238 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 00:36:43.238 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 00:36:43.339 UTC INFO [admin1] JE: Current group size: 1
+2015-12-17 00:36:43.339 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2015-12-17 00:36:43.454 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2015-12-17 00:36:43.455 UTC INFO [admin1] JE: Node 1 started
+2015-12-17 00:36:43.455 UTC INFO [admin1] JE: Election initiated; election #1
+2015-12-17 00:36:43.458 UTC INFO [admin1] JE: Started election thread Wed Dec 16 18:36:43 CST 2015
+2015-12-17 00:36:45.465 UTC INFO [admin1] JE: Winning proposal: Proposal(00000151ad5e1f13:2360fb4b3eb95f4e99d796cd4563c027:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 00:36:45.466 UTC INFO [admin1] JE: Master changed to 1
+2015-12-17 00:36:45.467 UTC INFO [admin1] JE: Election finished. Elapsed time: 2011ms
+2015-12-17 00:36:45.467 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2015-12-17 00:36:45.467 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2015-12-17 00:36:45.479 UTC INFO [admin1] JE: Joining group as master
+2015-12-17 00:36:45.481 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-17 00:36:45.483 UTC INFO [admin1] State change event: Wed Dec 16 18:36:45 CST 2015, State: MASTER, Type: PRIMARY, Master: 1
+2015-12-17 00:36:45.483 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2015-12-17 00:36:45.661 UTC INFO [admin1] Open Admin entity DB: AdminPlanDatabase
+2015-12-17 00:36:45.661 UTC INFO [admin1] Admin plan database initialized
+2015-12-17 00:36:45.662 UTC INFO [admin1] Initialized plan store to PlanDatabaseStore
+2015-12-17 00:36:45.662 UTC INFO [admin1] Shutting down monitor collector
+2015-12-17 00:36:45.686 UTC INFO [admin1] Using existing Admin database
+2015-12-17 00:36:45.693 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2015-12-17 00:36:45.694 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2015-12-17 00:36:45.756 UTC INFO [admin1] [sn1] Service status: RUNNING 2015-12-17 00:36:41 UTC
+2015-12-17 00:36:45.769 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2015-12-17 00:36:45 UTC
+2015-12-17 00:36:46.073 UTC INFO [admin1] Replicated environment handle established. Cache size: 71722598, State: MASTER
+2015-12-17 00:36:46.074 UTC INFO [admin1] Starting commandService on rmi://localhost:5000/commandService
+2015-12-17 00:36:46.188 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2015-12-17 00:36:46.306 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://localhost:5000/admin:CLIENT_ADMIN
+2015-12-17 00:36:46.312 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2015-12-17 00:36:46.342 UTC INFO [admin1] Starting Web service on port 5001
+2015-12-17 00:36:46.441 UTC INFO [admin1] jetty-7.4.0.v20110414
+2015-12-17 00:36:46.585 UTC INFO [admin1] Extract jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI/ to /Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp
+2015-12-17 00:36:46.866 UTC INFO [admin1] Plan 27[Deploy Zone (27)] approved
+2015-12-17 00:36:46.873 UTC INFO [admin1] Plan 27[Deploy Zone (27)]: started, 1 tasks
+2015-12-17 00:36:46.910 UTC INFO [admin1] Plan 27[Deploy Zone (27)]: task 1 [DeployDatacenter zone=WDB_zone] started
+2015-12-17 00:36:46.914 UTC INFO [admin1] Plan 27[Deploy Zone (27)]: task 1 [DeployDatacenter zone=WDB_zone] ended, state=SUCCEEDED
+2015-12-17 00:36:46.919 UTC INFO [admin1] Plan 27[Deploy Zone (27)]: ended, state=SUCCEEDED
+2015-12-17 00:36:46.925 UTC INFO [admin1] Waiting for Plan 27[Deploy Zone (27)] ended, state=SUCCEEDED
+2015-12-17 00:36:46.948 UTC INFO [admin1] Plan 28[Deploy Storage Node (28)] approved
+2015-12-17 00:36:46.952 UTC INFO [admin1] Plan 28[Deploy Storage Node (28)]: started, 1 tasks
+2015-12-17 00:36:46.955 UTC INFO [admin1] Plan 28[Deploy Storage Node (28)]: task 1 [DeploySN sn1(localhost:5000)] started
+2015-12-17 00:36:47.060 UTC INFO [admin1] DeploySN sn1(localhost:5000): SNA already deployed, had status of RUNNING
+2015-12-17 00:36:47.065 UTC INFO [admin1] Plan 28[Deploy Storage Node (28)]: task 1 [DeploySN sn1(localhost:5000)] ended, state=SUCCEEDED
+2015-12-17 00:36:47.069 UTC INFO [admin1] Plan 28[Deploy Storage Node (28)]: ended, state=SUCCEEDED
+2015-12-17 00:36:47.070 UTC INFO [admin1] Waiting for Plan 28[Deploy Storage Node (28)] ended, state=SUCCEEDED
+2015-12-17 00:36:47.101 UTC INFO [admin1] Plan 29[Deploy Admin Service (29)] approved
+2015-12-17 00:36:47.106 UTC INFO [admin1] Plan 29[Deploy Admin Service (29)]: started, 4 tasks
+2015-12-17 00:36:47.111 UTC INFO [admin1] Plan 29[Deploy Admin Service (29)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] started
+2015-12-17 00:36:47.225 UTC INFO [admin1] Plan 29[Deploy Admin Service (29)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] ended, state=SUCCEEDED
+2015-12-17 00:36:47.226 UTC INFO [admin1] Plan 29[Deploy Admin Service (29)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] started
+2015-12-17 00:36:47.401 UTC INFO [admin1] Plan 29[Deploy Admin Service (29)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] ended, state=SUCCEEDED
+2015-12-17 00:36:47.401 UTC INFO [admin1] Plan 29[Deploy Admin Service (29)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] started
+2015-12-17 00:36:47.414 UTC INFO [admin1] Changed helperHost for admin1 to localhost:5010
+2015-12-17 00:36:47.480 UTC INFO [admin1] Plan 29[Deploy Admin Service (29)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] ended, state=SUCCEEDED
+2015-12-17 00:36:47.480 UTC INFO [admin1] Plan 29[Deploy Admin Service (29)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] started
+2015-12-17 00:36:47.495 UTC INFO [admin1] Plan 29[Deploy Admin Service (29)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] ended, state=SUCCEEDED
+2015-12-17 00:36:47.497 UTC INFO [admin1] Plan 29[Deploy Admin Service (29)]: ended, state=SUCCEEDED
+2015-12-17 00:36:47.499 UTC INFO [admin1] Waiting for Plan 29[Deploy Admin Service (29)] ended, state=SUCCEEDED
+2015-12-17 00:36:47.565 UTC INFO [admin1] Added Storage Node sn1 to pool: WDBPool
+2015-12-17 00:36:47.601 UTC INFO [admin1] oracle.kv.impl.admin.topo.TopologyCandidate@533b4be1 has nothing to rebalance
+2015-12-17 00:36:47.636 UTC INFO [admin1] Couldn't improve topology. Store can only support 1 shards.
+Shard calculation based on smallest zone: zn id=zn1 maximum shards= 1
+
+2015-12-17 00:36:47.707 UTC INFO [admin1] Plan 30[Deploy Topo (30)] approved
+2015-12-17 00:36:47.717 UTC INFO [admin1] Plan 30[Deploy Topo (30)] deploying topology candidate WDBTopology.
+2015-12-17 00:36:47.720 UTC INFO [admin1] Current topology: store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-17 00:36:47.721 UTC INFO [admin1] Preview of changes to be executed by Plan 30[Deploy Topo (30)]:
+No differences in topologies.
+2015-12-17 00:36:47.722 UTC INFO [admin1] Target topology candidate: WDBTopology
+store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-17 00:36:47.721 UTC INFO [admin1] NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2015-12-17 00:36:47.724 UTC INFO [admin1] Plan 30[Deploy Topo (30)]: started, 3 tasks
+2015-12-17 00:36:47.725 UTC INFO [admin1] Plan 30[Deploy Topo (30)]: task 1 [UpdateDatacenterV2 zone=zn1] started
+2015-12-17 00:36:47.732 UTC INFO [admin1] Plan 30[Deploy Topo (30)]: task 1 [UpdateDatacenterV2 zone=zn1] ended, state=SUCCEEDED
+2015-12-17 00:36:47.733 UTC INFO [admin1] Plan 30[Deploy Topo (30)]: task 2 [BroadcastTopo] started
+2015-12-17 00:36:47.734 UTC INFO [admin1] Broadcasting topology seq# 14, changes for BroadcastTopo
+2015-12-17 00:36:47.784 UTC INFO [admin1] Plan 30[Deploy Topo (30)]: task 2 [BroadcastTopo] ended, state=SUCCEEDED
+2015-12-17 00:36:47.785 UTC INFO [admin1] Plan 30[Deploy Topo (30)]: task 3 [BroadcastMetadata] started
+2015-12-17 00:36:47.789 UTC INFO [admin1] Plan 30[Deploy Topo (30)]: task 3 [BroadcastMetadata] ended, state=SUCCEEDED
+2015-12-17 00:36:47.792 UTC INFO [admin1] Plan 30[Deploy Topo (30)]: ended, state=SUCCEEDED
+2015-12-17 00:36:47.796 UTC INFO [admin1] Waiting for Plan 30[Deploy Topo (30)] ended, state=SUCCEEDED
+2015-12-17 00:36:47.815 UTC INFO [admin1] started o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-17 00:36:48.053 UTC INFO [admin1] Started SelectChannelConnector@0.0.0.0:5001 STARTING
+2015-12-17 00:36:48.068 UTC INFO [admin1] Started AdminService
+2015-12-17 00:37:05.787 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2015-12-17 00:36:46 UTC
+2015-12-17 02:21:42.808 UTC INFO [admin1] Starting service process: admin1, Java command line arguments: [-XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc]
+2015-12-17 02:21:42.952 UTC INFO [admin1] Starting AdminService
+2015-12-17 02:21:43.071 UTC INFO [admin1] Initializing PRIMARY Admin for store: WDB
+2015-12-17 02:21:43.087 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 119537664
+2015-12-17 02:21:43.092 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 02:21:43.105 UTC INFO [admin1] DataChannelFactory: basic
+2015-12-17 02:21:43.108 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2015-12-17 02:21:43.998 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2015-12-17 02:21:44.275 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2015-12-17 02:21:44.290 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2015-12-17 02:21:44.342 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 02:21:44.350 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 02:21:44.362 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2015-12-17 02:21:44.390 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 02:21:44.395 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 02:21:44.413 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 02:21:44.423 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 02:21:44.485 UTC INFO [admin1] JE recovery: CKPT
+2015-12-17 02:21:44.502 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2015-12-17 02:21:44.542 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 02:21:44.544 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 02:21:44.590 UTC INFO [admin1] JE: Current group size: 1
+2015-12-17 02:21:44.591 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2015-12-17 02:21:44.674 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2015-12-17 02:21:44.675 UTC INFO [admin1] JE: Node 1 started
+2015-12-17 02:21:44.675 UTC INFO [admin1] JE: Election initiated; election #1
+2015-12-17 02:21:44.678 UTC INFO [admin1] JE: Started election thread Wed Dec 16 20:21:44 CST 2015
+2015-12-17 02:21:46.685 UTC INFO [admin1] JE: Winning proposal: Proposal(00000151adbe4536:db71929ee446a7914a9176d6a8f91d3f:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 02:21:46.688 UTC INFO [admin1] JE: Master changed to 1
+2015-12-17 02:21:46.688 UTC INFO [admin1] JE: Election finished. Elapsed time: 2013ms
+2015-12-17 02:21:46.688 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2015-12-17 02:21:46.689 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2015-12-17 02:21:46.695 UTC INFO [admin1] JE: Joining group as master
+2015-12-17 02:21:46.697 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-17 02:21:46.698 UTC INFO [admin1] State change event: Wed Dec 16 20:21:46 CST 2015, State: MASTER, Type: PRIMARY, Master: 1
+2015-12-17 02:21:46.698 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2015-12-17 02:21:46.915 UTC INFO [admin1] Open Admin entity DB: AdminPlanDatabase
+2015-12-17 02:21:46.916 UTC INFO [admin1] Admin plan database initialized
+2015-12-17 02:21:46.916 UTC INFO [admin1] Initialized plan store to PlanDatabaseStore
+2015-12-17 02:21:46.918 UTC INFO [admin1] Shutting down monitor collector
+2015-12-17 02:21:46.946 UTC INFO [admin1] Using existing Admin database
+2015-12-17 02:21:46.955 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2015-12-17 02:21:46.957 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2015-12-17 02:21:47.060 UTC INFO [admin1] [sn1] Service status: STOPPING 2015-12-17 02:21:41 UTC
+2015-12-17 02:21:47.060 UTC INFO [admin1] [sn1] admin1: Service status: ERROR_RESTARTING 2015-12-17 02:21:42 UTC
+2015-12-17 02:21:47.060 UTC INFO [admin1] [sn1] rg1-rn1: Service status: ERROR_NO_RESTART 2015-12-17 02:21:42 UTC
+2015-12-17 02:21:47.229 UTC INFO [admin1] Replicated environment handle established. Cache size: 71722598, State: MASTER
+2015-12-17 02:21:47.230 UTC INFO [admin1] Starting commandService on rmi://localhost:5000/commandService
+2015-12-17 02:21:47.375 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2015-12-17 02:21:47.417 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://localhost:5000/admin:CLIENT_ADMIN
+2015-12-17 02:21:47.421 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2015-12-17 02:21:47.432 UTC INFO [admin1] Starting Web service on port 5001
+2015-12-17 02:21:47.844 UTC INFO [admin1] jetty-7.4.0.v20110414
+2015-12-17 02:21:47.910 UTC INFO [admin1] Extract jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI/ to /Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp
+2015-12-17 02:21:48.592 UTC INFO [admin1] NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2015-12-17 02:21:48.674 UTC INFO [admin1] started o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-17 02:21:48.726 UTC INFO [admin1] Started SelectChannelConnector@0.0.0.0:5001 STARTING
+2015-12-17 02:21:48.732 UTC INFO [admin1] Started AdminService
+2015-12-17 02:21:48.738 UTC INFO [admin1] Shutting down AdminService instance
+2015-12-17 02:21:48.738 UTC INFO [admin1] Unbinding CommandService
+2015-12-17 02:21:48.739 UTC INFO [admin1] Unbinding ClientAdminService
+2015-12-17 02:21:48.740 UTC INFO [admin1] Shutting down WebService
+2015-12-17 02:21:48.757 UTC INFO [admin1] stopped o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-17 02:21:48.809 UTC INFO [admin1] Stopped Jetty
+2015-12-17 02:21:48.809 UTC INFO [admin1] Shutting down Admin
+2015-12-17 02:21:48.812 UTC INFO [admin1] Shutting down monitor collector
+2015-12-17 02:21:48.815 UTC INFO [admin1] Closing admin entity DB: AdminPlanDatabase
+2015-12-17 02:21:48.819 UTC INFO [admin1] JE: Shutting down node 1(1)
+2015-12-17 02:21:48.821 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-17 02:21:48.821 UTC INFO [admin1] JE: Elections shutdown initiated
+2015-12-17 02:21:48.822 UTC INFO [admin1] JE: Acceptor Thread 1 soft shutdown initiated.
+2015-12-17 02:21:48.824 UTC INFO [admin1] JE: Learner Thread 1 soft shutdown initiated.
+2015-12-17 02:21:48.824 UTC INFO [admin1] JE: ElectionThread_1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env soft shutdown initiated.
+2015-12-17 02:21:48.824 UTC INFO [admin1] JE: Elections shutdown completed
+2015-12-17 02:21:48.825 UTC INFO [admin1] JE: MASTER 1(1) soft shutdown initiated.
+2015-12-17 02:21:48.825 UTC INFO [admin1] JE: Feeder manager soft shutdown.
+2015-12-17 02:21:48.826 UTC INFO [admin1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 676
+2015-12-17 02:21:48.827 UTC INFO [admin1] JE: RepNode main thread shutting down.
+2015-12-17 02:21:48.828 UTC INFO [admin1] JE: RepNode main thread: DETACHED 1(1) exited.
+2015-12-17 02:21:48.828 UTC INFO [admin1] JE: Feeder Manager node: 1 soft shutdown initiated.
+2015-12-17 02:21:48.829 UTC INFO [admin1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-17 02:21:48.829 UTC INFO [admin1] JE: ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-17 02:21:48.832 UTC INFO [admin1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-17 02:21:48.832 UTC INFO [admin1] JE: 1(1) shutdown completed.
+2015-12-17 03:28:11.332 UTC INFO [admin1] Starting service process: admin1, Java command line arguments: [-XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc]
+2015-12-17 03:28:11.429 UTC INFO [admin1] Starting AdminService
+2015-12-17 03:28:11.696 UTC INFO [admin1] Initializing PRIMARY Admin for store: WDB
+2015-12-17 03:28:11.706 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 119537664
+2015-12-17 03:28:11.716 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 03:28:11.736 UTC INFO [admin1] DataChannelFactory: basic
+2015-12-17 03:28:11.742 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2015-12-17 03:28:12.245 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2015-12-17 03:28:12.302 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2015-12-17 03:28:12.315 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2015-12-17 03:28:12.346 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 03:28:12.350 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 03:28:12.355 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2015-12-17 03:28:12.371 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 03:28:12.373 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 03:28:12.379 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 03:28:12.390 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 03:28:12.474 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2015-12-17 03:28:12.508 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 03:28:12.510 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 03:28:12.593 UTC INFO [admin1] JE: Current group size: 1
+2015-12-17 03:28:12.594 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2015-12-17 03:28:12.731 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2015-12-17 03:28:12.731 UTC INFO [admin1] JE: Node 1 started
+2015-12-17 03:28:12.732 UTC INFO [admin1] JE: Election initiated; election #1
+2015-12-17 03:28:12.735 UTC INFO [admin1] JE: Started election thread Wed Dec 16 21:28:12 CST 2015
+2015-12-17 03:28:14.742 UTC INFO [admin1] JE: Winning proposal: Proposal(00000151adfb1f8f:a772c1ab26e2f080c5c64dd133ac23fe:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 03:28:14.744 UTC INFO [admin1] JE: Master changed to 1
+2015-12-17 03:28:14.744 UTC INFO [admin1] JE: Election finished. Elapsed time: 2012ms
+2015-12-17 03:28:14.744 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2015-12-17 03:28:14.745 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2015-12-17 03:28:14.755 UTC INFO [admin1] JE: Joining group as master
+2015-12-17 03:28:14.757 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-17 03:28:14.759 UTC INFO [admin1] State change event: Wed Dec 16 21:28:14 CST 2015, State: MASTER, Type: PRIMARY, Master: 1
+2015-12-17 03:28:14.759 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2015-12-17 03:28:14.945 UTC INFO [admin1] Open Admin entity DB: AdminPlanDatabase
+2015-12-17 03:28:14.945 UTC INFO [admin1] Admin plan database initialized
+2015-12-17 03:28:14.945 UTC INFO [admin1] Initialized plan store to PlanDatabaseStore
+2015-12-17 03:28:14.946 UTC INFO [admin1] Shutting down monitor collector
+2015-12-17 03:28:14.973 UTC INFO [admin1] Using existing Admin database
+2015-12-17 03:28:14.982 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2015-12-17 03:28:14.987 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2015-12-17 03:28:15.064 UTC INFO [admin1] [sn1] Service status: RUNNING 2015-12-17 03:28:11 UTC
+2015-12-17 03:28:15.072 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2015-12-17 03:28:15 UTC
+2015-12-17 03:28:15.479 UTC INFO [admin1] Replicated environment handle established. Cache size: 71722598, State: MASTER
+2015-12-17 03:28:15.480 UTC INFO [admin1] Starting commandService on rmi://localhost:5000/commandService
+2015-12-17 03:28:15.655 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2015-12-17 03:28:15.813 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://localhost:5000/admin:CLIENT_ADMIN
+2015-12-17 03:28:15.817 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2015-12-17 03:28:15.842 UTC INFO [admin1] Starting Web service on port 5001
+2015-12-17 03:28:16.427 UTC INFO [admin1] jetty-7.4.0.v20110414
+2015-12-17 03:28:16.487 UTC INFO [admin1] Extract jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI/ to /Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp
+2015-12-17 03:28:17.271 UTC INFO [admin1] NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2015-12-17 03:28:17.477 UTC INFO [admin1] started o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-17 03:28:17.568 UTC INFO [admin1] Started SelectChannelConnector@0.0.0.0:5001 STARTING
+2015-12-17 03:28:17.568 UTC INFO [admin1] Started AdminService
+2015-12-17 03:28:22.240 UTC INFO [admin1] Plan 31[Deploy Zone (31)] approved
+2015-12-17 03:28:22.251 UTC INFO [admin1] Plan 31[Deploy Zone (31)]: started, 1 tasks
+2015-12-17 03:28:22.263 UTC INFO [admin1] Plan 31[Deploy Zone (31)]: task 1 [DeployDatacenter zone=WDB_zone] started
+2015-12-17 03:28:22.268 UTC INFO [admin1] Plan 31[Deploy Zone (31)]: task 1 [DeployDatacenter zone=WDB_zone] ended, state=SUCCEEDED
+2015-12-17 03:28:22.273 UTC INFO [admin1] Plan 31[Deploy Zone (31)]: ended, state=SUCCEEDED
+2015-12-17 03:28:22.274 UTC INFO [admin1] Waiting for Plan 31[Deploy Zone (31)] ended, state=SUCCEEDED
+2015-12-17 03:28:22.297 UTC INFO [admin1] Plan 32[Deploy Storage Node (32)] approved
+2015-12-17 03:28:22.300 UTC INFO [admin1] Plan 32[Deploy Storage Node (32)]: started, 1 tasks
+2015-12-17 03:28:22.303 UTC INFO [admin1] Plan 32[Deploy Storage Node (32)]: task 1 [DeploySN sn1(localhost:5000)] started
+2015-12-17 03:28:22.335 UTC INFO [admin1] DeploySN sn1(localhost:5000): SNA already deployed, had status of RUNNING
+2015-12-17 03:28:22.338 UTC INFO [admin1] Plan 32[Deploy Storage Node (32)]: task 1 [DeploySN sn1(localhost:5000)] ended, state=SUCCEEDED
+2015-12-17 03:28:22.345 UTC INFO [admin1] Plan 32[Deploy Storage Node (32)]: ended, state=SUCCEEDED
+2015-12-17 03:28:22.346 UTC INFO [admin1] Waiting for Plan 32[Deploy Storage Node (32)] ended, state=SUCCEEDED
+2015-12-17 03:28:22.384 UTC INFO [admin1] Plan 33[Deploy Admin Service (33)] approved
+2015-12-17 03:28:22.389 UTC INFO [admin1] Plan 33[Deploy Admin Service (33)]: started, 4 tasks
+2015-12-17 03:28:22.393 UTC INFO [admin1] Plan 33[Deploy Admin Service (33)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] started
+2015-12-17 03:28:22.452 UTC INFO [admin1] Plan 33[Deploy Admin Service (33)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] ended, state=SUCCEEDED
+2015-12-17 03:28:22.453 UTC INFO [admin1] Plan 33[Deploy Admin Service (33)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] started
+2015-12-17 03:28:22.465 UTC INFO [admin1] Plan 33[Deploy Admin Service (33)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] ended, state=SUCCEEDED
+2015-12-17 03:28:22.466 UTC INFO [admin1] Plan 33[Deploy Admin Service (33)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] started
+2015-12-17 03:28:22.478 UTC INFO [admin1] Changed helperHost for admin1 to localhost:5010
+2015-12-17 03:28:22.522 UTC INFO [admin1] Plan 33[Deploy Admin Service (33)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] ended, state=SUCCEEDED
+2015-12-17 03:28:22.522 UTC INFO [admin1] Plan 33[Deploy Admin Service (33)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] started
+2015-12-17 03:28:22.537 UTC INFO [admin1] Plan 33[Deploy Admin Service (33)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] ended, state=SUCCEEDED
+2015-12-17 03:28:22.541 UTC INFO [admin1] Plan 33[Deploy Admin Service (33)]: ended, state=SUCCEEDED
+2015-12-17 03:28:22.542 UTC INFO [admin1] Waiting for Plan 33[Deploy Admin Service (33)] ended, state=SUCCEEDED
+2015-12-17 03:28:22.599 UTC INFO [admin1] Added Storage Node sn1 to pool: WDBPool
+2015-12-17 03:28:22.659 UTC INFO [admin1] oracle.kv.impl.admin.topo.TopologyCandidate@d6af180 has nothing to rebalance
+2015-12-17 03:28:22.680 UTC INFO [admin1] Couldn't improve topology. Store can only support 1 shards.
+Shard calculation based on smallest zone: zn id=zn1 maximum shards= 1
+
+2015-12-17 03:28:22.745 UTC INFO [admin1] Plan 34[Deploy Topo (34)] approved
+2015-12-17 03:28:22.748 UTC INFO [admin1] Plan 34[Deploy Topo (34)] deploying topology candidate WDBTopology.
+2015-12-17 03:28:22.826 UTC INFO [admin1] Current topology: store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-17 03:28:22.827 UTC INFO [admin1] Preview of changes to be executed by Plan 34[Deploy Topo (34)]:
+No differences in topologies.
+2015-12-17 03:28:22.827 UTC INFO [admin1] Target topology candidate: WDBTopology
+store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-17 03:28:22.830 UTC INFO [admin1] Plan 34[Deploy Topo (34)]: started, 3 tasks
+2015-12-17 03:28:22.832 UTC INFO [admin1] Plan 34[Deploy Topo (34)]: task 1 [UpdateDatacenterV2 zone=zn1] started
+2015-12-17 03:28:22.837 UTC INFO [admin1] Plan 34[Deploy Topo (34)]: task 1 [UpdateDatacenterV2 zone=zn1] ended, state=SUCCEEDED
+2015-12-17 03:28:22.837 UTC INFO [admin1] Plan 34[Deploy Topo (34)]: task 2 [BroadcastTopo] started
+2015-12-17 03:28:22.840 UTC INFO [admin1] Broadcasting topology seq# 14, changes for BroadcastTopo
+2015-12-17 03:28:22.874 UTC INFO [admin1] Plan 34[Deploy Topo (34)]: task 2 [BroadcastTopo] ended, state=SUCCEEDED
+2015-12-17 03:28:22.875 UTC INFO [admin1] Plan 34[Deploy Topo (34)]: task 3 [BroadcastMetadata] started
+2015-12-17 03:28:22.880 UTC INFO [admin1] Plan 34[Deploy Topo (34)]: task 3 [BroadcastMetadata] ended, state=SUCCEEDED
+2015-12-17 03:28:22.882 UTC INFO [admin1] Plan 34[Deploy Topo (34)]: ended, state=SUCCEEDED
+2015-12-17 03:28:22.884 UTC INFO [admin1] Waiting for Plan 34[Deploy Topo (34)] ended, state=SUCCEEDED
+2015-12-17 03:28:29.940 UTC INFO [admin1] New admin web client at 0:0:0:0:0:0:0:1, session id 1sqz09i9pos0xr10jbfhr1tgd
+2015-12-17 03:28:34.996 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2015-12-17 03:28:16 UTC
+2015-12-17 03:28:49.060 UTC INFO [admin1] store WDB based upon topology sequence #14
+10 partitions and 1 storage nodes
+Time: 2015-12-17 03:28:49 UTC   Version: 12.1.3.4.7
+2015-12-17 03:28:49.213 UTC INFO [admin1] Verify: starting verification of store WDB based upon topology sequence #14
+10 partitions and 1 storage nodes
+Time: 2015-12-17 03:28:49 UTC   Version: 12.1.3.4.7
+See localhost:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/WDB_{0..N}.log for progress messages
+Verification complete, no violations.
+2015-12-17 03:32:01.312 UTC INFO [admin1] Shutting down AdminService instance
+2015-12-17 03:32:01.313 UTC INFO [admin1] Unbinding CommandService
+2015-12-17 03:32:01.316 UTC INFO [admin1] Unbinding ClientAdminService
+2015-12-17 03:32:01.318 UTC INFO [admin1] Shutting down WebService
+2015-12-17 03:32:01.340 UTC INFO [admin1] stopped o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-17 03:32:01.394 UTC INFO [admin1] Stopped Jetty
+2015-12-17 03:32:01.394 UTC INFO [admin1] Shutting down Admin
+2015-12-17 03:32:01.395 UTC INFO [admin1] Shutting down monitor collector
+2015-12-17 03:32:01.395 UTC INFO [admin1] Closing admin entity DB: AdminPlanDatabase
+2015-12-17 03:32:01.400 UTC INFO [admin1] JE: Shutting down node 1(1)
+2015-12-17 03:32:01.402 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-17 03:32:01.402 UTC INFO [admin1] JE: Elections shutdown initiated
+2015-12-17 03:32:01.403 UTC INFO [admin1] JE: Acceptor Thread 1 soft shutdown initiated.
+2015-12-17 03:32:01.410 UTC INFO [admin1] JE: Learner Thread 1 soft shutdown initiated.
+2015-12-17 03:32:01.411 UTC INFO [admin1] JE: ElectionThread_1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env soft shutdown initiated.
+2015-12-17 03:32:01.412 UTC INFO [admin1] JE: Elections shutdown completed
+2015-12-17 03:32:01.412 UTC INFO [admin1] JE: Feeder manager soft shutdown.
+2015-12-17 03:32:01.412 UTC INFO [admin1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 749
+2015-12-17 03:32:01.413 UTC INFO [admin1] JE: RepNode main thread shutting down.
+2015-12-17 03:32:01.413 UTC INFO [admin1] JE: UNKNOWN 1(1) soft shutdown initiated.
+2015-12-17 03:32:01.416 UTC INFO [admin1] JE: RepNode main thread: DETACHED 1(1) exited.
+2015-12-17 03:32:01.416 UTC INFO [admin1] JE: Feeder Manager node: 1 soft shutdown initiated.
+2015-12-17 03:32:01.417 UTC INFO [admin1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-17 03:32:01.417 UTC INFO [admin1] JE: ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-17 03:32:01.419 UTC INFO [admin1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-17 03:32:01.419 UTC INFO [admin1] JE: 1(1) shutdown completed.
+2015-12-17 03:32:20.227 UTC INFO [admin1] Starting service process: admin1, Java command line arguments: [-XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc]
+2015-12-17 03:32:20.348 UTC INFO [admin1] Starting AdminService
+2015-12-17 03:32:20.643 UTC INFO [admin1] Initializing PRIMARY Admin for store: WDB
+2015-12-17 03:32:20.646 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 119537664
+2015-12-17 03:32:20.650 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 03:32:20.672 UTC INFO [admin1] DataChannelFactory: basic
+2015-12-17 03:32:20.676 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2015-12-17 03:32:21.262 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2015-12-17 03:32:21.428 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2015-12-17 03:32:21.450 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2015-12-17 03:32:21.475 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 03:32:21.484 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 03:32:21.498 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2015-12-17 03:32:21.524 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 03:32:21.538 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 03:32:21.547 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 03:32:21.573 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 03:32:21.656 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2015-12-17 03:32:21.682 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 03:32:21.682 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 03:32:21.763 UTC INFO [admin1] JE: Current group size: 1
+2015-12-17 03:32:21.764 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2015-12-17 03:32:21.893 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2015-12-17 03:32:21.893 UTC INFO [admin1] JE: Node 1 started
+2015-12-17 03:32:21.894 UTC INFO [admin1] JE: Election initiated; election #1
+2015-12-17 03:32:21.899 UTC INFO [admin1] JE: Started election thread Wed Dec 16 21:32:21 CST 2015
+2015-12-17 03:32:23.906 UTC INFO [admin1] JE: Winning proposal: Proposal(00000151adfeecdc:d563de92a0e1d36fb6e666f753f47e3b:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 03:32:23.908 UTC INFO [admin1] JE: Master changed to 1
+2015-12-17 03:32:23.908 UTC INFO [admin1] JE: Election finished. Elapsed time: 2014ms
+2015-12-17 03:32:23.908 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2015-12-17 03:32:23.909 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2015-12-17 03:32:23.921 UTC INFO [admin1] JE: Joining group as master
+2015-12-17 03:32:23.922 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-17 03:32:23.924 UTC INFO [admin1] State change event: Wed Dec 16 21:32:23 CST 2015, State: MASTER, Type: PRIMARY, Master: 1
+2015-12-17 03:32:23.925 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2015-12-17 03:32:24.122 UTC INFO [admin1] Open Admin entity DB: AdminPlanDatabase
+2015-12-17 03:32:24.122 UTC INFO [admin1] Admin plan database initialized
+2015-12-17 03:32:24.123 UTC INFO [admin1] Initialized plan store to PlanDatabaseStore
+2015-12-17 03:32:24.124 UTC INFO [admin1] Shutting down monitor collector
+2015-12-17 03:32:24.151 UTC INFO [admin1] Using existing Admin database
+2015-12-17 03:32:24.157 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2015-12-17 03:32:24.158 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2015-12-17 03:32:24.272 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2015-12-17 03:32:24 UTC
+2015-12-17 03:32:24.272 UTC INFO [admin1] [sn1] Service status: RUNNING 2015-12-17 03:32:19 UTC
+2015-12-17 03:32:24.553 UTC INFO [admin1] Replicated environment handle established. Cache size: 71722598, State: MASTER
+2015-12-17 03:32:24.554 UTC INFO [admin1] Starting commandService on rmi://localhost:5000/commandService
+2015-12-17 03:32:24.687 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2015-12-17 03:32:24.793 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://localhost:5000/admin:CLIENT_ADMIN
+2015-12-17 03:32:24.798 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2015-12-17 03:32:24.821 UTC INFO [admin1] Starting Web service on port 5001
+2015-12-17 03:32:24.909 UTC INFO [admin1] jetty-7.4.0.v20110414
+2015-12-17 03:32:24.988 UTC INFO [admin1] Extract jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI/ to /Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp
+2015-12-17 03:32:25.815 UTC INFO [admin1] NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2015-12-17 03:32:25.907 UTC INFO [admin1] started o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-17 03:32:25.937 UTC INFO [admin1] Started SelectChannelConnector@0.0.0.0:5001 STARTING
+2015-12-17 03:32:25.938 UTC INFO [admin1] Started AdminService
+2015-12-17 03:32:30.838 UTC INFO [admin1] Plan 35[Deploy Zone (35)] approved
+2015-12-17 03:32:30.844 UTC INFO [admin1] Plan 35[Deploy Zone (35)]: started, 1 tasks
+2015-12-17 03:32:30.851 UTC INFO [admin1] Plan 35[Deploy Zone (35)]: task 1 [DeployDatacenter zone=WDB_zone] started
+2015-12-17 03:32:30.862 UTC INFO [admin1] Plan 35[Deploy Zone (35)]: task 1 [DeployDatacenter zone=WDB_zone] ended, state=SUCCEEDED
+2015-12-17 03:32:30.868 UTC INFO [admin1] Plan 35[Deploy Zone (35)]: ended, state=SUCCEEDED
+2015-12-17 03:32:30.869 UTC INFO [admin1] Waiting for Plan 35[Deploy Zone (35)] ended, state=SUCCEEDED
+2015-12-17 03:32:30.902 UTC INFO [admin1] Plan 36[Deploy Storage Node (36)] approved
+2015-12-17 03:32:30.912 UTC INFO [admin1] Plan 36[Deploy Storage Node (36)]: started, 1 tasks
+2015-12-17 03:32:30.915 UTC INFO [admin1] Plan 36[Deploy Storage Node (36)]: task 1 [DeploySN sn1(localhost:5000)] started
+2015-12-17 03:32:30.949 UTC INFO [admin1] DeploySN sn1(localhost:5000): SNA already deployed, had status of RUNNING
+2015-12-17 03:32:30.955 UTC INFO [admin1] Plan 36[Deploy Storage Node (36)]: task 1 [DeploySN sn1(localhost:5000)] ended, state=SUCCEEDED
+2015-12-17 03:32:30.961 UTC INFO [admin1] Plan 36[Deploy Storage Node (36)]: ended, state=SUCCEEDED
+2015-12-17 03:32:30.962 UTC INFO [admin1] Waiting for Plan 36[Deploy Storage Node (36)] ended, state=SUCCEEDED
+2015-12-17 03:32:30.986 UTC INFO [admin1] Plan 37[Deploy Admin Service (37)] approved
+2015-12-17 03:32:30.988 UTC INFO [admin1] Plan 37[Deploy Admin Service (37)]: started, 4 tasks
+2015-12-17 03:32:30.993 UTC INFO [admin1] Plan 37[Deploy Admin Service (37)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] started
+2015-12-17 03:32:31.053 UTC INFO [admin1] Plan 37[Deploy Admin Service (37)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] ended, state=SUCCEEDED
+2015-12-17 03:32:31.053 UTC INFO [admin1] Plan 37[Deploy Admin Service (37)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] started
+2015-12-17 03:32:31.070 UTC INFO [admin1] Plan 37[Deploy Admin Service (37)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] ended, state=SUCCEEDED
+2015-12-17 03:32:31.071 UTC INFO [admin1] Plan 37[Deploy Admin Service (37)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] started
+2015-12-17 03:32:31.084 UTC INFO [admin1] Changed helperHost for admin1 to localhost:5010
+2015-12-17 03:32:31.146 UTC INFO [admin1] Plan 37[Deploy Admin Service (37)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] ended, state=SUCCEEDED
+2015-12-17 03:32:31.147 UTC INFO [admin1] Plan 37[Deploy Admin Service (37)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] started
+2015-12-17 03:32:31.161 UTC INFO [admin1] Plan 37[Deploy Admin Service (37)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] ended, state=SUCCEEDED
+2015-12-17 03:32:31.164 UTC INFO [admin1] Plan 37[Deploy Admin Service (37)]: ended, state=SUCCEEDED
+2015-12-17 03:32:31.176 UTC INFO [admin1] Waiting for Plan 37[Deploy Admin Service (37)] ended, state=SUCCEEDED
+2015-12-17 03:32:31.246 UTC INFO [admin1] Added Storage Node sn1 to pool: WDBPool
+2015-12-17 03:32:31.285 UTC INFO [admin1] oracle.kv.impl.admin.topo.TopologyCandidate@3cff10df has nothing to rebalance
+2015-12-17 03:32:31.295 UTC INFO [admin1] Couldn't improve topology. Store can only support 1 shards.
+Shard calculation based on smallest zone: zn id=zn1 maximum shards= 1
+
+2015-12-17 03:32:31.378 UTC INFO [admin1] Plan 38[Deploy Topo (38)] approved
+2015-12-17 03:32:31.386 UTC INFO [admin1] Plan 38[Deploy Topo (38)] deploying topology candidate WDBTopology.
+2015-12-17 03:32:31.391 UTC INFO [admin1] Current topology: store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-17 03:32:31.392 UTC INFO [admin1] Preview of changes to be executed by Plan 38[Deploy Topo (38)]:
+No differences in topologies.
+2015-12-17 03:32:31.392 UTC INFO [admin1] Target topology candidate: WDBTopology
+store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-17 03:32:31.396 UTC INFO [admin1] Plan 38[Deploy Topo (38)]: started, 3 tasks
+2015-12-17 03:32:31.399 UTC INFO [admin1] Plan 38[Deploy Topo (38)]: task 1 [UpdateDatacenterV2 zone=zn1] started
+2015-12-17 03:32:31.410 UTC INFO [admin1] Plan 38[Deploy Topo (38)]: task 1 [UpdateDatacenterV2 zone=zn1] ended, state=SUCCEEDED
+2015-12-17 03:32:31.410 UTC INFO [admin1] Plan 38[Deploy Topo (38)]: task 2 [BroadcastTopo] started
+2015-12-17 03:32:31.412 UTC INFO [admin1] Broadcasting topology seq# 14, changes for BroadcastTopo
+2015-12-17 03:32:31.446 UTC INFO [admin1] Plan 38[Deploy Topo (38)]: task 2 [BroadcastTopo] ended, state=SUCCEEDED
+2015-12-17 03:32:31.446 UTC INFO [admin1] Plan 38[Deploy Topo (38)]: task 3 [BroadcastMetadata] started
+2015-12-17 03:32:31.456 UTC INFO [admin1] Plan 38[Deploy Topo (38)]: task 3 [BroadcastMetadata] ended, state=SUCCEEDED
+2015-12-17 03:32:31.460 UTC INFO [admin1] Plan 38[Deploy Topo (38)]: ended, state=SUCCEEDED
+2015-12-17 03:32:31.461 UTC INFO [admin1] Waiting for Plan 38[Deploy Topo (38)] ended, state=SUCCEEDED
+2015-12-17 03:32:40.691 UTC INFO [admin1] New admin web client at 0:0:0:0:0:0:0:1, session id 1n3obe818b9ihxnbyw7a3yzhg
+2015-12-17 03:32:44.163 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2015-12-17 03:32:25 UTC
+2015-12-17 03:34:24.160 UTC INFO [admin1] [sn1] Service status: STOPPING 2015-12-17 03:34:24 UTC
+2015-12-17 03:34:24.734 UTC INFO [admin1] Shutting down AdminService instance
+2015-12-17 03:34:24.734 UTC INFO [admin1] Unbinding CommandService
+2015-12-17 03:34:24.736 UTC INFO [admin1] Unbinding ClientAdminService
+2015-12-17 03:34:24.736 UTC INFO [admin1] Shutting down WebService
+2015-12-17 03:34:24.749 UTC INFO [admin1] stopped o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-17 03:34:24.802 UTC INFO [admin1] Stopped Jetty
+2015-12-17 03:34:24.802 UTC INFO [admin1] Shutting down Admin
+2015-12-17 03:34:24.802 UTC INFO [admin1] Shutting down monitor collector
+2015-12-17 03:34:24.803 UTC INFO [admin1] Closing admin entity DB: AdminPlanDatabase
+2015-12-17 03:34:24.806 UTC INFO [admin1] JE: Shutting down node 1(1)
+2015-12-17 03:34:24.807 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-17 03:34:24.807 UTC INFO [admin1] JE: Elections shutdown initiated
+2015-12-17 03:34:24.808 UTC INFO [admin1] JE: Acceptor Thread 1 soft shutdown initiated.
+2015-12-17 03:34:24.809 UTC INFO [admin1] JE: Learner Thread 1 soft shutdown initiated.
+2015-12-17 03:34:24.809 UTC INFO [admin1] JE: ElectionThread_1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env soft shutdown initiated.
+2015-12-17 03:34:24.809 UTC INFO [admin1] JE: Elections shutdown completed
+2015-12-17 03:34:24.809 UTC INFO [admin1] JE: Feeder manager soft shutdown.
+2015-12-17 03:34:24.809 UTC INFO [admin1] JE: MASTER 1(1) soft shutdown initiated.
+2015-12-17 03:34:24.810 UTC INFO [admin1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 825
+2015-12-17 03:34:24.810 UTC INFO [admin1] JE: RepNode main thread shutting down.
+2015-12-17 03:34:24.811 UTC INFO [admin1] JE: RepNode main thread: DETACHED 1(1) exited.
+2015-12-17 03:34:24.811 UTC INFO [admin1] JE: Feeder Manager node: 1 soft shutdown initiated.
+2015-12-17 03:34:24.812 UTC INFO [admin1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-17 03:34:24.812 UTC INFO [admin1] JE: ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-17 03:34:24.813 UTC INFO [admin1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-17 03:34:24.813 UTC INFO [admin1] JE: 1(1) shutdown completed.
+2015-12-17 03:38:06.882 UTC INFO [admin1] Starting service process: admin1, Java command line arguments: [-XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc]
+2015-12-17 03:38:06.979 UTC INFO [admin1] Starting AdminService
+2015-12-17 03:38:07.219 UTC INFO [admin1] Initializing PRIMARY Admin for store: WDB
+2015-12-17 03:38:07.224 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 119537664
+2015-12-17 03:38:07.226 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 03:38:07.245 UTC INFO [admin1] DataChannelFactory: basic
+2015-12-17 03:38:07.250 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2015-12-17 03:38:07.765 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2015-12-17 03:38:07.826 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2015-12-17 03:38:07.836 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2015-12-17 03:38:07.868 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 03:38:07.871 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 03:38:07.884 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2015-12-17 03:38:07.910 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 03:38:07.912 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 03:38:07.916 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 03:38:07.929 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 03:38:08.024 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2015-12-17 03:38:08.062 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 03:38:08.062 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 03:38:08.164 UTC INFO [admin1] JE: Current group size: 1
+2015-12-17 03:38:08.165 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2015-12-17 03:38:08.296 UTC INFO [admin1] JE: Node 1 started
+2015-12-17 03:38:08.297 UTC INFO [admin1] JE: Election initiated; election #1
+2015-12-17 03:38:08.297 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2015-12-17 03:38:08.300 UTC INFO [admin1] JE: Started election thread Wed Dec 16 21:38:08 CST 2015
+2015-12-17 03:38:10.306 UTC INFO [admin1] JE: Winning proposal: Proposal(00000151ae0435fc:b419e9b7f6b3effc9ade6e081a571575:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 03:38:10.307 UTC INFO [admin1] JE: Master changed to 1
+2015-12-17 03:38:10.308 UTC INFO [admin1] JE: Election finished. Elapsed time: 2012ms
+2015-12-17 03:38:10.308 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2015-12-17 03:38:10.309 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2015-12-17 03:38:10.321 UTC INFO [admin1] JE: Joining group as master
+2015-12-17 03:38:10.322 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-17 03:38:10.324 UTC INFO [admin1] State change event: Wed Dec 16 21:38:10 CST 2015, State: MASTER, Type: PRIMARY, Master: 1
+2015-12-17 03:38:10.324 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2015-12-17 03:38:10.509 UTC INFO [admin1] Open Admin entity DB: AdminPlanDatabase
+2015-12-17 03:38:10.510 UTC INFO [admin1] Admin plan database initialized
+2015-12-17 03:38:10.510 UTC INFO [admin1] Initialized plan store to PlanDatabaseStore
+2015-12-17 03:38:10.511 UTC INFO [admin1] Shutting down monitor collector
+2015-12-17 03:38:10.557 UTC INFO [admin1] Using existing Admin database
+2015-12-17 03:38:10.565 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2015-12-17 03:38:10.569 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2015-12-17 03:38:10.635 UTC INFO [admin1] [sn1] Service status: RUNNING 2015-12-17 03:38:06 UTC
+2015-12-17 03:38:10.637 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2015-12-17 03:38:10 UTC
+2015-12-17 03:38:10.979 UTC INFO [admin1] Replicated environment handle established. Cache size: 71722598, State: MASTER
+2015-12-17 03:38:10.980 UTC INFO [admin1] Starting commandService on rmi://localhost:5000/commandService
+2015-12-17 03:38:11.121 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2015-12-17 03:38:11.282 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://localhost:5000/admin:CLIENT_ADMIN
+2015-12-17 03:38:11.289 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2015-12-17 03:38:11.330 UTC INFO [admin1] Starting Web service on port 5001
+2015-12-17 03:38:11.435 UTC INFO [admin1] jetty-7.4.0.v20110414
+2015-12-17 03:38:11.537 UTC INFO [admin1] Extract jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI/ to /Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp
+2015-12-17 03:38:12.264 UTC INFO [admin1] NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2015-12-17 03:38:12.355 UTC INFO [admin1] started o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-17 03:38:12.387 UTC INFO [admin1] Started SelectChannelConnector@0.0.0.0:5001 STARTING
+2015-12-17 03:38:12.390 UTC INFO [admin1] Started AdminService
+2015-12-17 03:38:17.677 UTC INFO [admin1] Plan 39[Deploy Zone (39)] approved
+2015-12-17 03:38:17.698 UTC INFO [admin1] Plan 39[Deploy Zone (39)]: started, 1 tasks
+2015-12-17 03:38:17.710 UTC INFO [admin1] Plan 39[Deploy Zone (39)]: task 1 [DeployDatacenter zone=WDB_zone] started
+2015-12-17 03:38:17.715 UTC INFO [admin1] Plan 39[Deploy Zone (39)]: task 1 [DeployDatacenter zone=WDB_zone] ended, state=SUCCEEDED
+2015-12-17 03:38:17.719 UTC INFO [admin1] Plan 39[Deploy Zone (39)]: ended, state=SUCCEEDED
+2015-12-17 03:38:17.725 UTC INFO [admin1] Waiting for Plan 39[Deploy Zone (39)] ended, state=SUCCEEDED
+2015-12-17 03:38:17.761 UTC INFO [admin1] Plan 40[Deploy Storage Node (40)] approved
+2015-12-17 03:38:17.762 UTC INFO [admin1] Plan 40[Deploy Storage Node (40)]: started, 1 tasks
+2015-12-17 03:38:17.765 UTC INFO [admin1] Plan 40[Deploy Storage Node (40)]: task 1 [DeploySN sn1(localhost:5000)] started
+2015-12-17 03:38:17.806 UTC INFO [admin1] DeploySN sn1(localhost:5000): SNA already deployed, had status of RUNNING
+2015-12-17 03:38:17.809 UTC INFO [admin1] Plan 40[Deploy Storage Node (40)]: task 1 [DeploySN sn1(localhost:5000)] ended, state=SUCCEEDED
+2015-12-17 03:38:17.812 UTC INFO [admin1] Plan 40[Deploy Storage Node (40)]: ended, state=SUCCEEDED
+2015-12-17 03:38:17.814 UTC INFO [admin1] Waiting for Plan 40[Deploy Storage Node (40)] ended, state=SUCCEEDED
+2015-12-17 03:38:17.839 UTC INFO [admin1] Plan 41[Deploy Admin Service (41)] approved
+2015-12-17 03:38:17.840 UTC INFO [admin1] Plan 41[Deploy Admin Service (41)]: started, 4 tasks
+2015-12-17 03:38:17.844 UTC INFO [admin1] Plan 41[Deploy Admin Service (41)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] started
+2015-12-17 03:38:17.909 UTC INFO [admin1] Plan 41[Deploy Admin Service (41)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] ended, state=SUCCEEDED
+2015-12-17 03:38:17.910 UTC INFO [admin1] Plan 41[Deploy Admin Service (41)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] started
+2015-12-17 03:38:17.923 UTC INFO [admin1] Plan 41[Deploy Admin Service (41)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] ended, state=SUCCEEDED
+2015-12-17 03:38:17.924 UTC INFO [admin1] Plan 41[Deploy Admin Service (41)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] started
+2015-12-17 03:38:17.939 UTC INFO [admin1] Changed helperHost for admin1 to localhost:5010
+2015-12-17 03:38:17.976 UTC INFO [admin1] Plan 41[Deploy Admin Service (41)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] ended, state=SUCCEEDED
+2015-12-17 03:38:17.977 UTC INFO [admin1] Plan 41[Deploy Admin Service (41)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] started
+2015-12-17 03:38:17.989 UTC INFO [admin1] Plan 41[Deploy Admin Service (41)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] ended, state=SUCCEEDED
+2015-12-17 03:38:17.992 UTC INFO [admin1] Plan 41[Deploy Admin Service (41)]: ended, state=SUCCEEDED
+2015-12-17 03:38:17.994 UTC INFO [admin1] Waiting for Plan 41[Deploy Admin Service (41)] ended, state=SUCCEEDED
+2015-12-17 03:38:18.098 UTC INFO [admin1] Added Storage Node sn1 to pool: WDBPool
+2015-12-17 03:38:18.132 UTC INFO [admin1] oracle.kv.impl.admin.topo.TopologyCandidate@22c7b9ee has nothing to rebalance
+2015-12-17 03:38:18.138 UTC INFO [admin1] Couldn't improve topology. Store can only support 1 shards.
+Shard calculation based on smallest zone: zn id=zn1 maximum shards= 1
+
+2015-12-17 03:38:18.186 UTC INFO [admin1] Plan 42[Deploy Topo (42)] approved
+2015-12-17 03:38:18.191 UTC INFO [admin1] Plan 42[Deploy Topo (42)] deploying topology candidate WDBTopology.
+2015-12-17 03:38:18.195 UTC INFO [admin1] Current topology: store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-17 03:38:18.196 UTC INFO [admin1] Preview of changes to be executed by Plan 42[Deploy Topo (42)]:
+No differences in topologies.
+2015-12-17 03:38:18.196 UTC INFO [admin1] Target topology candidate: WDBTopology
+store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-17 03:38:18.198 UTC INFO [admin1] Plan 42[Deploy Topo (42)]: started, 3 tasks
+2015-12-17 03:38:18.200 UTC INFO [admin1] Plan 42[Deploy Topo (42)]: task 1 [UpdateDatacenterV2 zone=zn1] started
+2015-12-17 03:38:18.204 UTC INFO [admin1] Plan 42[Deploy Topo (42)]: task 1 [UpdateDatacenterV2 zone=zn1] ended, state=SUCCEEDED
+2015-12-17 03:38:18.205 UTC INFO [admin1] Plan 42[Deploy Topo (42)]: task 2 [BroadcastTopo] started
+2015-12-17 03:38:18.206 UTC INFO [admin1] Broadcasting topology seq# 14, changes for BroadcastTopo
+2015-12-17 03:38:18.232 UTC INFO [admin1] Plan 42[Deploy Topo (42)]: task 2 [BroadcastTopo] ended, state=SUCCEEDED
+2015-12-17 03:38:18.233 UTC INFO [admin1] Plan 42[Deploy Topo (42)]: task 3 [BroadcastMetadata] started
+2015-12-17 03:38:18.237 UTC INFO [admin1] Plan 42[Deploy Topo (42)]: task 3 [BroadcastMetadata] ended, state=SUCCEEDED
+2015-12-17 03:38:18.239 UTC INFO [admin1] Plan 42[Deploy Topo (42)]: ended, state=SUCCEEDED
+2015-12-17 03:38:18.239 UTC INFO [admin1] Waiting for Plan 42[Deploy Topo (42)] ended, state=SUCCEEDED
+2015-12-17 03:38:30.582 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2015-12-17 03:38:11 UTC
+2015-12-17 03:44:16.821 UTC INFO [admin1] New admin web client at 0:0:0:0:0:0:0:1, session id em95871e21ej1n83ub13yy14k
+2015-12-17 13:27:57.605 UTC INFO [admin1] New admin web client at 0:0:0:0:0:0:0:1, session id 12ksoi0zn07na1famp8nfdmjpi
+2015-12-17 16:23:56.484 UTC INFO [admin1] Starting service process: admin1, Java command line arguments: [-XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc]
+2015-12-17 16:23:57.364 UTC INFO [admin1] Starting AdminService
+2015-12-17 16:23:58.187 UTC INFO [admin1] Initializing PRIMARY Admin for store: WDB
+2015-12-17 16:23:58.209 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 119537664
+2015-12-17 16:23:58.261 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 16:23:58.353 UTC INFO [admin1] DataChannelFactory: basic
+2015-12-17 16:23:58.429 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2015-12-18 03:01:30.714 UTC INFO [admin1] Starting service process: admin1, Java command line arguments: [-XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc]
+2015-12-18 03:01:30.952 UTC INFO [admin1] Starting AdminService
+2015-12-18 03:01:31.554 UTC INFO [admin1] Initializing PRIMARY Admin for store: WDB
+2015-12-18 03:01:31.682 UTC INFO [admin1] JVM Runtime maxMemory (bytes): 119537664
+2015-12-18 03:01:31.686 UTC INFO [admin1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.bindInaddrAny=true, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-18 03:01:31.843 UTC INFO [admin1] DataChannelFactory: basic
+2015-12-18 03:01:31.847 UTC INFO [admin1] AdminStateTracker thread start: admin1
+2015-12-18 03:01:34.115 UTC INFO [admin1] JE recovery: FIND_END_OF_LOG
+2015-12-18 03:01:34.331 UTC INFO [admin1] JE recovery: FIND_LAST_CKPT
+2015-12-18 03:01:34.336 UTC INFO [admin1] JE recovery: READ_DBMAP_INFO
+2015-12-18 03:01:34.394 UTC INFO [admin1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-18 03:01:34.399 UTC INFO [admin1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-18 03:01:34.406 UTC INFO [admin1] JE recovery: READ_DATA_INFO
+2015-12-18 03:01:34.423 UTC INFO [admin1] JE recovery: UNDO_DATA_RECORDS
+2015-12-18 03:01:34.426 UTC INFO [admin1] JE recovery: REDO_DATA_RECORDS
+2015-12-18 03:01:34.445 UTC INFO [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-18 03:01:34.463 UTC INFO [admin1] JE recovery: REMOVE_TEMP_DBS
+2015-12-18 03:01:34.634 UTC INFO [admin1] JE recovery: CKPT
+2015-12-18 03:01:34.674 UTC INFO [admin1] JE recovery: RECOVERY_FINISHED
+2015-12-18 03:01:35.038 UTC INFO [admin1] JE: Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-18 03:01:35.040 UTC INFO [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-18 03:01:35.087 UTC INFO [admin1] JE: Current group size: 1
+2015-12-18 03:01:35.087 UTC INFO [admin1] JE: Existing node 1 querying for a current master.
+2015-12-18 03:01:35.219 UTC INFO [admin1] JE recovery: BECOME_CONSISTENT
+2015-12-18 03:01:35.219 UTC INFO [admin1] JE: Node 1 started
+2015-12-18 03:01:35.221 UTC INFO [admin1] JE: Election initiated; election #1
+2015-12-18 03:01:35.224 UTC INFO [admin1] JE: Started election thread Thu Dec 17 21:01:35 CST 2015
+2015-12-18 03:01:37.237 UTC INFO [admin1] JE: Winning proposal: Proposal(00000151b3091b49:49c2d6c925bad8e8fe516c9a1409a14e:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-18 03:01:37.240 UTC INFO [admin1] JE: Master changed to 1
+2015-12-18 03:01:37.240 UTC INFO [admin1] JE: Election finished. Elapsed time: 2020ms
+2015-12-18 03:01:37.241 UTC INFO [admin1] JE: Election thread exited. Group master: 1(1)
+2015-12-18 03:01:37.241 UTC INFO [admin1] JE: Feeder manager accepting requests.
+2015-12-18 03:01:37.248 UTC INFO [admin1] JE: Joining group as master
+2015-12-18 03:01:37.250 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-18 03:01:37.252 UTC INFO [admin1] State change event: Thu Dec 17 21:01:37 CST 2015, State: MASTER, Type: PRIMARY, Master: 1
+2015-12-18 03:01:37.252 UTC INFO [admin1] AdminStateTracker queue added:MASTER
+2015-12-18 03:01:37.618 UTC INFO [admin1] Open Admin entity DB: AdminPlanDatabase
+2015-12-18 03:01:37.619 UTC INFO [admin1] Admin plan database initialized
+2015-12-18 03:01:37.619 UTC INFO [admin1] Initialized plan store to PlanDatabaseStore
+2015-12-18 03:01:37.620 UTC INFO [admin1] Shutting down monitor collector
+2015-12-18 03:01:37.707 UTC INFO [admin1] Using existing Admin database
+2015-12-18 03:01:37.712 UTC INFO [admin1] Monitor collector: adding sn1 to monitoring
+2015-12-18 03:01:37.714 UTC INFO [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2015-12-18 03:01:37.822 UTC INFO [admin1] [sn1] Service status: RUNNING 2015-12-18 03:01:31 UTC
+2015-12-18 03:01:37.831 UTC INFO [admin1] [rg1-rn1] Service status: STARTING 2015-12-18 03:01:37 UTC
+2015-12-18 03:01:37.967 UTC INFO [admin1] Replicated environment handle established. Cache size: 71722598, State: MASTER
+2015-12-18 03:01:37.968 UTC INFO [admin1] Starting commandService on rmi://localhost:5000/commandService
+2015-12-18 03:01:38.062 UTC INFO [admin1] Successfully created a secure proxy for commandService
+2015-12-18 03:01:38.163 UTC INFO [admin1] Starting admin:CLIENT_ADMIN on rmi://localhost:5000/admin:CLIENT_ADMIN
+2015-12-18 03:01:38.206 UTC INFO [admin1] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2015-12-18 03:01:38.217 UTC INFO [admin1] Starting Web service on port 5001
+2015-12-18 03:01:39.159 UTC INFO [admin1] jetty-7.4.0.v20110414
+2015-12-18 03:01:39.286 UTC INFO [admin1] Extract jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI/ to /Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp
+2015-12-18 03:01:39.907 UTC INFO [admin1] Plan 43[Deploy Zone (43)] approved
+2015-12-18 03:01:39.953 UTC INFO [admin1] Plan 43[Deploy Zone (43)]: started, 1 tasks
+2015-12-18 03:01:40.068 UTC INFO [admin1] Plan 43[Deploy Zone (43)]: task 1 [DeployDatacenter zone=WDB_zone] started
+2015-12-18 03:01:40.089 UTC INFO [admin1] Plan 43[Deploy Zone (43)]: task 1 [DeployDatacenter zone=WDB_zone] ended, state=SUCCEEDED
+2015-12-18 03:01:40.114 UTC INFO [admin1] Plan 43[Deploy Zone (43)]: ended, state=SUCCEEDED
+2015-12-18 03:01:40.114 UTC INFO [admin1] Waiting for Plan 43[Deploy Zone (43)] ended, state=SUCCEEDED
+2015-12-18 03:01:40.152 UTC INFO [admin1] Plan 44[Deploy Storage Node (44)] approved
+2015-12-18 03:01:40.154 UTC INFO [admin1] Plan 44[Deploy Storage Node (44)]: started, 1 tasks
+2015-12-18 03:01:40.178 UTC INFO [admin1] Plan 44[Deploy Storage Node (44)]: task 1 [DeploySN sn1(localhost:5000)] started
+2015-12-18 03:01:40.201 UTC INFO [admin1] DeploySN sn1(localhost:5000): SNA already deployed, had status of RUNNING
+2015-12-18 03:01:40.236 UTC INFO [admin1] Plan 44[Deploy Storage Node (44)]: task 1 [DeploySN sn1(localhost:5000)] ended, state=SUCCEEDED
+2015-12-18 03:01:40.240 UTC INFO [admin1] Plan 44[Deploy Storage Node (44)]: ended, state=SUCCEEDED
+2015-12-18 03:01:40.241 UTC INFO [admin1] Waiting for Plan 44[Deploy Storage Node (44)] ended, state=SUCCEEDED
+2015-12-18 03:01:40.332 UTC INFO [admin1] Plan 45[Deploy Admin Service (45)] approved
+2015-12-18 03:01:40.334 UTC INFO [admin1] Plan 45[Deploy Admin Service (45)]: started, 4 tasks
+2015-12-18 03:01:40.363 UTC INFO [admin1] Plan 45[Deploy Admin Service (45)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] started
+2015-12-18 03:01:40.412 UTC INFO [admin1] Plan 45[Deploy Admin Service (45)]: task 1 [DeployAdmin AdminId[admin1] on SNId[sn1]] ended, state=SUCCEEDED
+2015-12-18 03:01:40.413 UTC INFO [admin1] Plan 45[Deploy Admin Service (45)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] started
+2015-12-18 03:01:40.449 UTC INFO [admin1] Plan 45[Deploy Admin Service (45)]: task 2 [WaitForAdminState waits for Admin admin1 to reach RUNNING state] ended, state=SUCCEEDED
+2015-12-18 03:01:40.450 UTC INFO [admin1] Plan 45[Deploy Admin Service (45)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] started
+2015-12-18 03:01:40.481 UTC INFO [admin1] Changed helperHost for admin1 to localhost:5010
+2015-12-18 03:01:40.545 UTC INFO [admin1] Plan 45[Deploy Admin Service (45)]: task 3 [UpdateAdminHelperHost update helper hosts for admin1] ended, state=SUCCEEDED
+2015-12-18 03:01:40.545 UTC INFO [admin1] Plan 45[Deploy Admin Service (45)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] started
+2015-12-18 03:01:40.567 UTC INFO [admin1] Plan 45[Deploy Admin Service (45)]: task 4 [NewAdminParameters cause Admin admin1 to refresh its parameter state without restarting] ended, state=SUCCEEDED
+2015-12-18 03:01:40.569 UTC INFO [admin1] NO JSP Support for /, did not find org.apache.jasper.servlet.JspServlet
+2015-12-18 03:01:40.570 UTC INFO [admin1] Plan 45[Deploy Admin Service (45)]: ended, state=SUCCEEDED
+2015-12-18 03:01:40.570 UTC INFO [admin1] Waiting for Plan 45[Deploy Admin Service (45)] ended, state=SUCCEEDED
+2015-12-18 03:01:40.607 UTC INFO [admin1] Added Storage Node sn1 to pool: WDBPool
+2015-12-18 03:01:40.642 UTC INFO [admin1] oracle.kv.impl.admin.topo.TopologyCandidate@5371a6e2 has nothing to rebalance
+2015-12-18 03:01:40.647 UTC INFO [admin1] Couldn't improve topology. Store can only support 1 shards.
+Shard calculation based on smallest zone: zn id=zn1 maximum shards= 1
+
+2015-12-18 03:01:40.651 UTC INFO [admin1] started o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-18 03:01:40.701 UTC INFO [admin1] Plan 46[Deploy Topo (46)] approved
+2015-12-18 03:01:40.705 UTC INFO [admin1] Plan 46[Deploy Topo (46)] deploying topology candidate WDBTopology.
+2015-12-18 03:01:40.708 UTC INFO [admin1] Current topology: store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-18 03:01:40.709 UTC INFO [admin1] Preview of changes to be executed by Plan 46[Deploy Topo (46)]:
+No differences in topologies.
+2015-12-18 03:01:40.709 UTC INFO [admin1] Target topology candidate: WDBTopology
+store=WDB  numPartitions=10 sequence=14
+  zn: id=zn1 name=WDB_zone repFactor=1 type=PRIMARY
+
+  sn=[sn1] zn:[id=zn1 name=WDB_zone] localhost:5000
+    [rg1-rn1]
+
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2015-12-18 03:01:40.711 UTC INFO [admin1] Plan 46[Deploy Topo (46)]: started, 3 tasks
+2015-12-18 03:01:40.713 UTC INFO [admin1] Plan 46[Deploy Topo (46)]: task 1 [UpdateDatacenterV2 zone=zn1] started
+2015-12-18 03:01:40.732 UTC INFO [admin1] Plan 46[Deploy Topo (46)]: task 1 [UpdateDatacenterV2 zone=zn1] ended, state=SUCCEEDED
+2015-12-18 03:01:40.733 UTC INFO [admin1] Plan 46[Deploy Topo (46)]: task 2 [BroadcastTopo] started
+2015-12-18 03:01:40.734 UTC INFO [admin1] Broadcasting topology seq# 14, changes for BroadcastTopo
+2015-12-18 03:01:40.742 UTC INFO [admin1] Started SelectChannelConnector@0.0.0.0:5001 STARTING
+2015-12-18 03:01:40.746 UTC INFO [admin1] Started AdminService
+2015-12-18 03:01:40.779 UTC INFO [admin1] Plan 46[Deploy Topo (46)]: task 2 [BroadcastTopo] ended, state=SUCCEEDED
+2015-12-18 03:01:40.780 UTC INFO [admin1] Plan 46[Deploy Topo (46)]: task 3 [BroadcastMetadata] started
+2015-12-18 03:01:40.782 UTC INFO [admin1] Plan 46[Deploy Topo (46)]: task 3 [BroadcastMetadata] ended, state=SUCCEEDED
+2015-12-18 03:01:40.784 UTC INFO [admin1] Plan 46[Deploy Topo (46)]: ended, state=SUCCEEDED
+2015-12-18 03:01:40.785 UTC INFO [admin1] Waiting for Plan 46[Deploy Topo (46)] ended, state=SUCCEEDED
+2015-12-18 03:01:57.719 UTC INFO [admin1] [rg1-rn1] Service status: RUNNING 2015-12-18 03:01:39 UTC
+2015-12-18 03:02:06.575 UTC INFO [admin1] New admin web client at 0:0:0:0:0:0:0:1, session id o0hstt2f0hy64ojqki9rua6j
+2015-12-18 03:35:59.036 UTC INFO [admin1] Shutting down AdminService instance
+2015-12-18 03:35:59.047 UTC INFO [admin1] Unbinding CommandService
+2015-12-18 03:35:59.048 UTC INFO [admin1] Unbinding ClientAdminService
+2015-12-18 03:35:59.049 UTC INFO [admin1] Shutting down WebService
+2015-12-18 03:35:59.062 UTC INFO [admin1] stopped o.e.j.w.WebAppContext{/,file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/STORE/WDB/sn1/admin1/webapp/webapp/},jar:file:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/lib/kvstore.jar!/war/KVAdminUI
+2015-12-18 03:35:59.114 UTC INFO [admin1] Stopped Jetty
+2015-12-18 03:35:59.115 UTC INFO [admin1] Shutting down Admin
+2015-12-18 03:35:59.197 UTC INFO [admin1] Shutting down monitor collector
+2015-12-18 03:35:59.198 UTC INFO [admin1] Closing admin entity DB: AdminPlanDatabase
+2015-12-18 03:35:59.286 UTC INFO [admin1] JE: Shutting down node 1(1)
+2015-12-18 03:35:59.288 UTC INFO [admin1] JE: Refreshed 0 monitors.
+2015-12-18 03:35:59.288 UTC INFO [admin1] JE: Elections shutdown initiated
+2015-12-18 03:35:59.289 UTC INFO [admin1] JE: Acceptor Thread 1 soft shutdown initiated.
+2015-12-18 03:35:59.290 UTC INFO [admin1] JE: Learner Thread 1 soft shutdown initiated.
+2015-12-18 03:35:59.290 UTC INFO [admin1] JE: ElectionThread_1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env soft shutdown initiated.
+2015-12-18 03:35:59.290 UTC INFO [admin1] JE: Elections shutdown completed
+2015-12-18 03:35:59.290 UTC INFO [admin1] JE: Feeder manager soft shutdown.
+2015-12-18 03:35:59.291 UTC INFO [admin1] JE: MASTER 1(1) soft shutdown initiated.
+2015-12-18 03:35:59.291 UTC INFO [admin1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 971
+2015-12-18 03:35:59.292 UTC INFO [admin1] JE: RepNode main thread shutting down.
+2015-12-18 03:35:59.293 UTC INFO [admin1] JE: RepNode main thread: DETACHED 1(1) exited.
+2015-12-18 03:35:59.293 UTC INFO [admin1] JE: Feeder Manager node: 1 soft shutdown initiated.
+2015-12-18 03:35:59.294 UTC INFO [admin1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-18 03:35:59.294 UTC INFO [admin1] JE: ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-18 03:35:59.294 UTC INFO [admin1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-18 03:35:59.294 UTC INFO [admin1] JE: 1(1) shutdown completed.

@@ -1,0 +1,405 @@
+2015-12-16 23:18:21.153 UTC INFO [sn1] Starting StorageNodeAgent for WDB
+2015-12-16 23:18:21.182 UTC INFO [sn1] Started MasterRebalanceThread
+2015-12-16 23:18:21.189 UTC INFO [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=main backlog=0 port range=0,0> Client socket factory:<ClientSocketFactory name=WDB|sn|monitor id=-1087409004 connectMs=10000 readMs=5000>
+2015-12-16 23:18:21.208 UTC INFO [sn1] Successfully created secure proxy for the storage node agent
+2015-12-16 23:18:21.214 UTC INFO [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory name=main backlog=0 port range=0,0>
+2015-12-16 23:18:21.214 UTC INFO [sn1] Service status changed from STARTING to RUNNING
+2015-12-16 23:18:21.214 UTC INFO [sn1] Started StorageNodeAgent for WDB
+2015-12-16 23:18:21.427 UTC INFO [sn1] admin1: Creating AdminService
+2015-12-16 23:18:21.451 UTC INFO [sn1] admin1: Created AdminService
+2015-12-16 23:18:21.795 UTC INFO [sn1] rg1-rn1: Creating RepNode
+2015-12-16 23:18:21.815 UTC INFO [sn1] rg1-rn1: Starting RepNode
+2015-12-16 23:18:21.821 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, RepNode, -service, rg1-rn1]
+2015-12-16 23:18:21.920 UTC INFO [sn1] rg1-rn1: ProcessMonitor: startProcess
+2015-12-16 23:18:21.921 UTC INFO [sn1] rg1-rn1: Started RepNode
+2015-12-16 23:18:21.921 UTC INFO [sn1] rg1-rn1: Configuring RepNode
+2015-12-16 23:18:24.220 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ManagedServiceStarted: rg1-rn1
+2015-12-16 23:18:25.251 UTC INFO [sn1] noteState called
+2015-12-16 23:18:25.252 UTC INFO [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 4
+2015-12-16 23:18:25.252 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 4 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2015-12-16 23:18:25.253 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-16 23:18:25.277 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 4
+2015-12-16 23:18:25.304 UTC INFO [sn1] rg1-rn1: Created RepNode
+2015-12-16 23:18:33.968 UTC INFO [sn1] Shutdown thread running, stopping services
+2015-12-17 00:00:07.936 UTC INFO [sn1] Starting StorageNodeAgent for WDB
+2015-12-17 00:00:07.938 UTC INFO [sn1] Creating a Registry on port localhost:5000 server socket factory:<ClearServerSocketFactory name=registry backlog=1024 port range=0,0>
+2015-12-17 00:00:08.041 UTC INFO [sn1] Using mgmt class oracle.kv.impl.mgmt.NoOpAgent
+2015-12-17 00:00:09.442 UTC INFO [sn1] Started MasterRebalanceThread
+2015-12-17 00:00:09.448 UTC INFO [sn1] rg1-rn1: Starting RepNode
+2015-12-17 00:00:09.456 UTC INFO [sn1] Unable to exec test process: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -cp /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar oracle.kv.impl.sna.ProcessServiceManager$TestJavaExec, exception: java.io.IOException: Cannot run program "/Library/Internet": error=2, No such file or directory
+2015-12-17 00:00:09.456 UTC INFO [sn1] Using java program: java to execute managed processes
+2015-12-17 00:00:09.465 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, RepNode, -service, rg1-rn1]
+2015-12-17 00:00:09.470 UTC INFO [sn1] rg1-rn1: ProcessMonitor: startProcess
+2015-12-17 00:00:09.473 UTC INFO [sn1] rg1-rn1: Started RepNode
+2015-12-17 00:00:09.486 UTC INFO [sn1] admin1: Starting AdminService
+2015-12-17 00:00:09.487 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -server, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, Admin, -service, admin1]
+2015-12-17 00:00:09.501 UTC INFO [sn1] admin1: ProcessMonitor: startProcess
+2015-12-17 00:00:09.502 UTC INFO [sn1] admin1: Started AdminService
+2015-12-17 00:00:09.555 UTC INFO [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=main backlog=0 port range=0,0> Client socket factory:<ClientSocketFactory name=WDB|sn|monitor id=-1349890104 connectMs=10000 readMs=5000>
+2015-12-17 00:00:09.682 UTC INFO [sn1] Successfully created secure proxy for the storage node agent
+2015-12-17 00:00:09.700 UTC INFO [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory name=main backlog=0 port range=0,0>
+2015-12-17 00:00:09.700 UTC INFO [sn1] Service status changed from STARTING to RUNNING
+2015-12-17 00:00:09.701 UTC INFO [sn1] Started StorageNodeAgent for WDB
+2015-12-17 00:00:14.671 UTC INFO [sn1] noteState called
+2015-12-17 00:00:14.672 UTC INFO [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 14
+2015-12-17 00:00:14.673 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 14 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2015-12-17 00:00:14.673 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-17 00:00:14.691 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ManagedServiceStarted: rg1-rn1
+2015-12-17 00:00:15.570 UTC INFO [sn1] admin1: ProcessMonitor: ManagedServiceStarted: admin1
+2015-12-17 00:00:20.537 UTC INFO [sn1] admin1: Creating AdminService
+2015-12-17 00:00:20.542 UTC INFO [sn1] admin1: AdminService exists in config file
+2015-12-17 00:00:20.568 UTC INFO [sn1] admin1: Created AdminService
+2015-12-17 00:00:20.605 UTC INFO [sn1] admin1: newAdminParameters called
+2015-12-17 00:01:14.688 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-17 00:01:14.724 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 14
+2015-12-17 00:26:10.739 UTC INFO [sn1] sn1: Shutdown starting, stopping services
+2015-12-17 00:26:10.740 UTC INFO [sn1] Service status changed from RUNNING to STOPPING
+2015-12-17 00:26:10.741 UTC INFO [sn1] Initiating master transfers for RNs in preparation for shutting down the SN
+2015-12-17 00:26:11.084 UTC INFO [sn1] noteState called
+2015-12-17 00:26:11.084 UTC INFO [sn1] added:State RN:rg1-rn1 state: DETACHED top seq num: 14
+2015-12-17 00:26:11.084 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: DETACHED top seq num: 14 active masters:[] active replicas:0 replica leases:0
+2015-12-17 00:26:11.087 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: PutsCumulativeLatency (00:26:00.349 UTC) perSec=1 totalOps=846 totalReq=846 min=0 max=9 avg=0.4776428 95th=1 99th=2
+2015-12-17 00:26:11.087 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutIfAbsentCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.087 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutIfPresentCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.087 UTC INFO [sn1] rg1-rn1: ProcessMonitor: NOPsIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.088 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutIfVersionCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.088 UTC INFO [sn1] rg1-rn1: ProcessMonitor: GetsIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.088 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetsCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.088 UTC INFO [sn1] rg1-rn1: ProcessMonitor: GetsCumulativeLatency (00:26:00.349 UTC) perSec=1 totalOps=2145 totalReq=2145 min=0 max=34 avg=0.25394535 95th=0 99th=1
+2015-12-17 00:26:11.088 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetKeysCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.088 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetIteratorCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.088 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetKeysIteratorCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.089 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiDeletesCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.089 UTC INFO [sn1] rg1-rn1: ProcessMonitor: DeletesIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.089 UTC INFO [sn1] rg1-rn1: ProcessMonitor: DeleteIfVersionIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.089 UTC INFO [sn1] rg1-rn1: ProcessMonitor: NOPsCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.089 UTC INFO [sn1] rg1-rn1: ProcessMonitor: StoreIteratorIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.089 UTC INFO [sn1] rg1-rn1: ProcessMonitor: StoreKeysIteratorIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.089 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ExecutesIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.089 UTC INFO [sn1] rg1-rn1: ProcessMonitor: AllSingleKeyOperationsIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.089 UTC INFO [sn1] rg1-rn1: ProcessMonitor: DeletesCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.089 UTC INFO [sn1] rg1-rn1: ProcessMonitor: AllSingleKeyOperationsCumulativeLatency (00:26:00.349 UTC) perSec=1 totalOps=2991 totalReq=2991 min=0 max=34 avg=0.32109421 95th=1 99th=2
+2015-12-17 00:26:11.089 UTC INFO [sn1] rg1-rn1: ProcessMonitor: DeleteIfVersionCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.090 UTC INFO [sn1] rg1-rn1: ProcessMonitor: IndexIteratorIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.090 UTC INFO [sn1] rg1-rn1: ProcessMonitor: IndexKeysIteratorIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.090 UTC INFO [sn1] rg1-rn1: ProcessMonitor: StoreIteratorCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.090 UTC INFO [sn1] rg1-rn1: ProcessMonitor: StoreKeysIteratorCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.090 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutsIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.090 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutIfAbsentIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.090 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutIfPresentIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.091 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutIfVersionIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.091 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetsIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.091 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ExecutesCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.091 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetKeysIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.091 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetIteratorIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.091 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetKeysIteratorIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.091 UTC INFO [sn1] rg1-rn1: ProcessMonitor: AllMultiKeyOperationsIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.091 UTC INFO [sn1] rg1-rn1: ProcessMonitor: AllMultiKeyOperationsCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.091 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiDeletesIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.091 UTC INFO [sn1] rg1-rn1: ProcessMonitor: IndexIteratorCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.092 UTC INFO [sn1] rg1-rn1: ProcessMonitor: IndexKeysIteratorCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.092 UTC INFO [sn1] rg1-rn1: ProcessMonitor: 
+2015-12-17 00:26:11.092 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: RepNodeAdmin shutdown({0})
+2015-12-17 00:26:11.092 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: Service status changed from RUNNING to STOPPING
+2015-12-17 00:26:11.092 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: Service status: STOPPING 2015-12-17 00:26:10 UTC
+2015-12-17 00:26:11.092 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: {0} shutdown
+2015-12-17 00:26:11.092 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: Dispatcher shutdown
+2015-12-17 00:26:11.092 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: PutsCumulativeLatency (00:26:10.764 UTC) perSec=1 totalOps=846 totalReq=846 min=0 max=9 avg=0.4776428 95th=1 99th=2
+2015-12-17 00:26:11.093 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutIfAbsentCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.093 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutIfPresentCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.093 UTC INFO [sn1] rg1-rn1: ProcessMonitor: NOPsIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.093 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutIfVersionCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.093 UTC INFO [sn1] rg1-rn1: ProcessMonitor: GetsIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.093 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetsCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.093 UTC INFO [sn1] rg1-rn1: ProcessMonitor: GetsCumulativeLatency (00:26:10.764 UTC) perSec=1 totalOps=2145 totalReq=2145 min=0 max=34 avg=0.25394535 95th=0 99th=1
+2015-12-17 00:26:11.093 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetKeysCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.093 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetIteratorCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.093 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetKeysIteratorCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.094 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiDeletesCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.094 UTC INFO [sn1] rg1-rn1: ProcessMonitor: DeletesIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.094 UTC INFO [sn1] rg1-rn1: ProcessMonitor: DeleteIfVersionIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.094 UTC INFO [sn1] rg1-rn1: ProcessMonitor: NOPsCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.094 UTC INFO [sn1] rg1-rn1: ProcessMonitor: StoreIteratorIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.094 UTC INFO [sn1] rg1-rn1: ProcessMonitor: StoreKeysIteratorIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.094 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ExecutesIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.094 UTC INFO [sn1] rg1-rn1: ProcessMonitor: AllSingleKeyOperationsIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.094 UTC INFO [sn1] rg1-rn1: ProcessMonitor: DeletesCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.094 UTC INFO [sn1] rg1-rn1: ProcessMonitor: AllSingleKeyOperationsCumulativeLatency (00:26:10.764 UTC) perSec=1 totalOps=2991 totalReq=2991 min=0 max=34 avg=0.32109421 95th=1 99th=2
+2015-12-17 00:26:11.094 UTC INFO [sn1] rg1-rn1: ProcessMonitor: DeleteIfVersionCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.095 UTC INFO [sn1] rg1-rn1: ProcessMonitor: IndexIteratorIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.095 UTC INFO [sn1] rg1-rn1: ProcessMonitor: IndexKeysIteratorIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.095 UTC INFO [sn1] rg1-rn1: ProcessMonitor: StoreIteratorCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.095 UTC INFO [sn1] rg1-rn1: ProcessMonitor: StoreKeysIteratorCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.095 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutsIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.095 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutIfAbsentIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.095 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutIfPresentIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.095 UTC INFO [sn1] rg1-rn1: ProcessMonitor: PutIfVersionIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.095 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetsIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.095 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ExecutesCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.096 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetKeysIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.096 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetIteratorIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.096 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiGetKeysIteratorIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.096 UTC INFO [sn1] rg1-rn1: ProcessMonitor: AllMultiKeyOperationsIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.096 UTC INFO [sn1] rg1-rn1: ProcessMonitor: AllMultiKeyOperationsCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.096 UTC INFO [sn1] rg1-rn1: ProcessMonitor: MultiDeletesIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.096 UTC INFO [sn1] rg1-rn1: ProcessMonitor: IndexIteratorCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.096 UTC INFO [sn1] rg1-rn1: ProcessMonitor: IndexKeysIteratorCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+2015-12-17 00:26:11.096 UTC INFO [sn1] rg1-rn1: ProcessMonitor: 
+2015-12-17 00:26:11.097 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: RepNodeAdmin stopping
+2015-12-17 00:26:11.097 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: {0} shutdown
+2015-12-17 00:26:11.097 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: Shutting down RepNode
+2015-12-17 00:26:11.097 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: Shutting down migration manager.
+2015-12-17 00:26:11.103 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: MigrationStateTracker soft shutdown initiated.
+2015-12-17 00:26:11.103 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: {0} queue added:{1}
+2015-12-17 00:26:11.103 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: {0} thread exited: {1}{2}
+2015-12-17 00:26:11.103 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: TableManagerStateTracker soft shutdown initiated.
+2015-12-17 00:26:11.103 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: {0} queue added:{1}
+2015-12-17 00:26:11.103 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: Table manager change state to {0}
+2015-12-17 00:26:11.103 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: {0} thread exited: {1}{2}
+2015-12-17 00:26:11.103 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: Closing secondary database handles
+2015-12-17 00:26:11.103 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: Closing {0} db
+2015-12-17 00:26:11.104 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: Closing partition database handles
+2015-12-17 00:26:11.104 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: Closing {0} db
+2015-12-17 00:26:11.107 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: Shutting down node rg1-rn1(1)
+2015-12-17 00:26:11.108 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: Refreshed 0 monitors.
+2015-12-17 00:26:11.108 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: Elections shutdown initiated
+2015-12-17 00:26:11.108 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 00:26:11.108 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 00:26:11.108 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: ElectionThread_rg1-rn1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store/rg1-rn1/env soft shutdown initiated.
+2015-12-17 00:26:11.108 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: Elections shutdown completed
+2015-12-17 00:26:11.108 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: Feeder manager soft shutdown.
+2015-12-17 00:26:11.109 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-17 00:26:11.109 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: Feeder manager exited. CurrentTxnEnd VLSN: 1,962
+2015-12-17 00:26:11.109 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: State change event: Wed Dec 16 18:26:10 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-17 00:26:11.109 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: RepNode main thread shutting down.
+2015-12-17 00:26:11.109 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: State change event: Wed Dec 16 18:26:10 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-17 00:26:11.109 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-17 00:26:11.109 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-17 00:26:11.109 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-17 00:26:11.111 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-17 00:26:11.112 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-17 00:26:11.112 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: JE: rg1-rn1(1) shutdown completed.
+2015-12-17 00:26:11.112 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: MasterBalanceStateTracker soft shutdown initiated.
+2015-12-17 00:26:11.112 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: {0} queue added:{1}
+2015-12-17 00:26:11.112 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: {0} thread exited: {1}{2}
+2015-12-17 00:26:11.112 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: Service status changed from STOPPING to STOPPED
+2015-12-17 00:26:11.112 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: Service status: STOPPED 2015-12-17 00:26:11 UTC
+2015-12-17 00:26:11.112 UTC INFO [sn1] rg1-rn1: ProcessMonitor: [rg1-rn1] untransmitted monitor info at shutdown: MonitorAgent stopping, 46 items remain.
+2015-12-17 00:26:11.587 UTC INFO [sn1] rg1-rn1: ProcessMonitor: IOThread exiting
+2015-12-17 00:26:11.587 UTC INFO [sn1] rg1-rn1: ProcessMonitor: exited, exit code: 0
+2015-12-17 00:26:11.589 UTC INFO [sn1] rg1-rn1: ProcessMonitor: Process restart requested; exit code:0
+2015-12-17 00:26:11.589 UTC INFO [sn1] rg1-rn1: ProcessMonitor: restart count is 0
+2015-12-17 00:26:11.589 UTC INFO [sn1] Rebalance thread notes rg1-rn1 exited
+2015-12-17 00:26:11.589 UTC INFO [sn1] added:State RN:rg1-rn1 state: DETACHED top seq num: 0
+2015-12-17 00:26:11.589 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: DETACHED top seq num: 0 active masters:[] active replicas:0 replica leases:0
+2015-12-17 00:26:11.589 UTC INFO [sn1] rg1-rn1: ProcessMonitor: not restarting
+2015-12-17 00:26:11.596 UTC INFO [sn1] MasterRebalanceThread soft shutdown initiated.
+2015-12-17 00:26:11.596 UTC INFO [sn1] MasterRebalanceThread thread exited.
+2015-12-17 00:26:11.596 UTC INFO [sn1] Master balance manager shutdown
+2015-12-17 00:26:11.597 UTC INFO [sn1] admin1: Stopping AdminService
+2015-12-17 00:26:12.124 UTC INFO [sn1] admin1: ProcessMonitor: IOThread exiting
+2015-12-17 00:26:12.125 UTC INFO [sn1] admin1: ProcessMonitor: exited, exit code: 0
+2015-12-17 00:26:12.125 UTC INFO [sn1] admin1: ProcessMonitor: Process restart requested; exit code:0
+2015-12-17 00:26:12.125 UTC INFO [sn1] admin1: ProcessMonitor: restart count is 0
+2015-12-17 00:26:12.125 UTC INFO [sn1] admin1: ProcessMonitor: not restarting
+2015-12-17 00:26:12.125 UTC INFO [sn1] admin1: Stopped AdminService
+2015-12-17 00:26:12.131 UTC INFO [sn1] Stopping MonitorAgent
+2015-12-17 00:26:12.131 UTC INFO [sn1] sn1: Shutdown complete
+2015-12-17 00:26:12.131 UTC INFO [sn1] Service status changed from STOPPING to STOPPED
+2015-12-17 00:26:42.352 UTC INFO [sn1] Starting StorageNodeAgent for WDB
+2015-12-17 00:26:42.354 UTC INFO [sn1] Creating a Registry on port localhost:5000 server socket factory:<ClearServerSocketFactory name=registry backlog=1024 port range=0,0>
+2015-12-17 00:26:42.425 UTC INFO [sn1] Using mgmt class oracle.kv.impl.mgmt.NoOpAgent
+2015-12-17 00:26:43.521 UTC INFO [sn1] Started MasterRebalanceThread
+2015-12-17 00:26:43.524 UTC INFO [sn1] rg1-rn1: Starting RepNode
+2015-12-17 00:26:43.531 UTC INFO [sn1] Unable to exec test process: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -cp /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar oracle.kv.impl.sna.ProcessServiceManager$TestJavaExec, exception: java.io.IOException: Cannot run program "/Library/Internet": error=2, No such file or directory
+2015-12-17 00:26:43.531 UTC INFO [sn1] Using java program: java to execute managed processes
+2015-12-17 00:26:43.538 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, RepNode, -service, rg1-rn1]
+2015-12-17 00:26:43.544 UTC INFO [sn1] rg1-rn1: ProcessMonitor: startProcess
+2015-12-17 00:26:43.546 UTC INFO [sn1] rg1-rn1: Started RepNode
+2015-12-17 00:26:43.553 UTC INFO [sn1] admin1: Starting AdminService
+2015-12-17 00:26:43.555 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -server, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, Admin, -service, admin1]
+2015-12-17 00:26:43.565 UTC INFO [sn1] admin1: ProcessMonitor: startProcess
+2015-12-17 00:26:43.566 UTC INFO [sn1] admin1: Started AdminService
+2015-12-17 00:26:43.625 UTC INFO [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=main backlog=0 port range=0,0> Client socket factory:<ClientSocketFactory name=WDB|sn|monitor id=23343559 connectMs=10000 readMs=5000>
+2015-12-17 00:26:43.765 UTC INFO [sn1] Successfully created secure proxy for the storage node agent
+2015-12-17 00:26:43.783 UTC INFO [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory name=main backlog=0 port range=0,0>
+2015-12-17 00:26:43.783 UTC INFO [sn1] Service status changed from STARTING to RUNNING
+2015-12-17 00:26:43.784 UTC INFO [sn1] Started StorageNodeAgent for WDB
+2015-12-17 00:26:48.756 UTC INFO [sn1] noteState called
+2015-12-17 00:26:48.756 UTC INFO [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 14
+2015-12-17 00:26:48.759 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 14 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2015-12-17 00:26:48.760 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-17 00:26:48.805 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ManagedServiceStarted: rg1-rn1
+2015-12-17 00:26:49.023 UTC INFO [sn1] admin1: Creating AdminService
+2015-12-17 00:26:49.030 UTC INFO [sn1] admin1: AdminService exists in config file
+2015-12-17 00:26:49.067 UTC INFO [sn1] admin1: Created AdminService
+2015-12-17 00:26:49.121 UTC INFO [sn1] admin1: newAdminParameters called
+2015-12-17 00:26:50.526 UTC INFO [sn1] admin1: ProcessMonitor: ManagedServiceStarted: admin1
+2015-12-17 00:27:48.769 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-17 00:27:48.802 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 14
+2015-12-17 00:35:23.608 UTC INFO [sn1] Shutdown thread running, stopping services
+2015-12-17 00:35:23.608 UTC INFO [sn1] sn1: Shutdown starting, stopping services
+2015-12-17 00:35:23.608 UTC INFO [sn1] Service status changed from RUNNING to STOPPING
+2015-12-17 00:35:23.608 UTC INFO [sn1] Initiating master transfers for RNs in preparation for shutting down the SN
+2015-12-17 00:36:40.369 UTC INFO [sn1] Starting StorageNodeAgent for WDB
+2015-12-17 00:36:40.376 UTC INFO [sn1] Creating a Registry on port localhost:5000 server socket factory:<ClearServerSocketFactory name=registry backlog=1024 port range=0,0>
+2015-12-17 00:36:40.460 UTC INFO [sn1] Using mgmt class oracle.kv.impl.mgmt.NoOpAgent
+2015-12-17 00:36:41.634 UTC INFO [sn1] Started MasterRebalanceThread
+2015-12-17 00:36:41.641 UTC INFO [sn1] rg1-rn1: Starting RepNode
+2015-12-17 00:36:41.648 UTC INFO [sn1] Unable to exec test process: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -cp /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar oracle.kv.impl.sna.ProcessServiceManager$TestJavaExec, exception: java.io.IOException: Cannot run program "/Library/Internet": error=2, No such file or directory
+2015-12-17 00:36:41.649 UTC INFO [sn1] Using java program: java to execute managed processes
+2015-12-17 00:36:41.658 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, RepNode, -service, rg1-rn1]
+2015-12-17 00:36:41.662 UTC INFO [sn1] rg1-rn1: ProcessMonitor: startProcess
+2015-12-17 00:36:41.665 UTC INFO [sn1] rg1-rn1: Started RepNode
+2015-12-17 00:36:41.671 UTC INFO [sn1] admin1: Starting AdminService
+2015-12-17 00:36:41.674 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -server, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, Admin, -service, admin1]
+2015-12-17 00:36:41.684 UTC INFO [sn1] admin1: ProcessMonitor: startProcess
+2015-12-17 00:36:41.685 UTC INFO [sn1] admin1: Started AdminService
+2015-12-17 00:36:41.733 UTC INFO [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=main backlog=0 port range=0,0> Client socket factory:<ClientSocketFactory name=WDB|sn|monitor id=-1798982142 connectMs=10000 readMs=5000>
+2015-12-17 00:36:41.870 UTC INFO [sn1] Successfully created secure proxy for the storage node agent
+2015-12-17 00:36:41.892 UTC INFO [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory name=main backlog=0 port range=0,0>
+2015-12-17 00:36:41.892 UTC INFO [sn1] Service status changed from STARTING to RUNNING
+2015-12-17 00:36:41.892 UTC INFO [sn1] Started StorageNodeAgent for WDB
+2015-12-17 00:36:46.960 UTC INFO [sn1] noteState called
+2015-12-17 00:36:46.961 UTC INFO [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 14
+2015-12-17 00:36:46.962 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 14 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2015-12-17 00:36:46.962 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-17 00:36:46.993 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ManagedServiceStarted: rg1-rn1
+2015-12-17 00:36:47.140 UTC INFO [sn1] admin1: Creating AdminService
+2015-12-17 00:36:47.145 UTC INFO [sn1] admin1: AdminService exists in config file
+2015-12-17 00:36:47.174 UTC INFO [sn1] admin1: Created AdminService
+2015-12-17 00:36:47.428 UTC INFO [sn1] admin1: newAdminParameters called
+2015-12-17 00:36:48.099 UTC INFO [sn1] admin1: ProcessMonitor: ManagedServiceStarted: admin1
+2015-12-17 00:37:46.990 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-17 00:37:47.015 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 14
+2015-12-17 02:21:41.829 UTC INFO [sn1] Shutdown thread running, stopping services
+2015-12-17 03:28:09.572 UTC INFO [sn1] Starting StorageNodeAgent for WDB
+2015-12-17 03:28:09.587 UTC INFO [sn1] Creating a Registry on port localhost:5000 server socket factory:<ClearServerSocketFactory name=registry backlog=1024 port range=0,0>
+2015-12-17 03:28:09.667 UTC INFO [sn1] Using mgmt class oracle.kv.impl.mgmt.NoOpAgent
+2015-12-17 03:28:10.800 UTC INFO [sn1] Started MasterRebalanceThread
+2015-12-17 03:28:10.806 UTC INFO [sn1] rg1-rn1: Starting RepNode
+2015-12-17 03:28:10.816 UTC INFO [sn1] Unable to exec test process: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -cp /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar oracle.kv.impl.sna.ProcessServiceManager$TestJavaExec, exception: java.io.IOException: Cannot run program "/Library/Internet": error=2, No such file or directory
+2015-12-17 03:28:10.816 UTC INFO [sn1] Using java program: java to execute managed processes
+2015-12-17 03:28:10.823 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, RepNode, -service, rg1-rn1]
+2015-12-17 03:28:10.829 UTC INFO [sn1] rg1-rn1: ProcessMonitor: startProcess
+2015-12-17 03:28:10.833 UTC INFO [sn1] rg1-rn1: Started RepNode
+2015-12-17 03:28:10.838 UTC INFO [sn1] admin1: Starting AdminService
+2015-12-17 03:28:10.847 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -server, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, Admin, -service, admin1]
+2015-12-17 03:28:10.868 UTC INFO [sn1] admin1: ProcessMonitor: startProcess
+2015-12-17 03:28:10.869 UTC INFO [sn1] admin1: Started AdminService
+2015-12-17 03:28:10.917 UTC INFO [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=main backlog=0 port range=0,0> Client socket factory:<ClientSocketFactory name=WDB|sn|monitor id=296146291 connectMs=10000 readMs=5000>
+2015-12-17 03:28:11.041 UTC INFO [sn1] Successfully created secure proxy for the storage node agent
+2015-12-17 03:28:11.063 UTC INFO [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory name=main backlog=0 port range=0,0>
+2015-12-17 03:28:11.063 UTC INFO [sn1] Service status changed from STARTING to RUNNING
+2015-12-17 03:28:11.063 UTC INFO [sn1] Started StorageNodeAgent for WDB
+2015-12-17 03:28:16.123 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ManagedServiceStarted: rg1-rn1
+2015-12-17 03:28:16.168 UTC INFO [sn1] noteState called
+2015-12-17 03:28:16.168 UTC INFO [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 14
+2015-12-17 03:28:16.171 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 14 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2015-12-17 03:28:16.171 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-17 03:28:16.223 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 14
+2015-12-17 03:28:17.577 UTC INFO [sn1] admin1: ProcessMonitor: ManagedServiceStarted: admin1
+2015-12-17 03:28:22.410 UTC INFO [sn1] admin1: Creating AdminService
+2015-12-17 03:28:22.417 UTC INFO [sn1] admin1: AdminService exists in config file
+2015-12-17 03:28:22.450 UTC INFO [sn1] admin1: Created AdminService
+2015-12-17 03:28:22.485 UTC INFO [sn1] admin1: newAdminParameters called
+2015-12-17 03:32:00.735 UTC INFO [sn1] Shutdown thread running, stopping services
+2015-12-17 03:32:00.735 UTC INFO [sn1] sn1: Shutdown starting, stopping services
+2015-12-17 03:32:00.735 UTC INFO [sn1] Service status changed from RUNNING to STOPPING
+2015-12-17 03:32:18.368 UTC INFO [sn1] Starting StorageNodeAgent for WDB
+2015-12-17 03:32:18.371 UTC INFO [sn1] Creating a Registry on port localhost:5000 server socket factory:<ClearServerSocketFactory name=registry backlog=1024 port range=0,0>
+2015-12-17 03:32:18.456 UTC INFO [sn1] Using mgmt class oracle.kv.impl.mgmt.NoOpAgent
+2015-12-17 03:32:19.620 UTC INFO [sn1] Started MasterRebalanceThread
+2015-12-17 03:32:19.628 UTC INFO [sn1] rg1-rn1: Starting RepNode
+2015-12-17 03:32:19.635 UTC INFO [sn1] Unable to exec test process: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -cp /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar oracle.kv.impl.sna.ProcessServiceManager$TestJavaExec, exception: java.io.IOException: Cannot run program "/Library/Internet": error=2, No such file or directory
+2015-12-17 03:32:19.635 UTC INFO [sn1] Using java program: java to execute managed processes
+2015-12-17 03:32:19.643 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, RepNode, -service, rg1-rn1]
+2015-12-17 03:32:19.648 UTC INFO [sn1] rg1-rn1: ProcessMonitor: startProcess
+2015-12-17 03:32:19.651 UTC INFO [sn1] rg1-rn1: Started RepNode
+2015-12-17 03:32:19.657 UTC INFO [sn1] admin1: Starting AdminService
+2015-12-17 03:32:19.659 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -server, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, Admin, -service, admin1]
+2015-12-17 03:32:19.663 UTC INFO [sn1] admin1: ProcessMonitor: startProcess
+2015-12-17 03:32:19.663 UTC INFO [sn1] admin1: Started AdminService
+2015-12-17 03:32:19.722 UTC INFO [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=main backlog=0 port range=0,0> Client socket factory:<ClientSocketFactory name=WDB|sn|monitor id=-946983151 connectMs=10000 readMs=5000>
+2015-12-17 03:32:19.885 UTC INFO [sn1] Successfully created secure proxy for the storage node agent
+2015-12-17 03:32:19.917 UTC INFO [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory name=main backlog=0 port range=0,0>
+2015-12-17 03:32:19.917 UTC INFO [sn1] Service status changed from STARTING to RUNNING
+2015-12-17 03:32:19.917 UTC INFO [sn1] Started StorageNodeAgent for WDB
+2015-12-17 03:32:25.243 UTC INFO [sn1] noteState called
+2015-12-17 03:32:25.244 UTC INFO [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 14
+2015-12-17 03:32:25.244 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 14 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2015-12-17 03:32:25.245 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-17 03:32:25.274 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ManagedServiceStarted: rg1-rn1
+2015-12-17 03:32:25.942 UTC INFO [sn1] admin1: ProcessMonitor: ManagedServiceStarted: admin1
+2015-12-17 03:32:31.012 UTC INFO [sn1] admin1: Creating AdminService
+2015-12-17 03:32:31.017 UTC INFO [sn1] admin1: AdminService exists in config file
+2015-12-17 03:32:31.049 UTC INFO [sn1] admin1: Created AdminService
+2015-12-17 03:32:31.095 UTC INFO [sn1] admin1: newAdminParameters called
+2015-12-17 03:33:25.253 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-17 03:33:25.280 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 14
+2015-12-17 03:34:24.024 UTC INFO [sn1] Shutdown thread running, stopping services
+2015-12-17 03:34:24.024 UTC INFO [sn1] sn1: Shutdown starting, stopping services
+2015-12-17 03:34:24.024 UTC INFO [sn1] Service status changed from RUNNING to STOPPING
+2015-12-17 03:34:24.025 UTC INFO [sn1] Initiating master transfers for RNs in preparation for shutting down the SN
+2015-12-17 03:38:05.191 UTC INFO [sn1] Starting StorageNodeAgent for WDB
+2015-12-17 03:38:05.195 UTC INFO [sn1] Creating a Registry on port localhost:5000 server socket factory:<ClearServerSocketFactory name=registry backlog=1024 port range=0,0>
+2015-12-17 03:38:05.276 UTC INFO [sn1] Using mgmt class oracle.kv.impl.mgmt.NoOpAgent
+2015-12-17 03:38:06.408 UTC INFO [sn1] Started MasterRebalanceThread
+2015-12-17 03:38:06.414 UTC INFO [sn1] rg1-rn1: Starting RepNode
+2015-12-17 03:38:06.422 UTC INFO [sn1] Unable to exec test process: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -cp /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar oracle.kv.impl.sna.ProcessServiceManager$TestJavaExec, exception: java.io.IOException: Cannot run program "/Library/Internet": error=2, No such file or directory
+2015-12-17 03:38:06.423 UTC INFO [sn1] Using java program: java to execute managed processes
+2015-12-17 03:38:06.433 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, RepNode, -service, rg1-rn1]
+2015-12-17 03:38:06.438 UTC INFO [sn1] rg1-rn1: ProcessMonitor: startProcess
+2015-12-17 03:38:06.440 UTC INFO [sn1] rg1-rn1: Started RepNode
+2015-12-17 03:38:06.447 UTC INFO [sn1] admin1: Starting AdminService
+2015-12-17 03:38:06.448 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -server, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, Admin, -service, admin1]
+2015-12-17 03:38:06.452 UTC INFO [sn1] admin1: ProcessMonitor: startProcess
+2015-12-17 03:38:06.453 UTC INFO [sn1] admin1: Started AdminService
+2015-12-17 03:38:06.502 UTC INFO [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=main backlog=0 port range=0,0> Client socket factory:<ClientSocketFactory name=WDB|sn|monitor id=331348691 connectMs=10000 readMs=5000>
+2015-12-17 03:38:06.624 UTC INFO [sn1] Successfully created secure proxy for the storage node agent
+2015-12-17 03:38:06.656 UTC INFO [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory name=main backlog=0 port range=0,0>
+2015-12-17 03:38:06.656 UTC INFO [sn1] Service status changed from STARTING to RUNNING
+2015-12-17 03:38:06.657 UTC INFO [sn1] Started StorageNodeAgent for WDB
+2015-12-17 03:38:11.522 UTC INFO [sn1] noteState called
+2015-12-17 03:38:11.523 UTC INFO [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 14
+2015-12-17 03:38:11.524 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 14 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2015-12-17 03:38:11.524 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-17 03:38:11.579 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ManagedServiceStarted: rg1-rn1
+2015-12-17 03:38:12.390 UTC INFO [sn1] admin1: ProcessMonitor: ManagedServiceStarted: admin1
+2015-12-17 03:38:17.870 UTC INFO [sn1] admin1: Creating AdminService
+2015-12-17 03:38:17.876 UTC INFO [sn1] admin1: AdminService exists in config file
+2015-12-17 03:38:17.902 UTC INFO [sn1] admin1: Created AdminService
+2015-12-17 03:38:17.945 UTC INFO [sn1] admin1: newAdminParameters called
+2015-12-17 03:39:11.544 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-17 03:39:11.581 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 14
+2015-12-18 03:01:27.815 UTC INFO [sn1] Starting StorageNodeAgent for WDB
+2015-12-18 03:01:27.847 UTC INFO [sn1] Creating a Registry on port localhost:5000 server socket factory:<ClearServerSocketFactory name=registry backlog=1024 port range=0,0>
+2015-12-18 03:01:28.246 UTC INFO [sn1] Using mgmt class oracle.kv.impl.mgmt.NoOpAgent
+2015-12-18 03:01:29.894 UTC INFO [sn1] Started MasterRebalanceThread
+2015-12-18 03:01:29.900 UTC INFO [sn1] rg1-rn1: Starting RepNode
+2015-12-18 03:01:30.023 UTC INFO [sn1] Unable to exec test process: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -cp /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar oracle.kv.impl.sna.ProcessServiceManager$TestJavaExec, exception: java.io.IOException: Cannot run program "/Library/Internet": error=2, No such file or directory
+2015-12-18 03:01:30.023 UTC INFO [sn1] Using java program: java to execute managed processes
+2015-12-18 03:01:30.128 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, RepNode, -service, rg1-rn1]
+2015-12-18 03:01:30.133 UTC INFO [sn1] rg1-rn1: ProcessMonitor: startProcess
+2015-12-18 03:01:30.135 UTC INFO [sn1] rg1-rn1: Started RepNode
+2015-12-18 03:01:30.140 UTC INFO [sn1] admin1: Starting AdminService
+2015-12-18 03:01:30.141 UTC INFO [sn1] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -server, -Dje.rep.skipHelperHostResolution=true, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/admin1.gc, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1, -store, WDB, -class, Admin, -service, admin1]
+2015-12-18 03:01:30.144 UTC INFO [sn1] admin1: ProcessMonitor: startProcess
+2015-12-18 03:01:30.145 UTC INFO [sn1] admin1: Started AdminService
+2015-12-18 03:01:30.764 UTC INFO [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=main backlog=0 port range=0,0> Client socket factory:<ClientSocketFactory name=WDB|sn|monitor id=-1187250631 connectMs=10000 readMs=5000>
+2015-12-18 03:01:31.150 UTC INFO [sn1] Successfully created secure proxy for the storage node agent
+2015-12-18 03:01:31.160 UTC INFO [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory name=main backlog=0 port range=0,0>
+2015-12-18 03:01:31.160 UTC INFO [sn1] Service status changed from STARTING to RUNNING
+2015-12-18 03:01:31.160 UTC INFO [sn1] Started StorageNodeAgent for WDB
+2015-12-18 03:01:39.030 UTC INFO [sn1] rg1-rn1: ProcessMonitor: ManagedServiceStarted: rg1-rn1
+2015-12-18 03:01:39.105 UTC INFO [sn1] noteState called
+2015-12-18 03:01:39.105 UTC INFO [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 14
+2015-12-18 03:01:39.107 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 14 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2015-12-18 03:01:39.107 UTC INFO [sn1] Acquiring initial topology from RNs
+2015-12-18 03:01:39.161 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 14
+2015-12-18 03:01:40.373 UTC INFO [sn1] admin1: Creating AdminService
+2015-12-18 03:01:40.377 UTC INFO [sn1] admin1: AdminService exists in config file
+2015-12-18 03:01:40.402 UTC INFO [sn1] admin1: Created AdminService
+2015-12-18 03:01:40.488 UTC INFO [sn1] admin1: newAdminParameters called
+2015-12-18 03:01:40.746 UTC INFO [sn1] admin1: ProcessMonitor: ManagedServiceStarted: admin1
+2015-12-18 03:35:58.455 UTC INFO [sn1] Shutdown thread running, stopping services

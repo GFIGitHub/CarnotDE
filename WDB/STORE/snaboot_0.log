@@ -1,0 +1,41 @@
+2015-12-16 23:18:10.389 UTC INFO [snaService] Starting, configuration file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/config.xml
+2015-12-16 23:18:10.882 UTC INFO [snaService] Creating a Registry on port localhost:5000 server socket factory:<ClearServerSocketFactory name=main backlog=100 port range=0,0>
+2015-12-16 23:18:11.176 UTC INFO [snaService] Successfully created secure proxy for the storage node agent
+2015-12-16 23:18:11.440 UTC INFO [snaService] Bound to registry port 5000 using name snaService with SSF:null
+2015-12-16 23:18:11.442 UTC INFO [snaService] Using mgmt class oracle.kv.impl.mgmt.NoOpAgent
+2015-12-16 23:18:12.138 UTC INFO [snaService] BootstrapAdmin: Starting AdminService
+2015-12-16 23:18:12.143 UTC INFO [snaService] Unable to exec test process: /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -cp /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar oracle.kv.impl.sna.ProcessServiceManager$TestJavaExec, exception: java.io.IOException: Cannot run program "/Library/Internet": error=2, No such file or directory
+2015-12-16 23:18:12.143 UTC INFO [snaService] Using java program: java to execute managed processes
+2015-12-16 23:18:12.144 UTC INFO [snaService] Executing process with arguments: [java, -cp, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./lib/kvstore.jar, -XX:+DisableExplicitGC, -Xms96M, -Xmx128M, -XX:+HeapDumpOnOutOfMemoryError, -server, -Dje.rep.skipHelperHostResolution=true, oracle.kv.impl.sna.ManagedService, -root, /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE, -class, Admin, -service, BootstrapAdmin.5000, -config, config.xml]
+2015-12-16 23:18:12.149 UTC INFO [snaService] BootstrapAdmin.5000: ProcessMonitor: startProcess
+2015-12-16 23:18:12.152 UTC INFO [snaService] BootstrapAdmin: Started AdminService
+2015-12-16 23:18:12.152 UTC INFO [snaService] Service status changed from STARTING to WAITING_FOR_DEPLOY
+2015-12-16 23:18:12.878 UTC INFO [snaService] BootstrapAdmin.5000: ProcessMonitor: ManagedServiceStarted: BootstrapAdmin.5000
+2015-12-16 23:18:21.013 UTC INFO [snaService] Register: root: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE, store: WDB, hostingAdmin: true
+2015-12-16 23:18:21.034 UTC INFO [snaService] System architecture is x86_64
+2015-12-16 23:18:21.035 UTC INFO [snaService] Setting number of CPUs to 4
+2015-12-16 23:18:21.035 UTC INFO [snaService] Setting memory MB to 16384
+2015-12-16 23:18:21.132 UTC INFO [snaService] Starting, configuration file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/config.xml
+2015-12-16 23:18:21.136 UTC INFO [snaService] Registered startup, config file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/config.xml
+2015-12-16 23:18:21.152 UTC INFO [snaService] Changing log files to directory: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log
+2015-12-17 00:00:07.803 UTC INFO [snaService] Starting, configuration file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/config.xml
+2015-12-17 00:00:07.891 UTC INFO [snaService] Registered startup, config file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/config.xml
+2015-12-17 00:00:07.930 UTC INFO [snaService] Changing log files to directory: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log
+2015-12-17 00:26:42.177 UTC INFO [snaService] Starting, configuration file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/config.xml
+2015-12-17 00:26:42.284 UTC INFO [snaService] Registered startup, config file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/config.xml
+2015-12-17 00:26:42.348 UTC INFO [snaService] Changing log files to directory: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log
+2015-12-17 00:36:40.224 UTC INFO [snaService] Starting, configuration file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/config.xml
+2015-12-17 00:36:40.314 UTC INFO [snaService] Registered startup, config file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/config.xml
+2015-12-17 00:36:40.360 UTC INFO [snaService] Changing log files to directory: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log
+2015-12-17 03:28:09.390 UTC INFO [snaService] Starting, configuration file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/config.xml
+2015-12-17 03:28:09.529 UTC INFO [snaService] Registered startup, config file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/config.xml
+2015-12-17 03:28:09.565 UTC INFO [snaService] Changing log files to directory: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log
+2015-12-17 03:32:18.216 UTC INFO [snaService] Starting, configuration file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/config.xml
+2015-12-17 03:32:18.312 UTC INFO [snaService] Registered startup, config file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/config.xml
+2015-12-17 03:32:18.359 UTC INFO [snaService] Changing log files to directory: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log
+2015-12-17 03:38:04.992 UTC INFO [snaService] Starting, configuration file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/config.xml
+2015-12-17 03:38:05.126 UTC INFO [snaService] Registered startup, config file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/config.xml
+2015-12-17 03:38:05.180 UTC INFO [snaService] Changing log files to directory: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log
+2015-12-18 03:01:26.908 UTC INFO [snaService] Starting, configuration file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/config.xml
+2015-12-18 03:01:27.724 UTC INFO [snaService] Registered startup, config file: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/config.xml
+2015-12-18 03:01:27.809 UTC INFO [snaService] Changing log files to directory: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log

@@ -1,0 +1,13 @@
+// 1. Show all instances of the SIM_person class
+from sim_person retrieve *;
+// 2. Show all instances of the SIM_emp class
+from sim_project_emp retrieve *;
+// 3. Show all instances of the SIM_project_emp class along with their respective department name and project name(s).
+from sim_project_emp retrieve *, name OF department, name OF projects;
+// 4. Show all instances of the SIM_manager class along with their respective department names
+from sim_manager retrieve *, name OF department;
+// 5. Show all instances of the SIM_project class along with their respective project employee and department name(s).
+from sim_project retrieve *, name OF employees, name OF department;
+// 6. Show all instances of the SIM_dept class along with their respective project employee, project, and manager name(s).
+from sim_dept retrieve *, name OF employees, name OF projects, name OF manager;
+

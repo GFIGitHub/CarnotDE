@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="wdb" default="all">
+  
+  
+  <property file="build.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.war"/>
+    <include name="*.swc"/>
+    <include name="*.apk"/>
+    <include name="*.zip"/>
+    <include name="*.egg"/>
+    <include name="*.ane"/>
+    <include name="*.jar"/>
+    <include name="*.ear"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <include name="**/?*.properties"/>
+    <include name="**/?*.xml"/>
+    <include name="**/?*.gif"/>
+    <include name="**/?*.png"/>
+    <include name="**/?*.jpeg"/>
+    <include name="**/?*.jpg"/>
+    <include name="**/?*.html"/>
+    <include name="**/?*.dtd"/>
+    <include name="**/?*.tld"/>
+  </patternset>
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module WDB -->
+  
+  <dirname property="module.wdb.basedir" file="${ant.file}"/>
+  
+  
+  
+  <property name="compiler.args.wdb" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="wdb.output.dir" value="${module.wdb.basedir}/classes/production/WDB"/>
+  <property name="wdb.testoutput.dir" value="${module.wdb.basedir}/classes/test/WDB"/>
+  
+  <path id="wdb.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="wdb.module.production.classpath">
+    <pathelement location="${basedir}/lib/je.jar"/>
+    <pathelement location="${basedir}/lib/antlr-complete.jar"/>
+    <pathelement location="${basedir}/lib/avro.jar"/>
+    <pathelement location="${basedir}/lib/gwt-servlet.jar"/>
+    <pathelement location="${basedir}/lib/jackson-core-asl.jar"/>
+    <pathelement location="${basedir}/lib/jackson-mapper-asl.jar"/>
+    <pathelement location="${basedir}/lib/jetty-continuation.jar"/>
+    <pathelement location="${basedir}/lib/jetty-http.jar"/>
+    <pathelement location="${basedir}/lib/jetty-io.jar"/>
+    <pathelement location="${basedir}/lib/jetty-security.jar"/>
+    <pathelement location="${basedir}/lib/jetty-server.jar"/>
+    <pathelement location="${basedir}/lib/jetty-servlet.jar"/>
+    <pathelement location="${basedir}/lib/jetty-util.jar"/>
+    <pathelement location="${basedir}/lib/jetty-webapp.jar"/>
+    <pathelement location="${basedir}/lib/jetty-xml.jar"/>
+    <pathelement location="${basedir}/lib/jline.jar"/>
+    <pathelement location="${basedir}/lib/jsch.jar"/>
+    <pathelement location="${basedir}/lib/kvclient.jar"/>
+    <pathelement location="${basedir}/lib/kvstore.jar"/>
+    <pathelement location="${basedir}/lib/servlet-api.jar"/>
+    <pathelement location="${basedir}/lib/commons-lang3-3.4.jar"/>
+  </path>
+  
+  <path id="wdb.runtime.production.module.classpath">
+    <pathelement location="${wdb.output.dir}"/>
+    <pathelement location="${basedir}/lib/je.jar"/>
+    <pathelement location="${basedir}/lib/antlr-complete.jar"/>
+    <pathelement location="${basedir}/lib/avro.jar"/>
+    <pathelement location="${basedir}/lib/gwt-servlet.jar"/>
+    <pathelement location="${basedir}/lib/jackson-core-asl.jar"/>
+    <pathelement location="${basedir}/lib/jackson-mapper-asl.jar"/>
+    <pathelement location="${basedir}/lib/jetty-continuation.jar"/>
+    <pathelement location="${basedir}/lib/jetty-http.jar"/>
+    <pathelement location="${basedir}/lib/jetty-io.jar"/>
+    <pathelement location="${basedir}/lib/jetty-security.jar"/>
+    <pathelement location="${basedir}/lib/jetty-server.jar"/>
+    <pathelement location="${basedir}/lib/jetty-servlet.jar"/>
+    <pathelement location="${basedir}/lib/jetty-util.jar"/>
+    <pathelement location="${basedir}/lib/jetty-webapp.jar"/>
+    <pathelement location="${basedir}/lib/jetty-xml.jar"/>
+    <pathelement location="${basedir}/lib/jline.jar"/>
+    <pathelement location="${basedir}/lib/jsch.jar"/>
+    <pathelement location="${basedir}/lib/kvclient.jar"/>
+    <pathelement location="${basedir}/lib/kvstore.jar"/>
+    <pathelement location="${basedir}/lib/servlet-api.jar"/>
+    <pathelement location="${basedir}/lib/commons-lang3-3.4.jar"/>
+  </path>
+  
+  <path id="wdb.module.classpath">
+    <pathelement location="${wdb.output.dir}"/>
+    <pathelement location="${basedir}/lib/je.jar"/>
+    <pathelement location="${basedir}/lib/antlr-complete.jar"/>
+    <pathelement location="${basedir}/lib/avro.jar"/>
+    <pathelement location="${basedir}/lib/gwt-servlet.jar"/>
+    <pathelement location="${basedir}/lib/jackson-core-asl.jar"/>
+    <pathelement location="${basedir}/lib/jackson-mapper-asl.jar"/>
+    <pathelement location="${basedir}/lib/jetty-continuation.jar"/>
+    <pathelement location="${basedir}/lib/jetty-http.jar"/>
+    <pathelement location="${basedir}/lib/jetty-io.jar"/>
+    <pathelement location="${basedir}/lib/jetty-security.jar"/>
+    <pathelement location="${basedir}/lib/jetty-server.jar"/>
+    <pathelement location="${basedir}/lib/jetty-servlet.jar"/>
+    <pathelement location="${basedir}/lib/jetty-util.jar"/>
+    <pathelement location="${basedir}/lib/jetty-webapp.jar"/>
+    <pathelement location="${basedir}/lib/jetty-xml.jar"/>
+    <pathelement location="${basedir}/lib/jline.jar"/>
+    <pathelement location="${basedir}/lib/jsch.jar"/>
+    <pathelement location="${basedir}/lib/kvclient.jar"/>
+    <pathelement location="${basedir}/lib/kvstore.jar"/>
+    <pathelement location="${basedir}/lib/servlet-api.jar"/>
+    <pathelement location="${basedir}/lib/commons-lang3-3.4.jar"/>
+  </path>
+  
+  <path id="wdb.runtime.module.classpath">
+    <pathelement location="${wdb.testoutput.dir}"/>
+    <pathelement location="${wdb.output.dir}"/>
+    <pathelement location="${basedir}/lib/je.jar"/>
+    <pathelement location="${basedir}/lib/antlr-complete.jar"/>
+    <pathelement location="${basedir}/lib/avro.jar"/>
+    <pathelement location="${basedir}/lib/gwt-servlet.jar"/>
+    <pathelement location="${basedir}/lib/jackson-core-asl.jar"/>
+    <pathelement location="${basedir}/lib/jackson-mapper-asl.jar"/>
+    <pathelement location="${basedir}/lib/jetty-continuation.jar"/>
+    <pathelement location="${basedir}/lib/jetty-http.jar"/>
+    <pathelement location="${basedir}/lib/jetty-io.jar"/>
+    <pathelement location="${basedir}/lib/jetty-security.jar"/>
+    <pathelement location="${basedir}/lib/jetty-server.jar"/>
+    <pathelement location="${basedir}/lib/jetty-servlet.jar"/>
+    <pathelement location="${basedir}/lib/jetty-util.jar"/>
+    <pathelement location="${basedir}/lib/jetty-webapp.jar"/>
+    <pathelement location="${basedir}/lib/jetty-xml.jar"/>
+    <pathelement location="${basedir}/lib/jline.jar"/>
+    <pathelement location="${basedir}/lib/jsch.jar"/>
+    <pathelement location="${basedir}/lib/kvclient.jar"/>
+    <pathelement location="${basedir}/lib/kvstore.jar"/>
+    <pathelement location="${basedir}/lib/servlet-api.jar"/>
+    <pathelement location="${basedir}/lib/commons-lang3-3.4.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.wdb">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.wdb">
+    <patternset refid="excluded.from.module.wdb"/>
+  </patternset>
+  
+  <path id="wdb.module.sourcepath">
+    <dirset dir="${module.wdb.basedir}">
+      <include name="src/database"/>
+      <include name="src/parser/generated"/>
+      <include name="lib"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.wdb" depends="compile.module.wdb.production,compile.module.wdb.tests" description="Compile module WDB"/>
+  
+  <target name="compile.module.wdb.production" description="Compile module WDB; production classes">
+    <mkdir dir="${wdb.output.dir}"/>
+    <javac destdir="${wdb.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true">
+      <compilerarg line="${compiler.args.wdb}"/>
+      <bootclasspath refid="wdb.module.bootclasspath"/>
+      <classpath refid="wdb.module.production.classpath"/>
+      <src refid="wdb.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.wdb"/>
+    </javac>
+    
+    <copy todir="${wdb.output.dir}">
+      <fileset dir="${module.wdb.basedir}/src/database">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.wdb.basedir}/src/parser/generated">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.wdb.basedir}/lib">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.wdb.tests" depends="compile.module.wdb.production" description="compile module WDB; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.wdb" description="cleanup module">
+    <delete dir="${wdb.output.dir}"/>
+    <delete dir="${wdb.testoutput.dir}"/>
+  </target>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.wdb" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.wdb" description="build all modules"/>
+  
+  <target name="all" depends="build.modules" description="build all"/>
+</project>

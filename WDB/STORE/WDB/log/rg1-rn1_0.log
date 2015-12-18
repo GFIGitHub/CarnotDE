@@ -1,0 +1,1536 @@
+2015-12-16 23:18:22.692 UTC INFO [rg1-rn1] Starting service process: rg1-rn1, Java command line arguments: [-Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4]
+2015-12-16 23:18:22.892 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] started
+2015-12-16 23:18:22.975 UTC INFO [rg1-rn1] NoSQL version:12cR1.3.4.7 2015-10-01 04:48:39 UTC  Build id: 44f8b0e7d93a JE version:6.4.11 Java version:1.8.0_51
+2015-12-16 23:18:22.978 UTC INFO [rg1-rn1] JVM Runtime maxMemory:14,474,412,032 bytes JE cache size:0 Max Offheap cache size:0 bytes
+2015-12-16 23:18:22.979 UTC INFO [rg1-rn1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-16 23:18:22.981 UTC INFO [rg1-rn1] DataChannelFactory: basic
+2015-12-16 23:18:22.982 UTC INFO [rg1-rn1] Created new environment dir: /Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store/rg1-rn1/env
+2015-12-16 23:18:23.014 UTC INFO [rg1-rn1] Table manager created
+2015-12-16 23:18:23.034 UTC INFO [rg1-rn1] Partition database cache mode: EVICT_LN
+2015-12-16 23:18:23.061 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] started
+2015-12-16 23:18:23.192 UTC INFO [rg1-rn1] Starting RepNodeService
+2015-12-16 23:18:23.194 UTC INFO [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=monitor backlog=0 port range=0,0> Client socket connect factory: <ClientSocketFactory name=WDB|rn|monitor id=1875932945 connectMs=10000 readMs=10000>
+2015-12-16 23:18:23.446 UTC INFO [rg1-rn1] Starting MonitorAgent
+2015-12-16 23:18:23.483 UTC INFO [rg1-rn1] Successfully created secure proxy for the repnode admin
+2015-12-16 23:18:23.521 UTC INFO [rg1-rn1] RepNodeAdmin registered
+2015-12-16 23:18:23.886 UTC INFO [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-16 23:18:23.915 UTC INFO [rg1-rn1] JE recovery: REMOVE_TEMP_DBS
+2015-12-16 23:18:23.934 UTC INFO [rg1-rn1] JE recovery: CKPT
+2015-12-16 23:18:23.954 UTC INFO [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2015-12-16 23:18:24.027 UTC INFO [rg1-rn1] JE: Started ServiceDispatcher. HostPort=localhost:5011
+2015-12-16 23:18:24.027 UTC INFO [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-16 23:18:24.082 UTC INFO [rg1-rn1] JE: Current group size: 0
+2015-12-16 23:18:24.082 UTC INFO [rg1-rn1] JE: New node rg1-rn1(-1) unknown to rep group
+2015-12-16 23:18:24.083 UTC INFO [rg1-rn1] JE: Master changed to rg1-rn1
+2015-12-16 23:18:24.083 UTC INFO [rg1-rn1] JE: Nascent group. rg1-rn1 is master by virtue of being the first node.
+2015-12-16 23:18:24.124 UTC INFO [rg1-rn1] JE: Successfully added node:rg1-rn1(1) HostPort = localhost: 5011 [ELECTABLE]
+2015-12-16 23:18:24.127 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-16 23:18:24.130 UTC INFO [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2015-12-16 23:18:24.130 UTC INFO [rg1-rn1] JE: Node rg1-rn1 started
+2015-12-16 23:18:24.131 UTC INFO [rg1-rn1] JE: Feeder manager accepting requests.
+2015-12-16 23:18:24.133 UTC INFO [rg1-rn1] JE: Joining group as master
+2015-12-16 23:18:24.133 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-16 23:18:24.134 UTC INFO [rg1-rn1] Opened JE environment: 6.4.11 JVM max heap: 14,474,412,032 JE properties: allowCreate=true
+cacheSize=10222022164
+txnNoSync=false
+txnWriteNoSync=false
+{je.lock.timeout=10 s, je.cleaner.readSize=1048576, je.log.faultReadSize=4096, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.log.fileMax=1073741824, je.rep.feederTimeout=10 s, je.rep.nodeName=rg1-rn1, je.nodeMaxEntries=128, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.rep.electableGroupSizeOverride=0, je.env.runEvictor=true, je.log.iteratorReadSize=1048576, je.txn.durability=WRITE_NO_SYNC,WRITE_NO_SYNC,SIMPLE_MAJORITY, je.maxOffHeapMemory=0, je.checkpointer.bytesInterval=500000000, je.log.numBuffers=16, je.rep.nodeHostPort=localhost:5011, je.rep.vlsn.distance=1000000, je.rep.txnRollbackLimit=10, je.rep.replayMaxOpenDbHandles=100, je.rep.ignoreSecondaryNodeId=true, je.maxMemory=10222022164, je.cleaner.minUtilization=40, je.env.isTransactional=true, je.log.fileCacheSize=2000, je.rep.helperHosts=localhost:5011, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.vlsn.logCacheSize=128, je.rep.replicaTimeout=10 s, je.lock.nLockTables=97, je.rep.nodeType=ELECTABLE, je.rep.envUnknownStateTimeout=10 s, je.rep.preserveRecordVersion=true, je.rep.groupName=rg1, je.rep.replicaAckTimeout=5 s, je.cleaner.threads=2}
+
+2015-12-16 23:18:24.195 UTC INFO [rg1-rn1] Local Environment version updated to: 12cR1.3.4.7 2015-10-01 04:48:39 UTC  Build id: 44f8b0e7d93a Previous version:  none
+2015-12-16 23:18:24.197 UTC INFO [rg1-rn1] State change event: Wed Dec 16 17:18:24 CST 2015, State: MASTER, Type: ELECTABLE, Master: rg1-rn1
+2015-12-16 23:18:24.198 UTC INFO [rg1-rn1] MigrationStateTracker queue added:MASTER
+2015-12-16 23:18:24.198 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:MASTER
+2015-12-16 23:18:24.198 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:MASTER
+2015-12-16 23:18:24.198 UTC INFO [rg1-rn1] Replicated environment handle established. Cache size: 10222022164, State: MASTER
+2015-12-16 23:18:24.199 UTC INFO [rg1-rn1] Environment does not contain topology store.
+2015-12-16 23:18:24.200 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread start: rg1-rn1
+2015-12-16 23:18:24.200 UTC INFO [rg1-rn1] MigrationStateTracker thread start: null
+2015-12-16 23:18:24.200 UTC INFO [rg1-rn1] Migration manager change state to MASTER.
+2015-12-16 23:18:24.201 UTC INFO [rg1-rn1] Topology needs to be pushed to this node.
+2015-12-16 23:18:24.202 UTC INFO [rg1-rn1] TableManagerStateTracker thread start: rg1-rn1
+2015-12-16 23:18:24.202 UTC INFO [rg1-rn1] Table manager change state to MASTER
+2015-12-16 23:18:24.208 UTC INFO [rg1-rn1] Migration service accepting requests.
+2015-12-16 23:18:24.220 UTC INFO [rg1-rn1] No RN Login configured. 
+2015-12-16 23:18:24.220 UTC INFO [rg1-rn1] Service status changed from STARTING to RUNNING
+2015-12-16 23:18:24.220 UTC INFO [rg1-rn1] Started RepNodeService
+2015-12-16 23:18:25.046 UTC INFO [rg1-rn1] Topology updated from seq#: 0 to 4
+2015-12-16 23:18:25.051 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for SecurityMetadata
+2015-12-16 23:18:25.051 UTC INFO [rg1-rn1] Open SecurityMetadata DB
+2015-12-16 23:18:25.052 UTC INFO [rg1-rn1] Established 0 partition database handles, topology seq#: 4
+2015-12-16 23:18:25.053 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-16 23:18:25.053 UTC INFO [rg1-rn1] Open TableMetadata DB
+2015-12-16 23:18:25.059 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[0, 0, 0]
+2015-12-16 23:18:25.060 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-16 23:18:25.303 UTC INFO [rg1-rn1] Topology stored seq#: 4
+2015-12-16 23:18:25.392 UTC INFO [rg1-rn1] newParameters are identical to old parameters
+2015-12-16 23:18:25.486 UTC INFO [rg1-rn1] Topology incrementally updated from seq#: 4 to 14
+2015-12-16 23:18:25.500 UTC INFO [rg1-rn1] Established 10 partition database handles, topology seq#: 14
+2015-12-16 23:18:25.501 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[0, 0, 0]
+2015-12-16 23:18:25.501 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-16 23:18:25.553 UTC INFO [rg1-rn1] Topology stored seq#: 14
+2015-12-16 23:18:27.317 UTC INFO [rg1-rn1] Updating table metadata with TableMetadata[1, 1, 1]
+2015-12-16 23:18:27.328 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-16 23:18:27.328 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 1
+2015-12-16 23:18:27.331 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[1, 1, 1]
+2015-12-16 23:18:27.334 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-16 23:18:29.434 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[2, 1]
+2015-12-16 23:18:29.441 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-16 23:18:29.441 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 2
+2015-12-16 23:18:29.444 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[2, 2, 2]
+2015-12-16 23:18:29.445 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-16 23:18:34.012 UTC INFO [rg1-rn1] RepNodeAdmin shutdown(false)
+2015-12-16 23:18:34.012 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2015-12-16 23:18:34.016 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] shutdown
+2015-12-16 23:18:34.017 UTC INFO [rg1-rn1] Dispatcher shutdown
+2015-12-16 23:18:34.034 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2015-12-16 23:18:34.034 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] shutdown
+2015-12-16 23:18:34.035 UTC INFO [rg1-rn1] Shutting down RepNode
+2015-12-16 23:18:34.035 UTC INFO [rg1-rn1] Shutting down migration manager.
+2015-12-16 23:18:34.060 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2015-12-16 23:18:34.060 UTC INFO [rg1-rn1] MigrationStateTracker queue added:DETACHED
+2015-12-16 23:18:34.060 UTC INFO [rg1-rn1] MigrationStateTracker thread exited: null
+2015-12-16 23:18:34.061 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2015-12-16 23:18:34.061 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:DETACHED
+2015-12-16 23:18:34.061 UTC INFO [rg1-rn1] Table manager change state to DETACHED
+2015-12-16 23:18:34.061 UTC INFO [rg1-rn1] TableManagerStateTracker thread exited: rg1-rn1
+2015-12-16 23:18:34.061 UTC INFO [rg1-rn1] Closing secondary database handles
+2015-12-16 23:18:34.062 UTC INFO [rg1-rn1] Closing TableMetadata db
+2015-12-16 23:18:34.062 UTC INFO [rg1-rn1] Closing partition database handles
+2015-12-16 23:18:34.062 UTC INFO [rg1-rn1] Closing SecurityMetadata db
+2015-12-16 23:18:34.078 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1)
+2015-12-16 23:18:34.079 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-16 23:18:34.080 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2015-12-16 23:18:34.080 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-16 23:18:34.109 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-16 23:18:34.109 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2015-12-16 23:18:34.109 UTC INFO [rg1-rn1] JE: Feeder manager soft shutdown.
+2015-12-16 23:18:34.109 UTC INFO [rg1-rn1] JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-16 23:18:34.110 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 41
+2015-12-16 23:18:34.110 UTC INFO [rg1-rn1] State change event: Wed Dec 16 17:18:34 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-16 23:18:34.110 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2015-12-16 23:18:34.111 UTC INFO [rg1-rn1] State change event: Wed Dec 16 17:18:34 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-16 23:18:34.112 UTC INFO [rg1-rn1] JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-16 23:18:34.112 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-16 23:18:34.113 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-16 23:18:34.113 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-16 23:18:34.114 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-16 23:18:34.114 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2015-12-16 23:18:34.162 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2015-12-16 23:18:34.163 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:DETACHED
+2015-12-16 23:18:34.164 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread exited: rg1-rn1
+2015-12-16 23:18:34.164 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2015-12-16 23:18:34.164 UTC INFO [rg1-rn1] MonitorAgent stopping, 60 items remain.
+2015-12-16 23:18:34.165 UTC INFO [rg1-rn1] Saving untransmitted monitor info at shutdown.
+2015-12-16 23:18:34.165 UTC INFO [rg1-rn1] newParameters are identical to old parameters
+2015-12-16 23:18:34.165 UTC INFO [rg1-rn1] Topology incrementally updated from seq#: {0} to {1}
+2015-12-16 23:18:34.165 UTC INFO [rg1-rn1] Established {0} partition database handles, topology seq#: {1}
+2015-12-16 23:18:34.166 UTC INFO [rg1-rn1] Found {0} indexes and {1} tables marked for deletion in {2}
+2015-12-16 23:18:34.166 UTC INFO [rg1-rn1] Established {0} secondary database handles
+2015-12-16 23:18:34.166 UTC INFO [rg1-rn1] Topology stored seq#: 14
+2015-12-16 23:18:34.166 UTC INFO [rg1-rn1] Updating table metadata with {0}
+2015-12-16 23:18:34.166 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for {0}
+2015-12-16 23:18:34.166 UTC INFO [rg1-rn1] Metadata stored type: {0}, seq#: {1}
+2015-12-16 23:18:34.167 UTC INFO [rg1-rn1] Found {0} indexes and {1} tables marked for deletion in {2}
+2015-12-16 23:18:34.167 UTC INFO [rg1-rn1] Established {0} secondary database handles
+2015-12-16 23:18:34.167 UTC INFO [rg1-rn1] Updating table metadata with {0}
+2015-12-16 23:18:34.167 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for {0}
+2015-12-16 23:18:34.167 UTC INFO [rg1-rn1] Metadata stored type: {0}, seq#: {1}
+2015-12-16 23:18:34.167 UTC INFO [rg1-rn1] Found {0} indexes and {1} tables marked for deletion in {2}
+2015-12-16 23:18:34.167 UTC INFO [rg1-rn1] Established {0} secondary database handles
+2015-12-16 23:18:34.168 UTC INFO [rg1-rn1] RepNodeAdmin shutdown({0})
+2015-12-16 23:18:34.168 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2015-12-16 23:18:34.168 UTC INFO [rg1-rn1] Service status: STOPPING 2015-12-16 23:18:34 UTC
+2015-12-16 23:18:34.168 UTC INFO [rg1-rn1] {0} shutdown
+2015-12-16 23:18:34.168 UTC INFO [rg1-rn1] Dispatcher shutdown
+2015-12-16 23:18:34.177 UTC INFO [rg1-rn1] PutsCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeleteIfVersionIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeleteIfVersionCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutsIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesIntervalLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorCumulativeLatency (23:18:34.017 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+
+2015-12-16 23:18:34.177 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2015-12-16 23:18:34.177 UTC INFO [rg1-rn1] {0} shutdown
+2015-12-16 23:18:34.177 UTC INFO [rg1-rn1] Shutting down RepNode
+2015-12-16 23:18:34.178 UTC INFO [rg1-rn1] Shutting down migration manager.
+2015-12-16 23:18:34.178 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2015-12-16 23:18:34.178 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-16 23:18:34.178 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-16 23:18:34.178 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2015-12-16 23:18:34.178 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-16 23:18:34.179 UTC INFO [rg1-rn1] Table manager change state to {0}
+2015-12-16 23:18:34.179 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-16 23:18:34.179 UTC INFO [rg1-rn1] Closing secondary database handles
+2015-12-16 23:18:34.179 UTC INFO [rg1-rn1] Closing {0} db
+2015-12-16 23:18:34.179 UTC INFO [rg1-rn1] Closing partition database handles
+2015-12-16 23:18:34.179 UTC INFO [rg1-rn1] Closing {0} db
+2015-12-16 23:18:34.179 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1)
+2015-12-16 23:18:34.180 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-16 23:18:34.180 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2015-12-16 23:18:34.180 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-16 23:18:34.180 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-16 23:18:34.180 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2015-12-16 23:18:34.180 UTC INFO [rg1-rn1] JE: Feeder manager soft shutdown.
+2015-12-16 23:18:34.180 UTC INFO [rg1-rn1] JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-16 23:18:34.181 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 41
+2015-12-16 23:18:34.181 UTC INFO [rg1-rn1] State change event: Wed Dec 16 17:18:34 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-16 23:18:34.181 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2015-12-16 23:18:34.181 UTC INFO [rg1-rn1] State change event: Wed Dec 16 17:18:34 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-16 23:18:34.181 UTC INFO [rg1-rn1] JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-16 23:18:34.181 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-16 23:18:34.181 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-16 23:18:34.182 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-16 23:18:34.182 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-16 23:18:34.182 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2015-12-16 23:18:34.182 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2015-12-16 23:18:34.182 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-16 23:18:34.183 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-16 23:18:34.183 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2015-12-16 23:18:34.183 UTC INFO [rg1-rn1] Service status: STOPPED 2015-12-16 23:18:34 UTC
+2015-12-16 23:18:34.183 UTC INFO [rg1-rn1] MonitorAgent stopping, 60 items remain.
+2015-12-17 00:00:10.001 UTC INFO [rg1-rn1] Starting service process: rg1-rn1, Java command line arguments: [-Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4]
+2015-12-17 00:00:10.241 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] started
+2015-12-17 00:00:10.322 UTC INFO [rg1-rn1] NoSQL version:12cR1.3.4.7 2015-10-01 04:48:39 UTC  Build id: 44f8b0e7d93a JE version:6.4.11 Java version:1.8.0_51
+2015-12-17 00:00:10.325 UTC INFO [rg1-rn1] JVM Runtime maxMemory:14,474,412,032 bytes JE cache size:0 Max Offheap cache size:0 bytes
+2015-12-17 00:00:10.326 UTC INFO [rg1-rn1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 00:00:10.327 UTC INFO [rg1-rn1] DataChannelFactory: basic
+2015-12-17 00:00:10.368 UTC INFO [rg1-rn1] Table manager created
+2015-12-17 00:00:10.388 UTC INFO [rg1-rn1] Partition database cache mode: EVICT_LN
+2015-12-17 00:00:10.424 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] started
+2015-12-17 00:00:10.468 UTC INFO [rg1-rn1] Starting RepNodeService
+2015-12-17 00:00:10.471 UTC INFO [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=monitor backlog=0 port range=0,0> Client socket connect factory: <ClientSocketFactory name=WDB|rn|monitor id=988282999 connectMs=10000 readMs=10000>
+2015-12-17 00:00:10.698 UTC INFO [rg1-rn1] Starting MonitorAgent
+2015-12-17 00:00:10.774 UTC INFO [rg1-rn1] Successfully created secure proxy for the repnode admin
+2015-12-17 00:00:10.820 UTC INFO [rg1-rn1] RepNodeAdmin registered
+2015-12-17 00:00:11.168 UTC INFO [rg1-rn1] JE recovery: FIND_END_OF_LOG
+2015-12-17 00:00:11.262 UTC INFO [rg1-rn1] JE recovery: FIND_LAST_CKPT
+2015-12-17 00:00:11.275 UTC INFO [rg1-rn1] JE recovery: READ_DBMAP_INFO
+2015-12-17 00:00:11.294 UTC INFO [rg1-rn1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 00:00:11.298 UTC INFO [rg1-rn1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 00:00:11.314 UTC INFO [rg1-rn1] JE recovery: READ_DATA_INFO
+2015-12-17 00:00:11.334 UTC INFO [rg1-rn1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 00:00:11.337 UTC INFO [rg1-rn1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 00:00:11.351 UTC INFO [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 00:00:11.372 UTC INFO [rg1-rn1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 00:00:11.412 UTC INFO [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2015-12-17 00:00:11.478 UTC INFO [rg1-rn1] JE: Started ServiceDispatcher. HostPort=localhost:5011
+2015-12-17 00:00:11.479 UTC INFO [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 00:00:11.554 UTC INFO [rg1-rn1] JE: Current group size: 1
+2015-12-17 00:00:11.554 UTC INFO [rg1-rn1] JE: Existing node rg1-rn1 querying for a current master.
+2015-12-17 00:00:11.589 UTC INFO [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2015-12-17 00:00:11.590 UTC INFO [rg1-rn1] JE: Node rg1-rn1 started
+2015-12-17 00:00:11.591 UTC INFO [rg1-rn1] JE: Election initiated; election #1
+2015-12-17 00:00:11.596 UTC INFO [rg1-rn1] JE: Started election thread Wed Dec 16 18:00:11 CST 2015
+2015-12-17 00:00:13.607 UTC INFO [rg1-rn1] JE: Winning proposal: Proposal(00000151ad3cad1d:74d794212d8ca7e0d740aed5d58b75c7:00000001) Value: Value:localhost$$$5011$$$rg1-rn1$$$1
+2015-12-17 00:00:13.610 UTC INFO [rg1-rn1] JE: Master changed to rg1-rn1
+2015-12-17 00:00:13.610 UTC INFO [rg1-rn1] JE: Election finished. Elapsed time: 2019ms
+2015-12-17 00:00:13.611 UTC INFO [rg1-rn1] JE: Feeder manager accepting requests.
+2015-12-17 00:00:13.614 UTC INFO [rg1-rn1] JE: Election thread exited. Group master: rg1-rn1(1)
+2015-12-17 00:00:13.626 UTC INFO [rg1-rn1] JE: Joining group as master
+2015-12-17 00:00:13.628 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 00:00:13.630 UTC INFO [rg1-rn1] Opened JE environment: 6.4.11 JVM max heap: 14,474,412,032 JE properties: allowCreate=true
+cacheSize=10222022164
+txnNoSync=false
+txnWriteNoSync=false
+{je.lock.timeout=10 s, je.cleaner.readSize=1048576, je.log.faultReadSize=4096, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.log.fileMax=1073741824, je.rep.feederTimeout=10 s, je.rep.nodeName=rg1-rn1, je.nodeMaxEntries=128, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.rep.electableGroupSizeOverride=0, je.env.runEvictor=true, je.log.iteratorReadSize=1048576, je.txn.durability=WRITE_NO_SYNC,WRITE_NO_SYNC,SIMPLE_MAJORITY, je.maxOffHeapMemory=0, je.checkpointer.bytesInterval=500000000, je.log.numBuffers=16, je.rep.nodeHostPort=localhost:5011, je.rep.vlsn.distance=1000000, je.rep.txnRollbackLimit=10, je.rep.replayMaxOpenDbHandles=100, je.rep.ignoreSecondaryNodeId=true, je.maxMemory=10222022164, je.cleaner.minUtilization=40, je.env.isTransactional=true, je.log.fileCacheSize=2000, je.rep.helperHosts=localhost:5011, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.vlsn.logCacheSize=128, je.rep.replicaTimeout=10 s, je.lock.nLockTables=97, je.rep.nodeType=ELECTABLE, je.rep.envUnknownStateTimeout=10 s, je.rep.preserveRecordVersion=true, je.rep.groupName=rg1, je.rep.replicaAckTimeout=5 s, je.cleaner.threads=2}
+
+2015-12-17 00:00:13.647 UTC INFO [rg1-rn1] State change event: Wed Dec 16 18:00:13 CST 2015, State: MASTER, Type: ELECTABLE, Master: rg1-rn1
+2015-12-17 00:00:13.648 UTC INFO [rg1-rn1] MigrationStateTracker queue added:MASTER
+2015-12-17 00:00:13.648 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:MASTER
+2015-12-17 00:00:13.648 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:MASTER
+2015-12-17 00:00:13.648 UTC INFO [rg1-rn1] Replicated environment handle established. Cache size: 10222022164, State: MASTER
+2015-12-17 00:00:13.949 UTC INFO [rg1-rn1] Topology updated from seq#: 0 to 14
+2015-12-17 00:00:13.959 UTC INFO [rg1-rn1] Open SecurityMetadata DB
+2015-12-17 00:00:13.984 UTC INFO [rg1-rn1] Established 10 partition database handles, topology seq#: 14
+2015-12-17 00:00:13.996 UTC INFO [rg1-rn1] Open TableMetadata DB
+2015-12-17 00:00:14.550 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[2, 2, 2]
+2015-12-17 00:00:14.551 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:00:14.565 UTC INFO [rg1-rn1] Topology stored seq#: 14
+2015-12-17 00:00:14.567 UTC INFO [rg1-rn1] Topology fetched sequence#: 14, updated topology seq# 14
+2015-12-17 00:00:14.568 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread start: rg1-rn1
+2015-12-17 00:00:14.600 UTC INFO [rg1-rn1] MigrationStateTracker thread start: null
+2015-12-17 00:00:14.600 UTC INFO [rg1-rn1] Migration manager change state to MASTER.
+2015-12-17 00:00:14.607 UTC INFO [rg1-rn1] TableManagerStateTracker thread start: rg1-rn1
+2015-12-17 00:00:14.607 UTC INFO [rg1-rn1] Table manager change state to MASTER
+2015-12-17 00:00:14.625 UTC INFO [rg1-rn1] Migration service accepting requests.
+2015-12-17 00:00:14.690 UTC INFO [rg1-rn1] No RN Login configured. 
+2015-12-17 00:00:14.691 UTC INFO [rg1-rn1] Service status changed from STARTING to RUNNING
+2015-12-17 00:00:14.691 UTC INFO [rg1-rn1] Started RepNodeService
+2015-12-17 00:04:34.681 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[3, 1]
+2015-12-17 00:04:34.688 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:04:34.689 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 3
+2015-12-17 00:04:34.693 UTC INFO [rg1-rn1] Found 0 indexes and 1 tables marked for deletion in TableMetadata[3, 2, 3]
+2015-12-17 00:04:34.706 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:04:34.709 UTC INFO [rg1-rn1] Starting Thread[KV primary cleaner,5,RMI Runtime]
+2015-12-17 00:04:34.745 UTC INFO [rg1-rn1] Completed cleaning partition database(s) for all tables
+2015-12-17 00:04:44.776 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[4, 1]
+2015-12-17 00:04:44.778 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:04:44.778 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 4
+2015-12-17 00:04:44.780 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[4, 1, 4]
+2015-12-17 00:04:44.783 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:04:46.746 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[5, 1]
+2015-12-17 00:04:46.750 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:04:46.750 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 5
+2015-12-17 00:04:46.753 UTC INFO [rg1-rn1] Found 0 indexes and 1 tables marked for deletion in TableMetadata[5, 1, 5]
+2015-12-17 00:04:46.755 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:04:46.756 UTC INFO [rg1-rn1] Starting Thread[KV primary cleaner,5,RMI Runtime]
+2015-12-17 00:04:46.773 UTC INFO [rg1-rn1] Completed cleaning partition database(s) for all tables
+2015-12-17 00:04:56.810 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[6, 1]
+2015-12-17 00:04:56.814 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:04:56.814 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 6
+2015-12-17 00:04:56.817 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[6, 0, 6]
+2015-12-17 00:04:56.822 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:04:58.787 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[7, 1]
+2015-12-17 00:04:58.789 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:04:58.789 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 7
+2015-12-17 00:04:58.791 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[7, 1, 7]
+2015-12-17 00:04:58.791 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:05:00.807 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[8, 1]
+2015-12-17 00:05:00.809 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:05:00.809 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 8
+2015-12-17 00:05:00.811 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[8, 2, 8]
+2015-12-17 00:05:00.812 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:05:33.968 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[9, 1]
+2015-12-17 00:05:33.971 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:05:33.971 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 9
+2015-12-17 00:05:33.975 UTC INFO [rg1-rn1] Found 0 indexes and 1 tables marked for deletion in TableMetadata[9, 2, 9]
+2015-12-17 00:05:33.977 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:05:33.980 UTC INFO [rg1-rn1] Starting Thread[KV primary cleaner,5,RMI Runtime]
+2015-12-17 00:05:34.034 UTC INFO [rg1-rn1] Completed cleaning partition database(s) for all tables
+2015-12-17 00:05:44.057 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[10, 1]
+2015-12-17 00:05:44.059 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:05:44.060 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 10
+2015-12-17 00:05:44.061 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[10, 1, 10]
+2015-12-17 00:05:44.062 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:05:45.995 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[11, 1]
+2015-12-17 00:05:45.997 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:05:45.998 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 11
+2015-12-17 00:05:45.999 UTC INFO [rg1-rn1] Found 0 indexes and 1 tables marked for deletion in TableMetadata[11, 1, 11]
+2015-12-17 00:05:46.001 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:05:46.003 UTC INFO [rg1-rn1] Starting Thread[KV primary cleaner,5,RMI Runtime]
+2015-12-17 00:05:46.020 UTC INFO [rg1-rn1] Completed cleaning partition database(s) for all tables
+2015-12-17 00:05:46.057 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[12, 1]
+2015-12-17 00:05:46.059 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:05:46.059 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 12
+2015-12-17 00:05:46.060 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[12, 0, 12]
+2015-12-17 00:05:46.062 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:05:48.025 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[13, 1]
+2015-12-17 00:05:48.029 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:05:48.029 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 13
+2015-12-17 00:05:48.030 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[13, 1, 13]
+2015-12-17 00:05:48.031 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:05:50.046 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[14, 1]
+2015-12-17 00:05:50.048 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:05:50.048 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 14
+2015-12-17 00:05:50.049 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[14, 2, 14]
+2015-12-17 00:05:50.050 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:07:17.812 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[15, 1]
+2015-12-17 00:07:17.827 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:07:17.828 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 15
+2015-12-17 00:07:17.829 UTC INFO [rg1-rn1] Found 0 indexes and 1 tables marked for deletion in TableMetadata[15, 2, 15]
+2015-12-17 00:07:17.831 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:07:17.833 UTC INFO [rg1-rn1] Starting Thread[KV primary cleaner,5,RMI Runtime]
+2015-12-17 00:07:17.842 UTC INFO [rg1-rn1] Completed cleaning partition database(s) for all tables
+2015-12-17 00:07:17.891 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[16, 1]
+2015-12-17 00:07:17.893 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:07:17.893 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 16
+2015-12-17 00:07:17.895 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[16, 1, 16]
+2015-12-17 00:07:17.897 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:07:19.825 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[17, 1]
+2015-12-17 00:07:19.826 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:07:19.827 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 17
+2015-12-17 00:07:19.827 UTC INFO [rg1-rn1] Found 0 indexes and 1 tables marked for deletion in TableMetadata[17, 1, 17]
+2015-12-17 00:07:19.829 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:07:19.832 UTC INFO [rg1-rn1] Starting Thread[KV primary cleaner,5,RMI Runtime]
+2015-12-17 00:07:19.852 UTC INFO [rg1-rn1] Completed cleaning partition database(s) for all tables
+2015-12-17 00:07:19.876 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[18, 1]
+2015-12-17 00:07:19.878 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:07:19.878 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 18
+2015-12-17 00:07:19.882 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[18, 0, 18]
+2015-12-17 00:07:19.885 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:07:21.845 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[19, 1]
+2015-12-17 00:07:21.847 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:07:21.847 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 19
+2015-12-17 00:07:21.848 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[19, 1, 19]
+2015-12-17 00:07:21.849 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:07:23.868 UTC INFO [rg1-rn1] Updating table metadata with TableChangeList[20, 1]
+2015-12-17 00:07:23.870 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2015-12-17 00:07:23.870 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 20
+2015-12-17 00:07:23.871 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[20, 2, 20]
+2015-12-17 00:07:23.872 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:26:10.758 UTC INFO [rg1-rn1] RepNodeAdmin shutdown(false)
+2015-12-17 00:26:10.760 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2015-12-17 00:26:10.764 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] shutdown
+2015-12-17 00:26:10.764 UTC INFO [rg1-rn1] Dispatcher shutdown
+2015-12-17 00:26:10.768 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2015-12-17 00:26:10.769 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] shutdown
+2015-12-17 00:26:10.769 UTC INFO [rg1-rn1] Shutting down RepNode
+2015-12-17 00:26:10.769 UTC INFO [rg1-rn1] Shutting down migration manager.
+2015-12-17 00:26:10.771 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2015-12-17 00:26:10.771 UTC INFO [rg1-rn1] MigrationStateTracker queue added:DETACHED
+2015-12-17 00:26:10.772 UTC INFO [rg1-rn1] MigrationStateTracker thread exited: null
+2015-12-17 00:26:10.772 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2015-12-17 00:26:10.772 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:DETACHED
+2015-12-17 00:26:10.772 UTC INFO [rg1-rn1] Table manager change state to DETACHED
+2015-12-17 00:26:10.772 UTC INFO [rg1-rn1] TableManagerStateTracker thread exited: rg1-rn1
+2015-12-17 00:26:10.772 UTC INFO [rg1-rn1] Closing secondary database handles
+2015-12-17 00:26:10.772 UTC INFO [rg1-rn1] Closing TableMetadata db
+2015-12-17 00:26:10.773 UTC INFO [rg1-rn1] Closing partition database handles
+2015-12-17 00:26:10.775 UTC INFO [rg1-rn1] Closing SecurityMetadata db
+2015-12-17 00:26:10.777 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1)
+2015-12-17 00:26:10.779 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 00:26:10.779 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2015-12-17 00:26:10.779 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 00:26:10.780 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 00:26:10.780 UTC INFO [rg1-rn1] JE: ElectionThread_rg1-rn1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store/rg1-rn1/env soft shutdown initiated.
+2015-12-17 00:26:10.780 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2015-12-17 00:26:10.780 UTC INFO [rg1-rn1] JE: Feeder manager soft shutdown.
+2015-12-17 00:26:10.780 UTC INFO [rg1-rn1] JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-17 00:26:10.781 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 1,962
+2015-12-17 00:26:10.781 UTC INFO [rg1-rn1] State change event: Wed Dec 16 18:26:10 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-17 00:26:10.781 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2015-12-17 00:26:10.783 UTC INFO [rg1-rn1] State change event: Wed Dec 16 18:26:10 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-17 00:26:10.783 UTC INFO [rg1-rn1] JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-17 00:26:10.783 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-17 00:26:10.784 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-17 00:26:10.784 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-17 00:26:10.785 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-17 00:26:10.786 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2015-12-17 00:26:11.082 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2015-12-17 00:26:11.082 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:DETACHED
+2015-12-17 00:26:11.084 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread exited: rg1-rn1
+2015-12-17 00:26:11.085 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2015-12-17 00:26:11.085 UTC INFO [rg1-rn1] MonitorAgent stopping, 46 items remain.
+2015-12-17 00:26:11.086 UTC INFO [rg1-rn1] Saving untransmitted monitor info at shutdown.
+2015-12-17 00:26:11.088 UTC INFO [rg1-rn1] PutsCumulativeLatency (00:26:00.349 UTC) perSec=1 totalOps=846 totalReq=846 min=0 max=9 avg=0.4776428 95th=1 99th=2
+PutIfAbsentCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsCumulativeLatency (00:26:00.349 UTC) perSec=1 totalOps=2145 totalReq=2145 min=0 max=34 avg=0.25394535 95th=0 99th=1
+MultiGetKeysCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeleteIfVersionIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsCumulativeLatency (00:26:00.349 UTC) perSec=1 totalOps=2991 totalReq=2991 min=0 max=34 avg=0.32109421 95th=1 99th=2
+DeleteIfVersionCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutsIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesIntervalLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorCumulativeLatency (00:26:00.349 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+
+2015-12-17 00:26:11.088 UTC INFO [rg1-rn1] RepNodeAdmin shutdown({0})
+2015-12-17 00:26:11.089 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2015-12-17 00:26:11.090 UTC INFO [rg1-rn1] Service status: STOPPING 2015-12-17 00:26:10 UTC
+2015-12-17 00:26:11.090 UTC INFO [rg1-rn1] {0} shutdown
+2015-12-17 00:26:11.090 UTC INFO [rg1-rn1] Dispatcher shutdown
+2015-12-17 00:26:11.092 UTC INFO [rg1-rn1] PutsCumulativeLatency (00:26:10.764 UTC) perSec=1 totalOps=846 totalReq=846 min=0 max=9 avg=0.4776428 95th=1 99th=2
+PutIfAbsentCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsCumulativeLatency (00:26:10.764 UTC) perSec=1 totalOps=2145 totalReq=2145 min=0 max=34 avg=0.25394535 95th=0 99th=1
+MultiGetKeysCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeleteIfVersionIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsCumulativeLatency (00:26:10.764 UTC) perSec=1 totalOps=2991 totalReq=2991 min=0 max=34 avg=0.32109421 95th=1 99th=2
+DeleteIfVersionCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutsIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesIntervalLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorCumulativeLatency (00:26:10.764 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+
+2015-12-17 00:26:11.093 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2015-12-17 00:26:11.093 UTC INFO [rg1-rn1] {0} shutdown
+2015-12-17 00:26:11.093 UTC INFO [rg1-rn1] Shutting down RepNode
+2015-12-17 00:26:11.093 UTC INFO [rg1-rn1] Shutting down migration manager.
+2015-12-17 00:26:11.093 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2015-12-17 00:26:11.093 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-17 00:26:11.093 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-17 00:26:11.094 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2015-12-17 00:26:11.094 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-17 00:26:11.094 UTC INFO [rg1-rn1] Table manager change state to {0}
+2015-12-17 00:26:11.094 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-17 00:26:11.094 UTC INFO [rg1-rn1] Closing secondary database handles
+2015-12-17 00:26:11.101 UTC INFO [rg1-rn1] Closing {0} db
+2015-12-17 00:26:11.102 UTC INFO [rg1-rn1] Closing partition database handles
+2015-12-17 00:26:11.102 UTC INFO [rg1-rn1] Closing {0} db
+2015-12-17 00:26:11.107 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1)
+2015-12-17 00:26:11.107 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 00:26:11.108 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2015-12-17 00:26:11.108 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 00:26:11.108 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 00:26:11.108 UTC INFO [rg1-rn1] JE: ElectionThread_rg1-rn1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store/rg1-rn1/env soft shutdown initiated.
+2015-12-17 00:26:11.108 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2015-12-17 00:26:11.108 UTC INFO [rg1-rn1] JE: Feeder manager soft shutdown.
+2015-12-17 00:26:11.108 UTC INFO [rg1-rn1] JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-17 00:26:11.108 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 1,962
+2015-12-17 00:26:11.109 UTC INFO [rg1-rn1] State change event: Wed Dec 16 18:26:10 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-17 00:26:11.109 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2015-12-17 00:26:11.109 UTC INFO [rg1-rn1] State change event: Wed Dec 16 18:26:10 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-17 00:26:11.109 UTC INFO [rg1-rn1] JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-17 00:26:11.109 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-17 00:26:11.109 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-17 00:26:11.109 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-17 00:26:11.110 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-17 00:26:11.110 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2015-12-17 00:26:11.110 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2015-12-17 00:26:11.110 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-17 00:26:11.110 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-17 00:26:11.110 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2015-12-17 00:26:11.110 UTC INFO [rg1-rn1] Service status: STOPPED 2015-12-17 00:26:11 UTC
+2015-12-17 00:26:11.110 UTC INFO [rg1-rn1] MonitorAgent stopping, 46 items remain.
+2015-12-17 00:26:44.035 UTC INFO [rg1-rn1] Starting service process: rg1-rn1, Java command line arguments: [-Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4]
+2015-12-17 00:26:44.241 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] started
+2015-12-17 00:26:44.361 UTC INFO [rg1-rn1] NoSQL version:12cR1.3.4.7 2015-10-01 04:48:39 UTC  Build id: 44f8b0e7d93a JE version:6.4.11 Java version:1.8.0_51
+2015-12-17 00:26:44.365 UTC INFO [rg1-rn1] JVM Runtime maxMemory:14,474,412,032 bytes JE cache size:0 Max Offheap cache size:0 bytes
+2015-12-17 00:26:44.366 UTC INFO [rg1-rn1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 00:26:44.368 UTC INFO [rg1-rn1] DataChannelFactory: basic
+2015-12-17 00:26:44.414 UTC INFO [rg1-rn1] Table manager created
+2015-12-17 00:26:44.439 UTC INFO [rg1-rn1] Partition database cache mode: EVICT_LN
+2015-12-17 00:26:44.465 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] started
+2015-12-17 00:26:44.524 UTC INFO [rg1-rn1] Starting RepNodeService
+2015-12-17 00:26:44.526 UTC INFO [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=monitor backlog=0 port range=0,0> Client socket connect factory: <ClientSocketFactory name=WDB|rn|monitor id=-244904864 connectMs=10000 readMs=10000>
+2015-12-17 00:26:44.756 UTC INFO [rg1-rn1] Starting MonitorAgent
+2015-12-17 00:26:44.825 UTC INFO [rg1-rn1] Successfully created secure proxy for the repnode admin
+2015-12-17 00:26:44.869 UTC INFO [rg1-rn1] RepNodeAdmin registered
+2015-12-17 00:26:45.299 UTC INFO [rg1-rn1] JE recovery: FIND_END_OF_LOG
+2015-12-17 00:26:45.381 UTC INFO [rg1-rn1] JE recovery: FIND_LAST_CKPT
+2015-12-17 00:26:45.388 UTC INFO [rg1-rn1] JE recovery: READ_DBMAP_INFO
+2015-12-17 00:26:45.410 UTC INFO [rg1-rn1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 00:26:45.414 UTC INFO [rg1-rn1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 00:26:45.430 UTC INFO [rg1-rn1] JE recovery: READ_DATA_INFO
+2015-12-17 00:26:45.456 UTC INFO [rg1-rn1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 00:26:45.459 UTC INFO [rg1-rn1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 00:26:45.464 UTC INFO [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 00:26:45.478 UTC INFO [rg1-rn1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 00:26:45.503 UTC INFO [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2015-12-17 00:26:45.553 UTC INFO [rg1-rn1] JE: Started ServiceDispatcher. HostPort=localhost:5011
+2015-12-17 00:26:45.553 UTC INFO [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 00:26:45.618 UTC INFO [rg1-rn1] JE: Current group size: 1
+2015-12-17 00:26:45.618 UTC INFO [rg1-rn1] JE: Existing node rg1-rn1 querying for a current master.
+2015-12-17 00:26:45.654 UTC INFO [rg1-rn1] JE: Node rg1-rn1 started
+2015-12-17 00:26:45.654 UTC INFO [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2015-12-17 00:26:45.654 UTC INFO [rg1-rn1] JE: Election initiated; election #1
+2015-12-17 00:26:45.658 UTC INFO [rg1-rn1] JE: Started election thread Wed Dec 16 18:26:45 CST 2015
+2015-12-17 00:26:47.667 UTC INFO [rg1-rn1] JE: Winning proposal: Proposal(00000151ad54ffeb:9e7e289e69c893b2d35f08c12337b708:00000001) Value: Value:localhost$$$5011$$$rg1-rn1$$$1
+2015-12-17 00:26:47.669 UTC INFO [rg1-rn1] JE: Master changed to rg1-rn1
+2015-12-17 00:26:47.669 UTC INFO [rg1-rn1] JE: Election finished. Elapsed time: 2015ms
+2015-12-17 00:26:47.670 UTC INFO [rg1-rn1] JE: Election thread exited. Group master: rg1-rn1(1)
+2015-12-17 00:26:47.670 UTC INFO [rg1-rn1] JE: Feeder manager accepting requests.
+2015-12-17 00:26:47.685 UTC INFO [rg1-rn1] JE: Joining group as master
+2015-12-17 00:26:47.687 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 00:26:47.687 UTC INFO [rg1-rn1] Opened JE environment: 6.4.11 JVM max heap: 14,474,412,032 JE properties: allowCreate=true
+cacheSize=10222022164
+txnNoSync=false
+txnWriteNoSync=false
+{je.lock.timeout=10 s, je.cleaner.readSize=1048576, je.log.faultReadSize=4096, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.log.fileMax=1073741824, je.rep.feederTimeout=10 s, je.rep.nodeName=rg1-rn1, je.nodeMaxEntries=128, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.rep.electableGroupSizeOverride=0, je.env.runEvictor=true, je.log.iteratorReadSize=1048576, je.txn.durability=WRITE_NO_SYNC,WRITE_NO_SYNC,SIMPLE_MAJORITY, je.maxOffHeapMemory=0, je.checkpointer.bytesInterval=500000000, je.log.numBuffers=16, je.rep.nodeHostPort=localhost:5011, je.rep.vlsn.distance=1000000, je.rep.txnRollbackLimit=10, je.rep.replayMaxOpenDbHandles=100, je.rep.ignoreSecondaryNodeId=true, je.maxMemory=10222022164, je.cleaner.minUtilization=40, je.env.isTransactional=true, je.log.fileCacheSize=2000, je.rep.helperHosts=localhost:5011, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.vlsn.logCacheSize=128, je.rep.replicaTimeout=10 s, je.lock.nLockTables=97, je.rep.nodeType=ELECTABLE, je.rep.envUnknownStateTimeout=10 s, je.rep.preserveRecordVersion=true, je.rep.groupName=rg1, je.rep.replicaAckTimeout=5 s, je.cleaner.threads=2}
+
+2015-12-17 00:26:47.704 UTC INFO [rg1-rn1] State change event: Wed Dec 16 18:26:47 CST 2015, State: MASTER, Type: ELECTABLE, Master: rg1-rn1
+2015-12-17 00:26:47.706 UTC INFO [rg1-rn1] MigrationStateTracker queue added:MASTER
+2015-12-17 00:26:47.706 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:MASTER
+2015-12-17 00:26:47.706 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:MASTER
+2015-12-17 00:26:47.706 UTC INFO [rg1-rn1] Replicated environment handle established. Cache size: 10222022164, State: MASTER
+2015-12-17 00:26:48.060 UTC INFO [rg1-rn1] Topology updated from seq#: 0 to 14
+2015-12-17 00:26:48.067 UTC INFO [rg1-rn1] Open SecurityMetadata DB
+2015-12-17 00:26:48.079 UTC INFO [rg1-rn1] Open TableMetadata DB
+2015-12-17 00:26:48.079 UTC INFO [rg1-rn1] Established 10 partition database handles, topology seq#: 14
+2015-12-17 00:26:48.601 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[20, 2, 20]
+2015-12-17 00:26:48.610 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:26:48.651 UTC INFO [rg1-rn1] Topology stored seq#: 14
+2015-12-17 00:26:48.652 UTC INFO [rg1-rn1] Topology fetched sequence#: 14, updated topology seq# 14
+2015-12-17 00:26:48.667 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread start: rg1-rn1
+2015-12-17 00:26:48.682 UTC INFO [rg1-rn1] MigrationStateTracker thread start: null
+2015-12-17 00:26:48.682 UTC INFO [rg1-rn1] Migration manager change state to MASTER.
+2015-12-17 00:26:48.693 UTC INFO [rg1-rn1] TableManagerStateTracker thread start: rg1-rn1
+2015-12-17 00:26:48.693 UTC INFO [rg1-rn1] Table manager change state to MASTER
+2015-12-17 00:26:48.744 UTC INFO [rg1-rn1] Migration service accepting requests.
+2015-12-17 00:26:48.804 UTC INFO [rg1-rn1] No RN Login configured. 
+2015-12-17 00:26:48.804 UTC INFO [rg1-rn1] Service status changed from STARTING to RUNNING
+2015-12-17 00:26:48.804 UTC INFO [rg1-rn1] Started RepNodeService
+2015-12-17 00:35:23.664 UTC INFO [rg1-rn1] RepNodeAdmin shutdown(false)
+2015-12-17 00:35:23.664 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2015-12-17 00:35:23.667 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] shutdown
+2015-12-17 00:35:23.667 UTC INFO [rg1-rn1] Dispatcher shutdown
+2015-12-17 00:35:23.672 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2015-12-17 00:35:23.672 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] shutdown
+2015-12-17 00:35:23.672 UTC INFO [rg1-rn1] Shutting down RepNode
+2015-12-17 00:35:23.673 UTC INFO [rg1-rn1] Shutting down migration manager.
+2015-12-17 00:35:23.674 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2015-12-17 00:35:23.675 UTC INFO [rg1-rn1] MigrationStateTracker queue added:DETACHED
+2015-12-17 00:35:23.676 UTC INFO [rg1-rn1] MigrationStateTracker thread exited: null
+2015-12-17 00:35:23.677 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2015-12-17 00:35:23.677 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:DETACHED
+2015-12-17 00:35:23.678 UTC INFO [rg1-rn1] Table manager change state to DETACHED
+2015-12-17 00:35:23.678 UTC INFO [rg1-rn1] TableManagerStateTracker thread exited: rg1-rn1
+2015-12-17 00:35:23.678 UTC INFO [rg1-rn1] Closing secondary database handles
+2015-12-17 00:35:23.678 UTC INFO [rg1-rn1] Closing TableMetadata db
+2015-12-17 00:35:23.680 UTC INFO [rg1-rn1] Closing partition database handles
+2015-12-17 00:35:23.682 UTC INFO [rg1-rn1] Closing SecurityMetadata db
+2015-12-17 00:35:23.683 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1)
+2015-12-17 00:35:23.684 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 00:35:23.684 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2015-12-17 00:35:23.684 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 00:35:23.685 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 00:35:23.685 UTC INFO [rg1-rn1] JE: ElectionThread_rg1-rn1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store/rg1-rn1/env soft shutdown initiated.
+2015-12-17 00:35:23.685 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2015-12-17 00:35:23.686 UTC INFO [rg1-rn1] JE: Feeder manager soft shutdown.
+2015-12-17 00:35:23.686 UTC INFO [rg1-rn1] JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-17 00:35:23.686 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 1,964
+2015-12-17 00:35:23.686 UTC INFO [rg1-rn1] State change event: Wed Dec 16 18:35:23 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-17 00:35:23.686 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2015-12-17 00:35:23.687 UTC INFO [rg1-rn1] State change event: Wed Dec 16 18:35:23 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-17 00:35:23.688 UTC INFO [rg1-rn1] JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-17 00:35:23.688 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-17 00:35:23.688 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-17 00:35:23.689 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-17 00:35:23.690 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-17 00:35:23.690 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2015-12-17 00:35:23.733 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2015-12-17 00:35:23.733 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:DETACHED
+2015-12-17 00:35:23.735 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread exited: rg1-rn1
+2015-12-17 00:35:23.735 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2015-12-17 00:35:23.735 UTC INFO [rg1-rn1] MonitorAgent stopping, 45 items remain.
+2015-12-17 00:35:23.736 UTC INFO [rg1-rn1] Saving untransmitted monitor info at shutdown.
+2015-12-17 00:35:23.736 UTC INFO [rg1-rn1] RepNodeAdmin shutdown({0})
+2015-12-17 00:35:23.736 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2015-12-17 00:35:23.736 UTC INFO [rg1-rn1] Service status: STOPPING 2015-12-17 00:35:23 UTC
+2015-12-17 00:35:23.737 UTC INFO [rg1-rn1] {0} shutdown
+2015-12-17 00:35:23.737 UTC INFO [rg1-rn1] Dispatcher shutdown
+2015-12-17 00:35:23.742 UTC INFO [rg1-rn1] PutsCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeleteIfVersionIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeleteIfVersionCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutsIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesIntervalLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorCumulativeLatency (00:35:23.667 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+
+2015-12-17 00:35:23.742 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2015-12-17 00:35:23.743 UTC INFO [rg1-rn1] {0} shutdown
+2015-12-17 00:35:23.743 UTC INFO [rg1-rn1] Shutting down RepNode
+2015-12-17 00:35:23.743 UTC INFO [rg1-rn1] Shutting down migration manager.
+2015-12-17 00:35:23.743 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2015-12-17 00:35:23.743 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-17 00:35:23.743 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-17 00:35:23.743 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2015-12-17 00:35:23.744 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-17 00:35:23.744 UTC INFO [rg1-rn1] Table manager change state to {0}
+2015-12-17 00:35:23.744 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-17 00:35:23.744 UTC INFO [rg1-rn1] Closing secondary database handles
+2015-12-17 00:35:23.744 UTC INFO [rg1-rn1] Closing {0} db
+2015-12-17 00:35:23.744 UTC INFO [rg1-rn1] Closing partition database handles
+2015-12-17 00:35:23.744 UTC INFO [rg1-rn1] Closing {0} db
+2015-12-17 00:35:23.745 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1)
+2015-12-17 00:35:23.745 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 00:35:23.745 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2015-12-17 00:35:23.745 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 00:35:23.745 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 00:35:23.745 UTC INFO [rg1-rn1] JE: ElectionThread_rg1-rn1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store/rg1-rn1/env soft shutdown initiated.
+2015-12-17 00:35:23.745 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2015-12-17 00:35:23.749 UTC INFO [rg1-rn1] JE: Feeder manager soft shutdown.
+2015-12-17 00:35:23.749 UTC INFO [rg1-rn1] JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-17 00:35:23.749 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 1,964
+2015-12-17 00:35:23.749 UTC INFO [rg1-rn1] State change event: Wed Dec 16 18:35:23 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-17 00:35:23.749 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2015-12-17 00:35:23.749 UTC INFO [rg1-rn1] State change event: Wed Dec 16 18:35:23 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-17 00:35:23.750 UTC INFO [rg1-rn1] JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-17 00:35:23.750 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-17 00:35:23.750 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-17 00:35:23.750 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-17 00:35:23.750 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-17 00:35:23.750 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2015-12-17 00:35:23.750 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2015-12-17 00:35:23.750 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-17 00:35:23.751 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-17 00:35:23.751 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2015-12-17 00:35:23.751 UTC INFO [rg1-rn1] Service status: STOPPED 2015-12-17 00:35:23 UTC
+2015-12-17 00:35:23.751 UTC INFO [rg1-rn1] MonitorAgent stopping, 45 items remain.
+2015-12-17 00:36:42.144 UTC INFO [rg1-rn1] Starting service process: rg1-rn1, Java command line arguments: [-Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4]
+2015-12-17 00:36:42.427 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] started
+2015-12-17 00:36:42.554 UTC INFO [rg1-rn1] NoSQL version:12cR1.3.4.7 2015-10-01 04:48:39 UTC  Build id: 44f8b0e7d93a JE version:6.4.11 Java version:1.8.0_51
+2015-12-17 00:36:42.557 UTC INFO [rg1-rn1] JVM Runtime maxMemory:14,474,412,032 bytes JE cache size:0 Max Offheap cache size:0 bytes
+2015-12-17 00:36:42.558 UTC INFO [rg1-rn1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 00:36:42.562 UTC INFO [rg1-rn1] DataChannelFactory: basic
+2015-12-17 00:36:42.595 UTC INFO [rg1-rn1] Table manager created
+2015-12-17 00:36:42.617 UTC INFO [rg1-rn1] Partition database cache mode: EVICT_LN
+2015-12-17 00:36:42.641 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] started
+2015-12-17 00:36:42.706 UTC INFO [rg1-rn1] Starting RepNodeService
+2015-12-17 00:36:42.708 UTC INFO [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=monitor backlog=0 port range=0,0> Client socket connect factory: <ClientSocketFactory name=WDB|rn|monitor id=472229512 connectMs=10000 readMs=10000>
+2015-12-17 00:36:42.935 UTC INFO [rg1-rn1] Starting MonitorAgent
+2015-12-17 00:36:42.982 UTC INFO [rg1-rn1] Successfully created secure proxy for the repnode admin
+2015-12-17 00:36:43.022 UTC INFO [rg1-rn1] RepNodeAdmin registered
+2015-12-17 00:36:43.457 UTC INFO [rg1-rn1] JE recovery: FIND_END_OF_LOG
+2015-12-17 00:36:43.522 UTC INFO [rg1-rn1] JE recovery: FIND_LAST_CKPT
+2015-12-17 00:36:43.529 UTC INFO [rg1-rn1] JE recovery: READ_DBMAP_INFO
+2015-12-17 00:36:43.546 UTC INFO [rg1-rn1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 00:36:43.549 UTC INFO [rg1-rn1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 00:36:43.555 UTC INFO [rg1-rn1] JE recovery: READ_DATA_INFO
+2015-12-17 00:36:43.573 UTC INFO [rg1-rn1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 00:36:43.576 UTC INFO [rg1-rn1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 00:36:43.581 UTC INFO [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 00:36:43.590 UTC INFO [rg1-rn1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 00:36:43.613 UTC INFO [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2015-12-17 00:36:43.645 UTC INFO [rg1-rn1] JE: Started ServiceDispatcher. HostPort=localhost:5011
+2015-12-17 00:36:43.645 UTC INFO [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 00:36:43.701 UTC INFO [rg1-rn1] JE: Current group size: 1
+2015-12-17 00:36:43.702 UTC INFO [rg1-rn1] JE: Existing node rg1-rn1 querying for a current master.
+2015-12-17 00:36:43.725 UTC INFO [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2015-12-17 00:36:43.725 UTC INFO [rg1-rn1] JE: Node rg1-rn1 started
+2015-12-17 00:36:43.726 UTC INFO [rg1-rn1] JE: Election initiated; election #1
+2015-12-17 00:36:43.729 UTC INFO [rg1-rn1] JE: Started election thread Wed Dec 16 18:36:43 CST 2015
+2015-12-17 00:36:45.746 UTC INFO [rg1-rn1] JE: Winning proposal: Proposal(00000151ad5e2022:ff28c4b9437098d405de06c1bfdf9eca:00000001) Value: Value:localhost$$$5011$$$rg1-rn1$$$1
+2015-12-17 00:36:45.750 UTC INFO [rg1-rn1] JE: Master changed to rg1-rn1
+2015-12-17 00:36:45.751 UTC INFO [rg1-rn1] JE: Election finished. Elapsed time: 2025ms
+2015-12-17 00:36:45.751 UTC INFO [rg1-rn1] JE: Election thread exited. Group master: rg1-rn1(1)
+2015-12-17 00:36:45.752 UTC INFO [rg1-rn1] JE: Feeder manager accepting requests.
+2015-12-17 00:36:45.768 UTC INFO [rg1-rn1] JE: Joining group as master
+2015-12-17 00:36:45.770 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 00:36:45.771 UTC INFO [rg1-rn1] Opened JE environment: 6.4.11 JVM max heap: 14,474,412,032 JE properties: allowCreate=true
+cacheSize=10222022164
+txnNoSync=false
+txnWriteNoSync=false
+{je.lock.timeout=10 s, je.cleaner.readSize=1048576, je.log.faultReadSize=4096, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.log.fileMax=1073741824, je.rep.feederTimeout=10 s, je.rep.nodeName=rg1-rn1, je.nodeMaxEntries=128, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.rep.electableGroupSizeOverride=0, je.env.runEvictor=true, je.log.iteratorReadSize=1048576, je.txn.durability=WRITE_NO_SYNC,WRITE_NO_SYNC,SIMPLE_MAJORITY, je.maxOffHeapMemory=0, je.checkpointer.bytesInterval=500000000, je.log.numBuffers=16, je.rep.nodeHostPort=localhost:5011, je.rep.vlsn.distance=1000000, je.rep.txnRollbackLimit=10, je.rep.replayMaxOpenDbHandles=100, je.rep.ignoreSecondaryNodeId=true, je.maxMemory=10222022164, je.cleaner.minUtilization=40, je.env.isTransactional=true, je.log.fileCacheSize=2000, je.rep.helperHosts=localhost:5011, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.vlsn.logCacheSize=128, je.rep.replicaTimeout=10 s, je.lock.nLockTables=97, je.rep.nodeType=ELECTABLE, je.rep.envUnknownStateTimeout=10 s, je.rep.preserveRecordVersion=true, je.rep.groupName=rg1, je.rep.replicaAckTimeout=5 s, je.cleaner.threads=2}
+
+2015-12-17 00:36:45.788 UTC INFO [rg1-rn1] State change event: Wed Dec 16 18:36:45 CST 2015, State: MASTER, Type: ELECTABLE, Master: rg1-rn1
+2015-12-17 00:36:45.788 UTC INFO [rg1-rn1] MigrationStateTracker queue added:MASTER
+2015-12-17 00:36:45.789 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:MASTER
+2015-12-17 00:36:45.789 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:MASTER
+2015-12-17 00:36:45.790 UTC INFO [rg1-rn1] Replicated environment handle established. Cache size: 10222022164, State: MASTER
+2015-12-17 00:36:46.037 UTC INFO [rg1-rn1] Topology updated from seq#: 0 to 14
+2015-12-17 00:36:46.042 UTC INFO [rg1-rn1] Open SecurityMetadata DB
+2015-12-17 00:36:46.059 UTC INFO [rg1-rn1] Established 10 partition database handles, topology seq#: 14
+2015-12-17 00:36:46.064 UTC INFO [rg1-rn1] Open TableMetadata DB
+2015-12-17 00:36:46.842 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[20, 2, 20]
+2015-12-17 00:36:46.852 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 00:36:46.867 UTC INFO [rg1-rn1] Topology stored seq#: 14
+2015-12-17 00:36:46.870 UTC INFO [rg1-rn1] Topology fetched sequence#: 14, updated topology seq# 14
+2015-12-17 00:36:46.871 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread start: rg1-rn1
+2015-12-17 00:36:46.903 UTC INFO [rg1-rn1] MigrationStateTracker thread start: null
+2015-12-17 00:36:46.904 UTC INFO [rg1-rn1] Migration manager change state to MASTER.
+2015-12-17 00:36:46.924 UTC INFO [rg1-rn1] TableManagerStateTracker thread start: rg1-rn1
+2015-12-17 00:36:46.924 UTC INFO [rg1-rn1] Table manager change state to MASTER
+2015-12-17 00:36:46.942 UTC INFO [rg1-rn1] Migration service accepting requests.
+2015-12-17 00:36:46.992 UTC INFO [rg1-rn1] No RN Login configured. 
+2015-12-17 00:36:46.993 UTC INFO [rg1-rn1] Service status changed from STARTING to RUNNING
+2015-12-17 00:36:46.993 UTC INFO [rg1-rn1] Started RepNodeService
+2015-12-17 03:28:11.328 UTC INFO [rg1-rn1] Starting service process: rg1-rn1, Java command line arguments: [-Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4]
+2015-12-17 03:28:11.592 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] started
+2015-12-17 03:28:11.694 UTC INFO [rg1-rn1] NoSQL version:12cR1.3.4.7 2015-10-01 04:48:39 UTC  Build id: 44f8b0e7d93a JE version:6.4.11 Java version:1.8.0_51
+2015-12-17 03:28:11.697 UTC INFO [rg1-rn1] JVM Runtime maxMemory:14,474,412,032 bytes JE cache size:0 Max Offheap cache size:0 bytes
+2015-12-17 03:28:11.698 UTC INFO [rg1-rn1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 03:28:11.699 UTC INFO [rg1-rn1] DataChannelFactory: basic
+2015-12-17 03:28:11.733 UTC INFO [rg1-rn1] Table manager created
+2015-12-17 03:28:11.778 UTC INFO [rg1-rn1] Partition database cache mode: EVICT_LN
+2015-12-17 03:28:11.809 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] started
+2015-12-17 03:28:11.849 UTC INFO [rg1-rn1] Starting RepNodeService
+2015-12-17 03:28:11.851 UTC INFO [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=monitor backlog=0 port range=0,0> Client socket connect factory: <ClientSocketFactory name=WDB|rn|monitor id=1703317327 connectMs=10000 readMs=10000>
+2015-12-17 03:28:12.074 UTC INFO [rg1-rn1] Starting MonitorAgent
+2015-12-17 03:28:12.125 UTC INFO [rg1-rn1] Successfully created secure proxy for the repnode admin
+2015-12-17 03:28:12.168 UTC INFO [rg1-rn1] RepNodeAdmin registered
+2015-12-17 03:28:12.581 UTC INFO [rg1-rn1] JE recovery: FIND_END_OF_LOG
+2015-12-17 03:28:12.664 UTC INFO [rg1-rn1] JE recovery: FIND_LAST_CKPT
+2015-12-17 03:28:12.681 UTC INFO [rg1-rn1] JE recovery: READ_DBMAP_INFO
+2015-12-17 03:28:12.711 UTC INFO [rg1-rn1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 03:28:12.715 UTC INFO [rg1-rn1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 03:28:12.724 UTC INFO [rg1-rn1] JE recovery: READ_DATA_INFO
+2015-12-17 03:28:12.742 UTC INFO [rg1-rn1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 03:28:12.745 UTC INFO [rg1-rn1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 03:28:12.757 UTC INFO [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 03:28:12.778 UTC INFO [rg1-rn1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 03:28:12.806 UTC INFO [rg1-rn1] JE recovery: CKPT
+2015-12-17 03:28:12.848 UTC INFO [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2015-12-17 03:28:12.882 UTC INFO [rg1-rn1] JE: Started ServiceDispatcher. HostPort=localhost:5011
+2015-12-17 03:28:12.883 UTC INFO [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 03:28:12.939 UTC INFO [rg1-rn1] JE: Current group size: 1
+2015-12-17 03:28:12.939 UTC INFO [rg1-rn1] JE: Existing node rg1-rn1 querying for a current master.
+2015-12-17 03:28:12.962 UTC INFO [rg1-rn1] JE: Node rg1-rn1 started
+2015-12-17 03:28:12.962 UTC INFO [rg1-rn1] JE: Election initiated; election #1
+2015-12-17 03:28:12.962 UTC INFO [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2015-12-17 03:28:12.965 UTC INFO [rg1-rn1] JE: Started election thread Wed Dec 16 21:28:12 CST 2015
+2015-12-17 03:28:14.977 UTC INFO [rg1-rn1] JE: Winning proposal: Proposal(00000151adfb2076:f7c0e34bd25c089dcf1a3d72d5077f87:00000001) Value: Value:localhost$$$5011$$$rg1-rn1$$$1
+2015-12-17 03:28:14.980 UTC INFO [rg1-rn1] JE: Master changed to rg1-rn1
+2015-12-17 03:28:14.981 UTC INFO [rg1-rn1] JE: Election finished. Elapsed time: 2018ms
+2015-12-17 03:28:14.981 UTC INFO [rg1-rn1] JE: Feeder manager accepting requests.
+2015-12-17 03:28:14.988 UTC INFO [rg1-rn1] JE: Election thread exited. Group master: rg1-rn1(1)
+2015-12-17 03:28:14.988 UTC INFO [rg1-rn1] JE: Joining group as master
+2015-12-17 03:28:14.990 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 03:28:14.991 UTC INFO [rg1-rn1] Opened JE environment: 6.4.11 JVM max heap: 14,474,412,032 JE properties: allowCreate=true
+cacheSize=10222022164
+txnNoSync=false
+txnWriteNoSync=false
+{je.lock.timeout=10 s, je.cleaner.readSize=1048576, je.log.faultReadSize=4096, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.log.fileMax=1073741824, je.rep.feederTimeout=10 s, je.rep.nodeName=rg1-rn1, je.nodeMaxEntries=128, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.rep.electableGroupSizeOverride=0, je.env.runEvictor=true, je.log.iteratorReadSize=1048576, je.txn.durability=WRITE_NO_SYNC,WRITE_NO_SYNC,SIMPLE_MAJORITY, je.maxOffHeapMemory=0, je.checkpointer.bytesInterval=500000000, je.log.numBuffers=16, je.rep.nodeHostPort=localhost:5011, je.rep.vlsn.distance=1000000, je.rep.txnRollbackLimit=10, je.rep.replayMaxOpenDbHandles=100, je.rep.ignoreSecondaryNodeId=true, je.maxMemory=10222022164, je.cleaner.minUtilization=40, je.env.isTransactional=true, je.log.fileCacheSize=2000, je.rep.helperHosts=localhost:5011, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.vlsn.logCacheSize=128, je.rep.replicaTimeout=10 s, je.lock.nLockTables=97, je.rep.nodeType=ELECTABLE, je.rep.envUnknownStateTimeout=10 s, je.rep.preserveRecordVersion=true, je.rep.groupName=rg1, je.rep.replicaAckTimeout=5 s, je.cleaner.threads=2}
+
+2015-12-17 03:28:15.009 UTC INFO [rg1-rn1] State change event: Wed Dec 16 21:28:14 CST 2015, State: MASTER, Type: ELECTABLE, Master: rg1-rn1
+2015-12-17 03:28:15.009 UTC INFO [rg1-rn1] MigrationStateTracker queue added:MASTER
+2015-12-17 03:28:15.009 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:MASTER
+2015-12-17 03:28:15.010 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:MASTER
+2015-12-17 03:28:15.010 UTC INFO [rg1-rn1] Replicated environment handle established. Cache size: 10222022164, State: MASTER
+2015-12-17 03:28:15.383 UTC INFO [rg1-rn1] Topology updated from seq#: 0 to 14
+2015-12-17 03:28:15.390 UTC INFO [rg1-rn1] Open SecurityMetadata DB
+2015-12-17 03:28:15.406 UTC INFO [rg1-rn1] Established 10 partition database handles, topology seq#: 14
+2015-12-17 03:28:15.424 UTC INFO [rg1-rn1] Open TableMetadata DB
+2015-12-17 03:28:16.014 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[20, 2, 20]
+2015-12-17 03:28:16.017 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 03:28:16.046 UTC INFO [rg1-rn1] Topology stored seq#: 14
+2015-12-17 03:28:16.048 UTC INFO [rg1-rn1] Topology fetched sequence#: 14, updated topology seq# 14
+2015-12-17 03:28:16.051 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread start: rg1-rn1
+2015-12-17 03:28:16.072 UTC INFO [rg1-rn1] MigrationStateTracker thread start: null
+2015-12-17 03:28:16.073 UTC INFO [rg1-rn1] Migration manager change state to MASTER.
+2015-12-17 03:28:16.073 UTC INFO [rg1-rn1] TableManagerStateTracker thread start: rg1-rn1
+2015-12-17 03:28:16.073 UTC INFO [rg1-rn1] Table manager change state to MASTER
+2015-12-17 03:28:16.093 UTC INFO [rg1-rn1] Migration service accepting requests.
+2015-12-17 03:28:16.117 UTC INFO [rg1-rn1] No RN Login configured. 
+2015-12-17 03:28:16.117 UTC INFO [rg1-rn1] Service status changed from STARTING to RUNNING
+2015-12-17 03:28:16.117 UTC INFO [rg1-rn1] Started RepNodeService
+2015-12-17 03:32:00.759 UTC INFO [rg1-rn1] RepNodeAdmin shutdown(false)
+2015-12-17 03:32:00.759 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2015-12-17 03:32:00.762 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] shutdown
+2015-12-17 03:32:00.763 UTC INFO [rg1-rn1] Dispatcher shutdown
+2015-12-17 03:32:00.769 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2015-12-17 03:32:00.770 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] shutdown
+2015-12-17 03:32:00.770 UTC INFO [rg1-rn1] Shutting down RepNode
+2015-12-17 03:32:00.770 UTC INFO [rg1-rn1] Shutting down migration manager.
+2015-12-17 03:32:00.772 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2015-12-17 03:32:00.772 UTC INFO [rg1-rn1] MigrationStateTracker queue added:DETACHED
+2015-12-17 03:32:00.772 UTC INFO [rg1-rn1] MigrationStateTracker thread exited: null
+2015-12-17 03:32:00.772 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2015-12-17 03:32:00.773 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:DETACHED
+2015-12-17 03:32:00.773 UTC INFO [rg1-rn1] Table manager change state to DETACHED
+2015-12-17 03:32:00.773 UTC INFO [rg1-rn1] TableManagerStateTracker thread exited: rg1-rn1
+2015-12-17 03:32:00.773 UTC INFO [rg1-rn1] Closing secondary database handles
+2015-12-17 03:32:00.773 UTC INFO [rg1-rn1] Closing TableMetadata db
+2015-12-17 03:32:00.774 UTC INFO [rg1-rn1] Closing partition database handles
+2015-12-17 03:32:00.776 UTC INFO [rg1-rn1] Closing SecurityMetadata db
+2015-12-17 03:32:00.777 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1)
+2015-12-17 03:32:00.778 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 03:32:00.778 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2015-12-17 03:32:00.779 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 03:32:00.780 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 03:32:00.781 UTC INFO [rg1-rn1] JE: ElectionThread_rg1-rn1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store/rg1-rn1/env soft shutdown initiated.
+2015-12-17 03:32:00.781 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2015-12-17 03:32:00.781 UTC INFO [rg1-rn1] JE: Feeder manager soft shutdown.
+2015-12-17 03:32:00.781 UTC INFO [rg1-rn1] JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-17 03:32:00.782 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 1,968
+2015-12-17 03:32:00.782 UTC INFO [rg1-rn1] State change event: Wed Dec 16 21:32:00 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-17 03:32:00.782 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2015-12-17 03:32:00.783 UTC INFO [rg1-rn1] State change event: Wed Dec 16 21:32:00 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-17 03:32:00.784 UTC INFO [rg1-rn1] JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-17 03:32:00.785 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-17 03:32:00.785 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-17 03:32:00.786 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-17 03:32:00.787 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-17 03:32:00.787 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2015-12-17 03:32:00.835 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2015-12-17 03:32:00.835 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:DETACHED
+2015-12-17 03:32:00.838 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread exited: rg1-rn1
+2015-12-17 03:32:00.839 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2015-12-17 03:32:00.839 UTC INFO [rg1-rn1] MonitorAgent stopping, 46 items remain.
+2015-12-17 03:32:00.842 UTC INFO [rg1-rn1] Saving untransmitted monitor info at shutdown.
+2015-12-17 03:32:00.843 UTC INFO [rg1-rn1] RepNodeAdmin shutdown({0})
+2015-12-17 03:32:00.843 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2015-12-17 03:32:00.844 UTC INFO [rg1-rn1] Service status: STOPPING 2015-12-17 03:32:00 UTC
+2015-12-17 03:32:00.844 UTC INFO [rg1-rn1] {0} shutdown
+2015-12-17 03:32:00.844 UTC INFO [rg1-rn1] Dispatcher shutdown
+2015-12-17 03:32:00.855 UTC INFO [rg1-rn1] PutsCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsCumulativeLatency (03:32:00.763 UTC) perSec=1 totalOps=39 totalReq=39 min=0 max=6 avg=0.91698045 95th=2 99th=2
+MultiGetKeysCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeleteIfVersionIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsCumulativeLatency (03:32:00.763 UTC) perSec=1 totalOps=39 totalReq=39 min=0 max=6 avg=0.9255999 95th=2 99th=2
+DeleteIfVersionCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutsIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesIntervalLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorCumulativeLatency (03:32:00.763 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+
+2015-12-17 03:32:00.855 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2015-12-17 03:32:00.856 UTC INFO [rg1-rn1] {0} shutdown
+2015-12-17 03:32:00.856 UTC INFO [rg1-rn1] Shutting down RepNode
+2015-12-17 03:32:00.856 UTC INFO [rg1-rn1] Shutting down migration manager.
+2015-12-17 03:32:00.856 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2015-12-17 03:32:00.856 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-17 03:32:00.856 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-17 03:32:00.856 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2015-12-17 03:32:00.856 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-17 03:32:00.857 UTC INFO [rg1-rn1] Table manager change state to {0}
+2015-12-17 03:32:00.857 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-17 03:32:00.857 UTC INFO [rg1-rn1] Closing secondary database handles
+2015-12-17 03:32:00.857 UTC INFO [rg1-rn1] Closing {0} db
+2015-12-17 03:32:00.857 UTC INFO [rg1-rn1] Closing partition database handles
+2015-12-17 03:32:00.857 UTC INFO [rg1-rn1] Closing {0} db
+2015-12-17 03:32:00.857 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1)
+2015-12-17 03:32:00.857 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 03:32:00.858 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2015-12-17 03:32:00.858 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 03:32:00.858 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 03:32:00.858 UTC INFO [rg1-rn1] JE: ElectionThread_rg1-rn1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store/rg1-rn1/env soft shutdown initiated.
+2015-12-17 03:32:00.858 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2015-12-17 03:32:00.858 UTC INFO [rg1-rn1] JE: Feeder manager soft shutdown.
+2015-12-17 03:32:00.858 UTC INFO [rg1-rn1] JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-17 03:32:00.858 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 1,968
+2015-12-17 03:32:00.859 UTC INFO [rg1-rn1] State change event: Wed Dec 16 21:32:00 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-17 03:32:00.859 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2015-12-17 03:32:00.859 UTC INFO [rg1-rn1] State change event: Wed Dec 16 21:32:00 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-17 03:32:00.859 UTC INFO [rg1-rn1] JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-17 03:32:00.859 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-17 03:32:00.859 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-17 03:32:00.859 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-17 03:32:00.859 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-17 03:32:00.860 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2015-12-17 03:32:00.860 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2015-12-17 03:32:00.866 UTC INFO [rg1-rn1] PutsCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsCumulativeLatency (03:32:00.780 UTC) perSec=1 totalOps=39 totalReq=39 min=0 max=6 avg=0.91698045 95th=2 99th=2
+MultiGetKeysCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeleteIfVersionIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsCumulativeLatency (03:32:00.780 UTC) perSec=1 totalOps=39 totalReq=39 min=0 max=6 avg=0.9255999 95th=2 99th=2
+DeleteIfVersionCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutsIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesIntervalLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorCumulativeLatency (03:32:00.780 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+
+2015-12-17 03:32:00.866 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-17 03:32:00.867 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-17 03:32:00.867 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2015-12-17 03:32:00.867 UTC INFO [rg1-rn1] Service status: STOPPED 2015-12-17 03:32:00 UTC
+2015-12-17 03:32:00.867 UTC INFO [rg1-rn1] MonitorAgent stopping, 46 items remain.
+2015-12-17 03:32:20.259 UTC INFO [rg1-rn1] Starting service process: rg1-rn1, Java command line arguments: [-Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4]
+2015-12-17 03:32:20.572 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] started
+2015-12-17 03:32:20.683 UTC INFO [rg1-rn1] NoSQL version:12cR1.3.4.7 2015-10-01 04:48:39 UTC  Build id: 44f8b0e7d93a JE version:6.4.11 Java version:1.8.0_51
+2015-12-17 03:32:20.686 UTC INFO [rg1-rn1] JVM Runtime maxMemory:14,474,412,032 bytes JE cache size:0 Max Offheap cache size:0 bytes
+2015-12-17 03:32:20.687 UTC INFO [rg1-rn1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 03:32:20.689 UTC INFO [rg1-rn1] DataChannelFactory: basic
+2015-12-17 03:32:20.785 UTC INFO [rg1-rn1] Table manager created
+2015-12-17 03:32:20.808 UTC INFO [rg1-rn1] Partition database cache mode: EVICT_LN
+2015-12-17 03:32:20.836 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] started
+2015-12-17 03:32:20.875 UTC INFO [rg1-rn1] Starting RepNodeService
+2015-12-17 03:32:20.878 UTC INFO [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=monitor backlog=0 port range=0,0> Client socket connect factory: <ClientSocketFactory name=WDB|rn|monitor id=1296764824 connectMs=10000 readMs=10000>
+2015-12-17 03:32:21.215 UTC INFO [rg1-rn1] Starting MonitorAgent
+2015-12-17 03:32:21.264 UTC INFO [rg1-rn1] Successfully created secure proxy for the repnode admin
+2015-12-17 03:32:21.332 UTC INFO [rg1-rn1] RepNodeAdmin registered
+2015-12-17 03:32:21.836 UTC INFO [rg1-rn1] JE recovery: FIND_END_OF_LOG
+2015-12-17 03:32:21.932 UTC INFO [rg1-rn1] JE recovery: FIND_LAST_CKPT
+2015-12-17 03:32:21.941 UTC INFO [rg1-rn1] JE recovery: READ_DBMAP_INFO
+2015-12-17 03:32:21.960 UTC INFO [rg1-rn1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 03:32:21.962 UTC INFO [rg1-rn1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 03:32:21.968 UTC INFO [rg1-rn1] JE recovery: READ_DATA_INFO
+2015-12-17 03:32:21.982 UTC INFO [rg1-rn1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 03:32:21.986 UTC INFO [rg1-rn1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 03:32:21.991 UTC INFO [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 03:32:21.999 UTC INFO [rg1-rn1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 03:32:22.022 UTC INFO [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2015-12-17 03:32:22.053 UTC INFO [rg1-rn1] JE: Started ServiceDispatcher. HostPort=localhost:5011
+2015-12-17 03:32:22.053 UTC INFO [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 03:32:22.123 UTC INFO [rg1-rn1] JE: Current group size: 1
+2015-12-17 03:32:22.123 UTC INFO [rg1-rn1] JE: Existing node rg1-rn1 querying for a current master.
+2015-12-17 03:32:22.155 UTC INFO [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2015-12-17 03:32:22.155 UTC INFO [rg1-rn1] JE: Node rg1-rn1 started
+2015-12-17 03:32:22.156 UTC INFO [rg1-rn1] JE: Election initiated; election #1
+2015-12-17 03:32:22.158 UTC INFO [rg1-rn1] JE: Started election thread Wed Dec 16 21:32:22 CST 2015
+2015-12-17 03:32:24.172 UTC INFO [rg1-rn1] JE: Winning proposal: Proposal(00000151adfeede0:06fbe9e078d1bc7b633b37395a465d40:00000001) Value: Value:localhost$$$5011$$$rg1-rn1$$$1
+2015-12-17 03:32:24.177 UTC INFO [rg1-rn1] JE: Master changed to rg1-rn1
+2015-12-17 03:32:24.178 UTC INFO [rg1-rn1] JE: Election finished. Elapsed time: 2023ms
+2015-12-17 03:32:24.179 UTC INFO [rg1-rn1] JE: Feeder manager accepting requests.
+2015-12-17 03:32:24.179 UTC INFO [rg1-rn1] JE: Election thread exited. Group master: rg1-rn1(1)
+2015-12-17 03:32:24.192 UTC INFO [rg1-rn1] JE: Joining group as master
+2015-12-17 03:32:24.194 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 03:32:24.194 UTC INFO [rg1-rn1] Opened JE environment: 6.4.11 JVM max heap: 14,474,412,032 JE properties: allowCreate=true
+cacheSize=10222022164
+txnNoSync=false
+txnWriteNoSync=false
+{je.lock.timeout=10 s, je.cleaner.readSize=1048576, je.log.faultReadSize=4096, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.log.fileMax=1073741824, je.rep.feederTimeout=10 s, je.rep.nodeName=rg1-rn1, je.nodeMaxEntries=128, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.rep.electableGroupSizeOverride=0, je.env.runEvictor=true, je.log.iteratorReadSize=1048576, je.txn.durability=WRITE_NO_SYNC,WRITE_NO_SYNC,SIMPLE_MAJORITY, je.maxOffHeapMemory=0, je.checkpointer.bytesInterval=500000000, je.log.numBuffers=16, je.rep.nodeHostPort=localhost:5011, je.rep.vlsn.distance=1000000, je.rep.txnRollbackLimit=10, je.rep.replayMaxOpenDbHandles=100, je.rep.ignoreSecondaryNodeId=true, je.maxMemory=10222022164, je.cleaner.minUtilization=40, je.env.isTransactional=true, je.log.fileCacheSize=2000, je.rep.helperHosts=localhost:5011, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.vlsn.logCacheSize=128, je.rep.replicaTimeout=10 s, je.lock.nLockTables=97, je.rep.nodeType=ELECTABLE, je.rep.envUnknownStateTimeout=10 s, je.rep.preserveRecordVersion=true, je.rep.groupName=rg1, je.rep.replicaAckTimeout=5 s, je.cleaner.threads=2}
+
+2015-12-17 03:32:24.213 UTC INFO [rg1-rn1] State change event: Wed Dec 16 21:32:24 CST 2015, State: MASTER, Type: ELECTABLE, Master: rg1-rn1
+2015-12-17 03:32:24.214 UTC INFO [rg1-rn1] MigrationStateTracker queue added:MASTER
+2015-12-17 03:32:24.214 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:MASTER
+2015-12-17 03:32:24.214 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:MASTER
+2015-12-17 03:32:24.215 UTC INFO [rg1-rn1] Replicated environment handle established. Cache size: 10222022164, State: MASTER
+2015-12-17 03:32:24.559 UTC INFO [rg1-rn1] Topology updated from seq#: 0 to 14
+2015-12-17 03:32:24.567 UTC INFO [rg1-rn1] Open SecurityMetadata DB
+2015-12-17 03:32:24.590 UTC INFO [rg1-rn1] Established 10 partition database handles, topology seq#: 14
+2015-12-17 03:32:24.596 UTC INFO [rg1-rn1] Open TableMetadata DB
+2015-12-17 03:32:25.154 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[20, 2, 20]
+2015-12-17 03:32:25.157 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 03:32:25.202 UTC INFO [rg1-rn1] Topology stored seq#: 14
+2015-12-17 03:32:25.203 UTC INFO [rg1-rn1] Topology fetched sequence#: 14, updated topology seq# 14
+2015-12-17 03:32:25.204 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread start: rg1-rn1
+2015-12-17 03:32:25.207 UTC INFO [rg1-rn1] MigrationStateTracker thread start: null
+2015-12-17 03:32:25.207 UTC INFO [rg1-rn1] Migration manager change state to MASTER.
+2015-12-17 03:32:25.210 UTC INFO [rg1-rn1] TableManagerStateTracker thread start: rg1-rn1
+2015-12-17 03:32:25.210 UTC INFO [rg1-rn1] Table manager change state to MASTER
+2015-12-17 03:32:25.246 UTC INFO [rg1-rn1] Migration service accepting requests.
+2015-12-17 03:32:25.273 UTC INFO [rg1-rn1] No RN Login configured. 
+2015-12-17 03:32:25.273 UTC INFO [rg1-rn1] Service status changed from STARTING to RUNNING
+2015-12-17 03:32:25.273 UTC INFO [rg1-rn1] Started RepNodeService
+2015-12-17 03:34:24.062 UTC INFO [rg1-rn1] RepNodeAdmin shutdown(false)
+2015-12-17 03:34:24.062 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2015-12-17 03:34:24.066 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] shutdown
+2015-12-17 03:34:24.067 UTC INFO [rg1-rn1] Dispatcher shutdown
+2015-12-17 03:34:24.086 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2015-12-17 03:34:24.087 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] shutdown
+2015-12-17 03:34:24.087 UTC INFO [rg1-rn1] Shutting down RepNode
+2015-12-17 03:34:24.087 UTC INFO [rg1-rn1] Shutting down migration manager.
+2015-12-17 03:34:24.089 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2015-12-17 03:34:24.089 UTC INFO [rg1-rn1] MigrationStateTracker queue added:DETACHED
+2015-12-17 03:34:24.090 UTC INFO [rg1-rn1] MigrationStateTracker thread exited: null
+2015-12-17 03:34:24.091 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2015-12-17 03:34:24.091 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:DETACHED
+2015-12-17 03:34:24.091 UTC INFO [rg1-rn1] Table manager change state to DETACHED
+2015-12-17 03:34:24.091 UTC INFO [rg1-rn1] TableManagerStateTracker thread exited: rg1-rn1
+2015-12-17 03:34:24.092 UTC INFO [rg1-rn1] Closing secondary database handles
+2015-12-17 03:34:24.092 UTC INFO [rg1-rn1] Closing TableMetadata db
+2015-12-17 03:34:24.093 UTC INFO [rg1-rn1] Closing partition database handles
+2015-12-17 03:34:24.096 UTC INFO [rg1-rn1] Closing SecurityMetadata db
+2015-12-17 03:34:24.098 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1)
+2015-12-17 03:34:24.098 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 03:34:24.099 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2015-12-17 03:34:24.099 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 03:34:24.100 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 03:34:24.102 UTC INFO [rg1-rn1] JE: ElectionThread_rg1-rn1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store/rg1-rn1/env soft shutdown initiated.
+2015-12-17 03:34:24.103 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2015-12-17 03:34:24.103 UTC INFO [rg1-rn1] JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-17 03:34:24.103 UTC INFO [rg1-rn1] JE: Feeder manager soft shutdown.
+2015-12-17 03:34:24.104 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 1,970
+2015-12-17 03:34:24.104 UTC INFO [rg1-rn1] State change event: Wed Dec 16 21:34:24 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-17 03:34:24.104 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2015-12-17 03:34:24.106 UTC INFO [rg1-rn1] State change event: Wed Dec 16 21:34:24 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-17 03:34:24.106 UTC INFO [rg1-rn1] JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-17 03:34:24.106 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-17 03:34:24.107 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-17 03:34:24.107 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-17 03:34:24.108 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-17 03:34:24.108 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2015-12-17 03:34:24.137 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2015-12-17 03:34:24.137 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:DETACHED
+2015-12-17 03:34:24.140 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread exited: rg1-rn1
+2015-12-17 03:34:24.140 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2015-12-17 03:34:24.140 UTC INFO [rg1-rn1] MonitorAgent stopping, 45 items remain.
+2015-12-17 03:34:24.142 UTC INFO [rg1-rn1] Saving untransmitted monitor info at shutdown.
+2015-12-17 03:34:24.142 UTC INFO [rg1-rn1] RepNodeAdmin shutdown({0})
+2015-12-17 03:34:24.142 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2015-12-17 03:34:24.142 UTC INFO [rg1-rn1] Service status: STOPPING 2015-12-17 03:34:24 UTC
+2015-12-17 03:34:24.143 UTC INFO [rg1-rn1] {0} shutdown
+2015-12-17 03:34:24.143 UTC INFO [rg1-rn1] Dispatcher shutdown
+2015-12-17 03:34:24.156 UTC INFO [rg1-rn1] PutsCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeleteIfVersionIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeleteIfVersionCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutsIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesIntervalLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorCumulativeLatency (03:34:24.067 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+
+2015-12-17 03:34:24.157 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2015-12-17 03:34:24.157 UTC INFO [rg1-rn1] {0} shutdown
+2015-12-17 03:34:24.157 UTC INFO [rg1-rn1] Shutting down RepNode
+2015-12-17 03:34:24.157 UTC INFO [rg1-rn1] Shutting down migration manager.
+2015-12-17 03:34:24.157 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2015-12-17 03:34:24.158 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-17 03:34:24.158 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-17 03:34:24.158 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2015-12-17 03:34:24.158 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-17 03:34:24.158 UTC INFO [rg1-rn1] Table manager change state to {0}
+2015-12-17 03:34:24.158 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-17 03:34:24.158 UTC INFO [rg1-rn1] Closing secondary database handles
+2015-12-17 03:34:24.159 UTC INFO [rg1-rn1] Closing {0} db
+2015-12-17 03:34:24.159 UTC INFO [rg1-rn1] Closing partition database handles
+2015-12-17 03:34:24.170 UTC INFO [rg1-rn1] Closing {0} db
+2015-12-17 03:34:24.171 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1)
+2015-12-17 03:34:24.171 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 03:34:24.173 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2015-12-17 03:34:24.173 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 03:34:24.174 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-17 03:34:24.174 UTC INFO [rg1-rn1] JE: ElectionThread_rg1-rn1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store/rg1-rn1/env soft shutdown initiated.
+2015-12-17 03:34:24.174 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2015-12-17 03:34:24.175 UTC INFO [rg1-rn1] JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-17 03:34:24.175 UTC INFO [rg1-rn1] JE: Feeder manager soft shutdown.
+2015-12-17 03:34:24.175 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 1,970
+2015-12-17 03:34:24.176 UTC INFO [rg1-rn1] State change event: Wed Dec 16 21:34:24 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-17 03:34:24.176 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2015-12-17 03:34:24.180 UTC INFO [rg1-rn1] State change event: Wed Dec 16 21:34:24 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-17 03:34:24.180 UTC INFO [rg1-rn1] JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-17 03:34:24.180 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-17 03:34:24.180 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-17 03:34:24.180 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-17 03:34:24.181 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-17 03:34:24.181 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2015-12-17 03:34:24.181 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2015-12-17 03:34:24.181 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-17 03:34:24.181 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-17 03:34:24.181 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2015-12-17 03:34:24.182 UTC INFO [rg1-rn1] Service status: STOPPED 2015-12-17 03:34:24 UTC
+2015-12-17 03:34:24.182 UTC INFO [rg1-rn1] MonitorAgent stopping, 45 items remain.
+2015-12-17 03:38:06.942 UTC INFO [rg1-rn1] Starting service process: rg1-rn1, Java command line arguments: [-Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4]
+2015-12-17 03:38:07.171 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] started
+2015-12-17 03:38:07.248 UTC INFO [rg1-rn1] NoSQL version:12cR1.3.4.7 2015-10-01 04:48:39 UTC  Build id: 44f8b0e7d93a JE version:6.4.11 Java version:1.8.0_51
+2015-12-17 03:38:07.253 UTC INFO [rg1-rn1] JVM Runtime maxMemory:14,474,412,032 bytes JE cache size:0 Max Offheap cache size:0 bytes
+2015-12-17 03:38:07.253 UTC INFO [rg1-rn1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-17 03:38:07.257 UTC INFO [rg1-rn1] DataChannelFactory: basic
+2015-12-17 03:38:07.290 UTC INFO [rg1-rn1] Table manager created
+2015-12-17 03:38:07.308 UTC INFO [rg1-rn1] Partition database cache mode: EVICT_LN
+2015-12-17 03:38:07.335 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] started
+2015-12-17 03:38:07.355 UTC INFO [rg1-rn1] Starting RepNodeService
+2015-12-17 03:38:07.357 UTC INFO [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=monitor backlog=0 port range=0,0> Client socket connect factory: <ClientSocketFactory name=WDB|rn|monitor id=-1918930492 connectMs=10000 readMs=10000>
+2015-12-17 03:38:07.614 UTC INFO [rg1-rn1] Starting MonitorAgent
+2015-12-17 03:38:07.671 UTC INFO [rg1-rn1] Successfully created secure proxy for the repnode admin
+2015-12-17 03:38:07.716 UTC INFO [rg1-rn1] RepNodeAdmin registered
+2015-12-17 03:38:08.139 UTC INFO [rg1-rn1] JE recovery: FIND_END_OF_LOG
+2015-12-17 03:38:08.220 UTC INFO [rg1-rn1] JE recovery: FIND_LAST_CKPT
+2015-12-17 03:38:08.228 UTC INFO [rg1-rn1] JE recovery: READ_DBMAP_INFO
+2015-12-17 03:38:08.248 UTC INFO [rg1-rn1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-17 03:38:08.252 UTC INFO [rg1-rn1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-17 03:38:08.260 UTC INFO [rg1-rn1] JE recovery: READ_DATA_INFO
+2015-12-17 03:38:08.281 UTC INFO [rg1-rn1] JE recovery: UNDO_DATA_RECORDS
+2015-12-17 03:38:08.284 UTC INFO [rg1-rn1] JE recovery: REDO_DATA_RECORDS
+2015-12-17 03:38:08.294 UTC INFO [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-17 03:38:08.312 UTC INFO [rg1-rn1] JE recovery: REMOVE_TEMP_DBS
+2015-12-17 03:38:08.334 UTC INFO [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2015-12-17 03:38:08.371 UTC INFO [rg1-rn1] JE: Started ServiceDispatcher. HostPort=localhost:5011
+2015-12-17 03:38:08.371 UTC INFO [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 03:38:08.428 UTC INFO [rg1-rn1] JE: Current group size: 1
+2015-12-17 03:38:08.428 UTC INFO [rg1-rn1] JE: Existing node rg1-rn1 querying for a current master.
+2015-12-17 03:38:08.447 UTC INFO [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2015-12-17 03:38:08.447 UTC INFO [rg1-rn1] JE: Node rg1-rn1 started
+2015-12-17 03:38:08.448 UTC INFO [rg1-rn1] JE: Election initiated; election #1
+2015-12-17 03:38:08.453 UTC INFO [rg1-rn1] JE: Started election thread Wed Dec 16 21:38:08 CST 2015
+2015-12-17 03:38:10.464 UTC INFO [rg1-rn1] JE: Winning proposal: Proposal(00000151ae043696:e444658c9a78ba8d0fe6d1198b3be674:00000001) Value: Value:localhost$$$5011$$$rg1-rn1$$$1
+2015-12-17 03:38:10.466 UTC INFO [rg1-rn1] JE: Master changed to rg1-rn1
+2015-12-17 03:38:10.467 UTC INFO [rg1-rn1] JE: Election finished. Elapsed time: 2019ms
+2015-12-17 03:38:10.467 UTC INFO [rg1-rn1] JE: Election thread exited. Group master: rg1-rn1(1)
+2015-12-17 03:38:10.468 UTC INFO [rg1-rn1] JE: Feeder manager accepting requests.
+2015-12-17 03:38:10.483 UTC INFO [rg1-rn1] JE: Joining group as master
+2015-12-17 03:38:10.484 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-17 03:38:10.485 UTC INFO [rg1-rn1] Opened JE environment: 6.4.11 JVM max heap: 14,474,412,032 JE properties: allowCreate=true
+cacheSize=10222022164
+txnNoSync=false
+txnWriteNoSync=false
+{je.lock.timeout=10 s, je.cleaner.readSize=1048576, je.log.faultReadSize=4096, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.log.fileMax=1073741824, je.rep.feederTimeout=10 s, je.rep.nodeName=rg1-rn1, je.nodeMaxEntries=128, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.rep.electableGroupSizeOverride=0, je.env.runEvictor=true, je.log.iteratorReadSize=1048576, je.txn.durability=WRITE_NO_SYNC,WRITE_NO_SYNC,SIMPLE_MAJORITY, je.maxOffHeapMemory=0, je.checkpointer.bytesInterval=500000000, je.log.numBuffers=16, je.rep.nodeHostPort=localhost:5011, je.rep.vlsn.distance=1000000, je.rep.txnRollbackLimit=10, je.rep.replayMaxOpenDbHandles=100, je.rep.ignoreSecondaryNodeId=true, je.maxMemory=10222022164, je.cleaner.minUtilization=40, je.env.isTransactional=true, je.log.fileCacheSize=2000, je.rep.helperHosts=localhost:5011, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.vlsn.logCacheSize=128, je.rep.replicaTimeout=10 s, je.lock.nLockTables=97, je.rep.nodeType=ELECTABLE, je.rep.envUnknownStateTimeout=10 s, je.rep.preserveRecordVersion=true, je.rep.groupName=rg1, je.rep.replicaAckTimeout=5 s, je.cleaner.threads=2}
+
+2015-12-17 03:38:10.503 UTC INFO [rg1-rn1] State change event: Wed Dec 16 21:38:10 CST 2015, State: MASTER, Type: ELECTABLE, Master: rg1-rn1
+2015-12-17 03:38:10.505 UTC INFO [rg1-rn1] MigrationStateTracker queue added:MASTER
+2015-12-17 03:38:10.505 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:MASTER
+2015-12-17 03:38:10.505 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:MASTER
+2015-12-17 03:38:10.506 UTC INFO [rg1-rn1] Replicated environment handle established. Cache size: 10222022164, State: MASTER
+2015-12-17 03:38:10.813 UTC INFO [rg1-rn1] Topology updated from seq#: 0 to 14
+2015-12-17 03:38:10.820 UTC INFO [rg1-rn1] Open SecurityMetadata DB
+2015-12-17 03:38:10.832 UTC INFO [rg1-rn1] Open TableMetadata DB
+2015-12-17 03:38:10.838 UTC INFO [rg1-rn1] Established 10 partition database handles, topology seq#: 14
+2015-12-17 03:38:11.377 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[20, 2, 20]
+2015-12-17 03:38:11.382 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-17 03:38:11.431 UTC INFO [rg1-rn1] Topology stored seq#: 14
+2015-12-17 03:38:11.432 UTC INFO [rg1-rn1] Topology fetched sequence#: 14, updated topology seq# 14
+2015-12-17 03:38:11.436 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread start: rg1-rn1
+2015-12-17 03:38:11.469 UTC INFO [rg1-rn1] TableManagerStateTracker thread start: rg1-rn1
+2015-12-17 03:38:11.469 UTC INFO [rg1-rn1] Table manager change state to MASTER
+2015-12-17 03:38:11.475 UTC INFO [rg1-rn1] MigrationStateTracker thread start: null
+2015-12-17 03:38:11.475 UTC INFO [rg1-rn1] Migration manager change state to MASTER.
+2015-12-17 03:38:11.490 UTC INFO [rg1-rn1] Migration service accepting requests.
+2015-12-17 03:38:11.578 UTC INFO [rg1-rn1] No RN Login configured. 
+2015-12-17 03:38:11.578 UTC INFO [rg1-rn1] Service status changed from STARTING to RUNNING
+2015-12-17 03:38:11.578 UTC INFO [rg1-rn1] Started RepNodeService
+2015-12-18 03:01:30.716 UTC INFO [rg1-rn1] Starting service process: rg1-rn1, Java command line arguments: [-Dje.rep.skipHelperHostResolution=true, -XX:+UseConcMarkSweepGC, -XX:+UseParNewGC, -XX:+DisableExplicitGC, -XX:NewRatio=18, -XX:SurvivorRatio=4, -XX:MaxTenuringThreshold=10, -XX:CMSInitiatingOccupancyFraction=80, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintGCApplicationStoppedTime, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=1048576, -Xloggc:/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/log/rg1-rn1.gc, -Xms13926M, -Xmx13926M, -XX:ParallelGCThreads=4]
+2015-12-18 03:01:31.429 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] started
+2015-12-18 03:01:31.939 UTC INFO [rg1-rn1] NoSQL version:12cR1.3.4.7 2015-10-01 04:48:39 UTC  Build id: 44f8b0e7d93a JE version:6.4.11 Java version:1.8.0_51
+2015-12-18 03:01:31.989 UTC INFO [rg1-rn1] JVM Runtime maxMemory:14,474,412,032 bytes JE cache size:0 Max Offheap cache size:0 bytes
+2015-12-18 03:01:31.990 UTC INFO [rg1-rn1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=10 s, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=10 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.checkpointer.bytesInterval=500000000, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2015-12-18 03:01:31.992 UTC INFO [rg1-rn1] DataChannelFactory: basic
+2015-12-18 03:01:32.147 UTC INFO [rg1-rn1] Table manager created
+2015-12-18 03:01:32.214 UTC INFO [rg1-rn1] Partition database cache mode: EVICT_LN
+2015-12-18 03:01:32.346 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] started
+2015-12-18 03:01:32.780 UTC INFO [rg1-rn1] Starting RepNodeService
+2015-12-18 03:01:32.782 UTC INFO [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory name=monitor backlog=0 port range=0,0> Client socket connect factory: <ClientSocketFactory name=WDB|rn|monitor id=-1659002810 connectMs=10000 readMs=10000>
+2015-12-18 03:01:32.977 UTC INFO [rg1-rn1] Starting MonitorAgent
+2015-12-18 03:01:33.072 UTC INFO [rg1-rn1] Successfully created secure proxy for the repnode admin
+2015-12-18 03:01:33.105 UTC INFO [rg1-rn1] RepNodeAdmin registered
+2015-12-18 03:01:34.115 UTC INFO [rg1-rn1] JE recovery: FIND_END_OF_LOG
+2015-12-18 03:01:34.286 UTC INFO [rg1-rn1] JE recovery: FIND_LAST_CKPT
+2015-12-18 03:01:34.333 UTC INFO [rg1-rn1] JE recovery: READ_DBMAP_INFO
+2015-12-18 03:01:34.388 UTC INFO [rg1-rn1] JE recovery: UNDO_DBMAP_RECORDS
+2015-12-18 03:01:34.392 UTC INFO [rg1-rn1] JE recovery: REDO_DBMAP_RECORDS
+2015-12-18 03:01:34.401 UTC INFO [rg1-rn1] JE recovery: READ_DATA_INFO
+2015-12-18 03:01:34.419 UTC INFO [rg1-rn1] JE recovery: UNDO_DATA_RECORDS
+2015-12-18 03:01:34.421 UTC INFO [rg1-rn1] JE recovery: REDO_DATA_RECORDS
+2015-12-18 03:01:34.433 UTC INFO [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2015-12-18 03:01:34.449 UTC INFO [rg1-rn1] JE recovery: REMOVE_TEMP_DBS
+2015-12-18 03:01:34.513 UTC INFO [rg1-rn1] JE recovery: CKPT
+2015-12-18 03:01:34.672 UTC INFO [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2015-12-18 03:01:35.045 UTC INFO [rg1-rn1] JE: Started ServiceDispatcher. HostPort=localhost:5011
+2015-12-18 03:01:35.046 UTC INFO [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-18 03:01:35.103 UTC INFO [rg1-rn1] JE: Current group size: 1
+2015-12-18 03:01:35.103 UTC INFO [rg1-rn1] JE: Existing node rg1-rn1 querying for a current master.
+2015-12-18 03:01:35.220 UTC INFO [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2015-12-18 03:01:35.221 UTC INFO [rg1-rn1] JE: Node rg1-rn1 started
+2015-12-18 03:01:35.222 UTC INFO [rg1-rn1] JE: Election initiated; election #1
+2015-12-18 03:01:35.225 UTC INFO [rg1-rn1] JE: Started election thread Thu Dec 17 21:01:35 CST 2015
+2015-12-18 03:01:37.239 UTC INFO [rg1-rn1] JE: Winning proposal: Proposal(00000151b3091b4a:f9170d1ca5010af37843f005ee5313a1:00000001) Value: Value:localhost$$$5011$$$rg1-rn1$$$1
+2015-12-18 03:01:37.242 UTC INFO [rg1-rn1] JE: Master changed to rg1-rn1
+2015-12-18 03:01:37.242 UTC INFO [rg1-rn1] JE: Election finished. Elapsed time: 2020ms
+2015-12-18 03:01:37.242 UTC INFO [rg1-rn1] JE: Election thread exited. Group master: rg1-rn1(1)
+2015-12-18 03:01:37.243 UTC INFO [rg1-rn1] JE: Feeder manager accepting requests.
+2015-12-18 03:01:37.250 UTC INFO [rg1-rn1] JE: Joining group as master
+2015-12-18 03:01:37.252 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-18 03:01:37.253 UTC INFO [rg1-rn1] Opened JE environment: 6.4.11 JVM max heap: 14,474,412,032 JE properties: allowCreate=true
+cacheSize=10222022164
+txnNoSync=false
+txnWriteNoSync=false
+{je.lock.timeout=10 s, je.cleaner.readSize=1048576, je.log.faultReadSize=4096, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.log.fileMax=1073741824, je.rep.feederTimeout=10 s, je.rep.nodeName=rg1-rn1, je.nodeMaxEntries=128, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.rep.electableGroupSizeOverride=0, je.env.runEvictor=true, je.log.iteratorReadSize=1048576, je.txn.durability=WRITE_NO_SYNC,WRITE_NO_SYNC,SIMPLE_MAJORITY, je.maxOffHeapMemory=0, je.checkpointer.bytesInterval=500000000, je.log.numBuffers=16, je.rep.nodeHostPort=localhost:5011, je.rep.vlsn.distance=1000000, je.rep.txnRollbackLimit=10, je.rep.replayMaxOpenDbHandles=100, je.rep.ignoreSecondaryNodeId=true, je.maxMemory=10222022164, je.cleaner.minUtilization=40, je.env.isTransactional=true, je.log.fileCacheSize=2000, je.rep.helperHosts=localhost:5011, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.vlsn.logCacheSize=128, je.rep.replicaTimeout=10 s, je.lock.nLockTables=97, je.rep.nodeType=ELECTABLE, je.rep.envUnknownStateTimeout=10 s, je.rep.preserveRecordVersion=true, je.rep.groupName=rg1, je.rep.replicaAckTimeout=5 s, je.cleaner.threads=2}
+
+2015-12-18 03:01:37.375 UTC INFO [rg1-rn1] State change event: Thu Dec 17 21:01:37 CST 2015, State: MASTER, Type: ELECTABLE, Master: rg1-rn1
+2015-12-18 03:01:37.376 UTC INFO [rg1-rn1] MigrationStateTracker queue added:MASTER
+2015-12-18 03:01:37.376 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:MASTER
+2015-12-18 03:01:37.376 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:MASTER
+2015-12-18 03:01:37.376 UTC INFO [rg1-rn1] Replicated environment handle established. Cache size: 10222022164, State: MASTER
+2015-12-18 03:01:37.675 UTC INFO [rg1-rn1] Topology updated from seq#: 0 to 14
+2015-12-18 03:01:37.690 UTC INFO [rg1-rn1] Open SecurityMetadata DB
+2015-12-18 03:01:37.693 UTC INFO [rg1-rn1] Open TableMetadata DB
+2015-12-18 03:01:37.698 UTC INFO [rg1-rn1] Established 10 partition database handles, topology seq#: 14
+2015-12-18 03:01:38.966 UTC INFO [rg1-rn1] Topology stored seq#: 14
+2015-12-18 03:01:38.967 UTC INFO [rg1-rn1] Topology fetched sequence#: 14, updated topology seq# 14
+2015-12-18 03:01:38.968 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread start: rg1-rn1
+2015-12-18 03:01:38.969 UTC INFO [rg1-rn1] TableManagerStateTracker thread start: rg1-rn1
+2015-12-18 03:01:38.969 UTC INFO [rg1-rn1] Table manager change state to MASTER
+2015-12-18 03:01:38.970 UTC INFO [rg1-rn1] MigrationStateTracker thread start: null
+2015-12-18 03:01:38.970 UTC INFO [rg1-rn1] Migration manager change state to MASTER.
+2015-12-18 03:01:38.971 UTC INFO [rg1-rn1] Found 0 indexes and 0 tables marked for deletion in TableMetadata[20, 2, 20]
+2015-12-18 03:01:39.012 UTC INFO [rg1-rn1] Migration service accepting requests.
+2015-12-18 03:01:39.012 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2015-12-18 03:01:39.029 UTC INFO [rg1-rn1] No RN Login configured. 
+2015-12-18 03:01:39.029 UTC INFO [rg1-rn1] Service status changed from STARTING to RUNNING
+2015-12-18 03:01:39.030 UTC INFO [rg1-rn1] Started RepNodeService
+2015-12-18 03:35:58.542 UTC INFO [rg1-rn1] RepNodeAdmin shutdown(false)
+2015-12-18 03:35:58.558 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2015-12-18 03:35:58.562 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_RepNodeStateUpdateThread,5,main] shutdown
+2015-12-18 03:35:58.563 UTC INFO [rg1-rn1] Dispatcher shutdown
+2015-12-18 03:35:58.566 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2015-12-18 03:35:58.567 UTC INFO [rg1-rn1] Thread[KV_rg1-rn1_MetadataUpdateThread,5,main] shutdown
+2015-12-18 03:35:58.567 UTC INFO [rg1-rn1] Shutting down RepNode
+2015-12-18 03:35:58.567 UTC INFO [rg1-rn1] Shutting down migration manager.
+2015-12-18 03:35:58.569 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2015-12-18 03:35:58.569 UTC INFO [rg1-rn1] MigrationStateTracker queue added:DETACHED
+2015-12-18 03:35:58.569 UTC INFO [rg1-rn1] MigrationStateTracker thread exited: null
+2015-12-18 03:35:58.569 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2015-12-18 03:35:58.570 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:DETACHED
+2015-12-18 03:35:58.570 UTC INFO [rg1-rn1] Table manager change state to DETACHED
+2015-12-18 03:35:58.570 UTC INFO [rg1-rn1] TableManagerStateTracker thread exited: rg1-rn1
+2015-12-18 03:35:58.570 UTC INFO [rg1-rn1] Closing secondary database handles
+2015-12-18 03:35:58.570 UTC INFO [rg1-rn1] Closing TableMetadata db
+2015-12-18 03:35:58.571 UTC INFO [rg1-rn1] Closing partition database handles
+2015-12-18 03:35:58.573 UTC INFO [rg1-rn1] Closing SecurityMetadata db
+2015-12-18 03:35:58.590 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1)
+2015-12-18 03:35:58.592 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-18 03:35:58.592 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2015-12-18 03:35:58.593 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-18 03:35:58.607 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-18 03:35:58.608 UTC INFO [rg1-rn1] JE: ElectionThread_rg1-rn1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store/rg1-rn1/env soft shutdown initiated.
+2015-12-18 03:35:58.608 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2015-12-18 03:35:58.609 UTC INFO [rg1-rn1] JE: Feeder manager soft shutdown.
+2015-12-18 03:35:58.609 UTC INFO [rg1-rn1] JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-18 03:35:58.609 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 1,974
+2015-12-18 03:35:58.610 UTC INFO [rg1-rn1] State change event: Thu Dec 17 21:35:58 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-18 03:35:58.610 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2015-12-18 03:35:58.610 UTC INFO [rg1-rn1] State change event: Thu Dec 17 21:35:58 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-18 03:35:58.611 UTC INFO [rg1-rn1] JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-18 03:35:58.611 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-18 03:35:58.611 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-18 03:35:58.612 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-18 03:35:58.613 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-18 03:35:58.614 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2015-12-18 03:35:58.631 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2015-12-18 03:35:58.631 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:DETACHED
+2015-12-18 03:35:58.634 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread exited: rg1-rn1
+2015-12-18 03:35:58.634 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2015-12-18 03:35:58.634 UTC INFO [rg1-rn1] MonitorAgent stopping, 45 items remain.
+2015-12-18 03:35:58.635 UTC INFO [rg1-rn1] Saving untransmitted monitor info at shutdown.
+2015-12-18 03:35:58.635 UTC INFO [rg1-rn1] RepNodeAdmin shutdown({0})
+2015-12-18 03:35:58.635 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2015-12-18 03:35:58.635 UTC INFO [rg1-rn1] Service status: STOPPING 2015-12-18 03:35:58 UTC
+2015-12-18 03:35:58.636 UTC INFO [rg1-rn1] {0} shutdown
+2015-12-18 03:35:58.636 UTC INFO [rg1-rn1] Dispatcher shutdown
+2015-12-18 03:35:58.638 UTC INFO [rg1-rn1] PutsCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+GetsCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeleteIfVersionIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+NOPsCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeletesCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllSingleKeyOperationsCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+DeleteIfVersionCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreIteratorCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+StoreKeysIteratorCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutsIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfAbsentIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfPresentIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+PutIfVersionIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetsIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+ExecutesCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetIteratorIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiGetKeysIteratorIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+AllMultiKeyOperationsCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+MultiDeletesIntervalLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexIteratorCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+IndexKeysIteratorCumulativeLatency (03:35:58.563 UTC) perSec=0 totalOps=0 totalReq=0 min=0 max=0 avg=0.0 95th=0 99th=0
+
+2015-12-18 03:35:58.638 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2015-12-18 03:35:58.638 UTC INFO [rg1-rn1] {0} shutdown
+2015-12-18 03:35:58.639 UTC INFO [rg1-rn1] Shutting down RepNode
+2015-12-18 03:35:58.639 UTC INFO [rg1-rn1] Shutting down migration manager.
+2015-12-18 03:35:58.639 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2015-12-18 03:35:58.639 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-18 03:35:58.639 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-18 03:35:58.639 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2015-12-18 03:35:58.639 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-18 03:35:58.639 UTC INFO [rg1-rn1] Table manager change state to {0}
+2015-12-18 03:35:58.639 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-18 03:35:58.640 UTC INFO [rg1-rn1] Closing secondary database handles
+2015-12-18 03:35:58.640 UTC INFO [rg1-rn1] Closing {0} db
+2015-12-18 03:35:58.640 UTC INFO [rg1-rn1] Closing partition database handles
+2015-12-18 03:35:58.640 UTC INFO [rg1-rn1] Closing {0} db
+2015-12-18 03:35:58.640 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1)
+2015-12-18 03:35:58.640 UTC INFO [rg1-rn1] JE: Refreshed 0 monitors.
+2015-12-18 03:35:58.640 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2015-12-18 03:35:58.640 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2015-12-18 03:35:58.640 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2015-12-18 03:35:58.640 UTC INFO [rg1-rn1] JE: ElectionThread_rg1-rn1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./db/store/rg1-rn1/env soft shutdown initiated.
+2015-12-18 03:35:58.641 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2015-12-18 03:35:58.641 UTC INFO [rg1-rn1] JE: Feeder manager soft shutdown.
+2015-12-18 03:35:58.641 UTC INFO [rg1-rn1] JE: MASTER rg1-rn1(1) soft shutdown initiated.
+2015-12-18 03:35:58.641 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 1,974
+2015-12-18 03:35:58.641 UTC INFO [rg1-rn1] State change event: Thu Dec 17 21:35:58 CST 2015, State: UNKNOWN, Type: ELECTABLE, Master: none
+2015-12-18 03:35:58.641 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2015-12-18 03:35:58.641 UTC INFO [rg1-rn1] State change event: Thu Dec 17 21:35:58 CST 2015, State: DETACHED, Type: ELECTABLE, Master: none
+2015-12-18 03:35:58.641 UTC INFO [rg1-rn1] JE: RepNode main thread: DETACHED rg1-rn1(1) exited.
+2015-12-18 03:35:58.642 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2015-12-18 03:35:58.642 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5011 Registered services: [PartitionMigration]
+2015-12-18 03:35:58.642 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5011 soft shutdown initiated.
+2015-12-18 03:35:58.642 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5011
+2015-12-18 03:35:58.642 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2015-12-18 03:35:58.642 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2015-12-18 03:35:58.642 UTC INFO [rg1-rn1] {0} queue added:{1}
+2015-12-18 03:35:58.642 UTC INFO [rg1-rn1] {0} thread exited: {1}{2}
+2015-12-18 03:35:58.642 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2015-12-18 03:35:58.643 UTC INFO [rg1-rn1] Service status: STOPPED 2015-12-18 03:35:58 UTC
+2015-12-18 03:35:58.643 UTC INFO [rg1-rn1] MonitorAgent stopping, 45 items remain.

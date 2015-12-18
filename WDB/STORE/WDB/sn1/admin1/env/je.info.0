@@ -1,0 +1,242 @@
+2015-12-16 23:18:18.549 UTC INFO [1] Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-16 23:18:18.550 UTC INFO [1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-16 23:18:18.844 UTC INFO [1] Current group size: 0
+2015-12-16 23:18:18.845 UTC INFO [1] New node 1(-1) unknown to rep group
+2015-12-16 23:18:18.846 UTC INFO [1] Master changed to 1
+2015-12-16 23:18:18.846 UTC INFO [1] Nascent group. 1 is master by virtue of being the first node.
+2015-12-16 23:18:18.860 UTC INFO [1] Successfully added node:1(1) HostPort = localhost: 5010 [ELECTABLE]
+2015-12-16 23:18:18.863 UTC INFO [1] Refreshed 0 monitors.
+2015-12-16 23:18:18.868 UTC INFO [1] Node 1 started
+2015-12-16 23:18:18.869 UTC INFO [1] Feeder manager accepting requests.
+2015-12-16 23:18:18.870 UTC INFO [1] Joining group as master
+2015-12-16 23:18:18.871 UTC INFO [1] Refreshed 0 monitors.
+2015-12-16 23:18:34.844 UTC INFO [1] Shutting down node 1(1)
+2015-12-16 23:18:34.865 UTC INFO [1] Refreshed 0 monitors.
+2015-12-16 23:18:34.866 UTC INFO [1] Elections shutdown initiated
+2015-12-16 23:18:34.867 UTC INFO [1] Acceptor Thread 1 soft shutdown initiated.
+2015-12-16 23:18:34.871 UTC INFO [1] Learner Thread 1 soft shutdown initiated.
+2015-12-16 23:18:34.873 UTC INFO [1] Elections shutdown completed
+2015-12-16 23:18:34.873 UTC INFO [1] Feeder manager soft shutdown.
+2015-12-16 23:18:34.874 UTC INFO [1] Feeder manager exited. CurrentTxnEnd VLSN: 210
+2015-12-16 23:18:34.875 UTC INFO [1] UNKNOWN 1(1) soft shutdown initiated.
+2015-12-16 23:18:34.876 UTC INFO [1] RepNode main thread shutting down.
+2015-12-16 23:18:34.877 UTC INFO [1] RepNode main thread: DETACHED 1(1) exited.
+2015-12-16 23:18:34.878 UTC INFO [1] Feeder Manager node: 1 soft shutdown initiated.
+2015-12-16 23:18:34.880 UTC INFO [1] ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-16 23:18:34.880 UTC INFO [1] ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-16 23:18:34.882 UTC INFO [1] ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-16 23:18:34.882 UTC INFO [1] 1(1) shutdown completed.
+2015-12-17 00:00:11.300 UTC INFO [1] Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 00:00:11.301 UTC INFO [1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 00:00:11.386 UTC INFO [1] Current group size: 1
+2015-12-17 00:00:11.387 UTC INFO [1] Existing node 1 querying for a current master.
+2015-12-17 00:00:11.592 UTC INFO [1] Node 1 started
+2015-12-17 00:00:11.592 UTC INFO [1] Election initiated; election #1
+2015-12-17 00:00:11.595 UTC INFO [1] Started election thread Wed Dec 16 18:00:11 CST 2015
+2015-12-17 00:00:13.606 UTC INFO [1] Winning proposal: Proposal(00000151ad3cad1d:57af5cde1f0d5f8df1972a0ecdf79c61:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 00:00:13.609 UTC INFO [1] Master changed to 1
+2015-12-17 00:00:13.610 UTC INFO [1] Election finished. Elapsed time: 2018ms
+2015-12-17 00:00:13.611 UTC INFO [1] Feeder manager accepting requests.
+2015-12-17 00:00:13.614 UTC INFO [1] Election thread exited. Group master: 1(1)
+2015-12-17 00:00:13.624 UTC INFO [1] Joining group as master
+2015-12-17 00:00:13.627 UTC INFO [1] Refreshed 0 monitors.
+2015-12-17 00:26:11.705 UTC INFO [1] Shutting down node 1(1)
+2015-12-17 00:26:11.709 UTC INFO [1] Refreshed 0 monitors.
+2015-12-17 00:26:11.711 UTC INFO [1] Elections shutdown initiated
+2015-12-17 00:26:11.712 UTC INFO [1] Acceptor Thread 1 soft shutdown initiated.
+2015-12-17 00:26:11.713 UTC INFO [1] Learner Thread 1 soft shutdown initiated.
+2015-12-17 00:26:11.713 UTC INFO [1] ElectionThread_1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env soft shutdown initiated.
+2015-12-17 00:26:11.713 UTC INFO [1] Elections shutdown completed
+2015-12-17 00:26:11.713 UTC INFO [1] Feeder manager soft shutdown.
+2015-12-17 00:26:11.714 UTC INFO [1] MASTER 1(1) soft shutdown initiated.
+2015-12-17 00:26:11.714 UTC INFO [1] Feeder manager exited. CurrentTxnEnd VLSN: 523
+2015-12-17 00:26:11.714 UTC INFO [1] RepNode main thread shutting down.
+2015-12-17 00:26:11.715 UTC INFO [1] RepNode main thread: DETACHED 1(1) exited.
+2015-12-17 00:26:11.715 UTC INFO [1] Feeder Manager node: 1 soft shutdown initiated.
+2015-12-17 00:26:11.716 UTC INFO [1] ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-17 00:26:11.716 UTC INFO [1] ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-17 00:26:11.717 UTC INFO [1] ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-17 00:26:11.717 UTC INFO [1] 1(1) shutdown completed.
+2015-12-17 00:26:45.125 UTC INFO [1] Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 00:26:45.126 UTC INFO [1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 00:26:45.199 UTC INFO [1] Current group size: 1
+2015-12-17 00:26:45.199 UTC INFO [1] Existing node 1 querying for a current master.
+2015-12-17 00:26:45.312 UTC INFO [1] Node 1 started
+2015-12-17 00:26:45.313 UTC INFO [1] Election initiated; election #1
+2015-12-17 00:26:45.316 UTC INFO [1] Started election thread Wed Dec 16 18:26:45 CST 2015
+2015-12-17 00:26:47.323 UTC INFO [1] Winning proposal: Proposal(00000151ad54fe95:7b08a33d394c6b82a5922581086e9104:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 00:26:47.326 UTC INFO [1] Master changed to 1
+2015-12-17 00:26:47.326 UTC INFO [1] Election finished. Elapsed time: 2013ms
+2015-12-17 00:26:47.326 UTC INFO [1] Election thread exited. Group master: 1(1)
+2015-12-17 00:26:47.327 UTC INFO [1] Feeder manager accepting requests.
+2015-12-17 00:26:47.339 UTC INFO [1] Joining group as master
+2015-12-17 00:26:47.341 UTC INFO [1] Refreshed 0 monitors.
+2015-12-17 00:35:24.306 UTC INFO [1] Shutting down node 1(1)
+2015-12-17 00:35:24.308 UTC INFO [1] Refreshed 0 monitors.
+2015-12-17 00:35:24.308 UTC INFO [1] Elections shutdown initiated
+2015-12-17 00:35:24.309 UTC INFO [1] Acceptor Thread 1 soft shutdown initiated.
+2015-12-17 00:35:24.310 UTC INFO [1] Learner Thread 1 soft shutdown initiated.
+2015-12-17 00:35:24.310 UTC INFO [1] ElectionThread_1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env soft shutdown initiated.
+2015-12-17 00:35:24.310 UTC INFO [1] Elections shutdown completed
+2015-12-17 00:35:24.311 UTC INFO [1] MASTER 1(1) soft shutdown initiated.
+2015-12-17 00:35:24.311 UTC INFO [1] Feeder manager soft shutdown.
+2015-12-17 00:35:24.311 UTC INFO [1] Feeder manager exited. CurrentTxnEnd VLSN: 596
+2015-12-17 00:35:24.312 UTC INFO [1] RepNode main thread shutting down.
+2015-12-17 00:35:24.313 UTC INFO [1] RepNode main thread: DETACHED 1(1) exited.
+2015-12-17 00:35:24.314 UTC INFO [1] Feeder Manager node: 1 soft shutdown initiated.
+2015-12-17 00:35:24.314 UTC INFO [1] ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-17 00:35:24.314 UTC INFO [1] ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-17 00:35:24.315 UTC INFO [1] ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-17 00:35:24.316 UTC INFO [1] 1(1) shutdown completed.
+2015-12-17 00:36:43.237 UTC INFO [1] Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 00:36:43.238 UTC INFO [1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 00:36:43.339 UTC INFO [1] Current group size: 1
+2015-12-17 00:36:43.339 UTC INFO [1] Existing node 1 querying for a current master.
+2015-12-17 00:36:43.454 UTC INFO [1] Node 1 started
+2015-12-17 00:36:43.455 UTC INFO [1] Election initiated; election #1
+2015-12-17 00:36:43.458 UTC INFO [1] Started election thread Wed Dec 16 18:36:43 CST 2015
+2015-12-17 00:36:45.464 UTC INFO [1] Winning proposal: Proposal(00000151ad5e1f13:2360fb4b3eb95f4e99d796cd4563c027:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 00:36:45.466 UTC INFO [1] Master changed to 1
+2015-12-17 00:36:45.466 UTC INFO [1] Election finished. Elapsed time: 2011ms
+2015-12-17 00:36:45.467 UTC INFO [1] Election thread exited. Group master: 1(1)
+2015-12-17 00:36:45.467 UTC INFO [1] Feeder manager accepting requests.
+2015-12-17 00:36:45.479 UTC INFO [1] Joining group as master
+2015-12-17 00:36:45.481 UTC INFO [1] Refreshed 0 monitors.
+2015-12-17 02:21:44.530 UTC INFO [1] Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 02:21:44.543 UTC INFO [1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 02:21:44.590 UTC INFO [1] Current group size: 1
+2015-12-17 02:21:44.591 UTC INFO [1] Existing node 1 querying for a current master.
+2015-12-17 02:21:44.674 UTC INFO [1] Node 1 started
+2015-12-17 02:21:44.675 UTC INFO [1] Election initiated; election #1
+2015-12-17 02:21:44.678 UTC INFO [1] Started election thread Wed Dec 16 20:21:44 CST 2015
+2015-12-17 02:21:46.685 UTC INFO [1] Winning proposal: Proposal(00000151adbe4536:db71929ee446a7914a9176d6a8f91d3f:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 02:21:46.688 UTC INFO [1] Master changed to 1
+2015-12-17 02:21:46.688 UTC INFO [1] Election finished. Elapsed time: 2013ms
+2015-12-17 02:21:46.688 UTC INFO [1] Election thread exited. Group master: 1(1)
+2015-12-17 02:21:46.689 UTC INFO [1] Feeder manager accepting requests.
+2015-12-17 02:21:46.695 UTC INFO [1] Joining group as master
+2015-12-17 02:21:46.697 UTC INFO [1] Refreshed 0 monitors.
+2015-12-17 02:21:48.819 UTC INFO [1] Shutting down node 1(1)
+2015-12-17 02:21:48.820 UTC INFO [1] Refreshed 0 monitors.
+2015-12-17 02:21:48.821 UTC INFO [1] Elections shutdown initiated
+2015-12-17 02:21:48.822 UTC INFO [1] Acceptor Thread 1 soft shutdown initiated.
+2015-12-17 02:21:48.823 UTC INFO [1] Learner Thread 1 soft shutdown initiated.
+2015-12-17 02:21:48.824 UTC INFO [1] ElectionThread_1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env soft shutdown initiated.
+2015-12-17 02:21:48.824 UTC INFO [1] Elections shutdown completed
+2015-12-17 02:21:48.825 UTC INFO [1] MASTER 1(1) soft shutdown initiated.
+2015-12-17 02:21:48.825 UTC INFO [1] Feeder manager soft shutdown.
+2015-12-17 02:21:48.826 UTC INFO [1] Feeder manager exited. CurrentTxnEnd VLSN: 676
+2015-12-17 02:21:48.826 UTC INFO [1] RepNode main thread shutting down.
+2015-12-17 02:21:48.828 UTC INFO [1] RepNode main thread: DETACHED 1(1) exited.
+2015-12-17 02:21:48.828 UTC INFO [1] Feeder Manager node: 1 soft shutdown initiated.
+2015-12-17 02:21:48.829 UTC INFO [1] ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-17 02:21:48.829 UTC INFO [1] ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-17 02:21:48.831 UTC INFO [1] ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-17 02:21:48.832 UTC INFO [1] 1(1) shutdown completed.
+2015-12-17 03:28:12.506 UTC INFO [1] Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 03:28:12.509 UTC INFO [1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 03:28:12.593 UTC INFO [1] Current group size: 1
+2015-12-17 03:28:12.594 UTC INFO [1] Existing node 1 querying for a current master.
+2015-12-17 03:28:12.731 UTC INFO [1] Node 1 started
+2015-12-17 03:28:12.732 UTC INFO [1] Election initiated; election #1
+2015-12-17 03:28:12.735 UTC INFO [1] Started election thread Wed Dec 16 21:28:12 CST 2015
+2015-12-17 03:28:14.742 UTC INFO [1] Winning proposal: Proposal(00000151adfb1f8f:a772c1ab26e2f080c5c64dd133ac23fe:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 03:28:14.744 UTC INFO [1] Master changed to 1
+2015-12-17 03:28:14.744 UTC INFO [1] Election finished. Elapsed time: 2012ms
+2015-12-17 03:28:14.744 UTC INFO [1] Election thread exited. Group master: 1(1)
+2015-12-17 03:28:14.745 UTC INFO [1] Feeder manager accepting requests.
+2015-12-17 03:28:14.755 UTC INFO [1] Joining group as master
+2015-12-17 03:28:14.757 UTC INFO [1] Refreshed 0 monitors.
+2015-12-17 03:32:01.400 UTC INFO [1] Shutting down node 1(1)
+2015-12-17 03:32:01.402 UTC INFO [1] Refreshed 0 monitors.
+2015-12-17 03:32:01.402 UTC INFO [1] Elections shutdown initiated
+2015-12-17 03:32:01.403 UTC INFO [1] Acceptor Thread 1 soft shutdown initiated.
+2015-12-17 03:32:01.409 UTC INFO [1] Learner Thread 1 soft shutdown initiated.
+2015-12-17 03:32:01.411 UTC INFO [1] ElectionThread_1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env soft shutdown initiated.
+2015-12-17 03:32:01.412 UTC INFO [1] Elections shutdown completed
+2015-12-17 03:32:01.412 UTC INFO [1] Feeder manager soft shutdown.
+2015-12-17 03:32:01.412 UTC INFO [1] Feeder manager exited. CurrentTxnEnd VLSN: 749
+2015-12-17 03:32:01.412 UTC INFO [1] RepNode main thread shutting down.
+2015-12-17 03:32:01.413 UTC INFO [1] UNKNOWN 1(1) soft shutdown initiated.
+2015-12-17 03:32:01.416 UTC INFO [1] RepNode main thread: DETACHED 1(1) exited.
+2015-12-17 03:32:01.416 UTC INFO [1] Feeder Manager node: 1 soft shutdown initiated.
+2015-12-17 03:32:01.417 UTC INFO [1] ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-17 03:32:01.417 UTC INFO [1] ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-17 03:32:01.419 UTC INFO [1] ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-17 03:32:01.419 UTC INFO [1] 1(1) shutdown completed.
+2015-12-17 03:32:21.682 UTC INFO [1] Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 03:32:21.682 UTC INFO [1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 03:32:21.763 UTC INFO [1] Current group size: 1
+2015-12-17 03:32:21.764 UTC INFO [1] Existing node 1 querying for a current master.
+2015-12-17 03:32:21.893 UTC INFO [1] Node 1 started
+2015-12-17 03:32:21.894 UTC INFO [1] Election initiated; election #1
+2015-12-17 03:32:21.899 UTC INFO [1] Started election thread Wed Dec 16 21:32:21 CST 2015
+2015-12-17 03:32:23.906 UTC INFO [1] Winning proposal: Proposal(00000151adfeecdc:d563de92a0e1d36fb6e666f753f47e3b:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 03:32:23.908 UTC INFO [1] Master changed to 1
+2015-12-17 03:32:23.908 UTC INFO [1] Election finished. Elapsed time: 2014ms
+2015-12-17 03:32:23.908 UTC INFO [1] Election thread exited. Group master: 1(1)
+2015-12-17 03:32:23.909 UTC INFO [1] Feeder manager accepting requests.
+2015-12-17 03:32:23.920 UTC INFO [1] Joining group as master
+2015-12-17 03:32:23.922 UTC INFO [1] Refreshed 0 monitors.
+2015-12-17 03:34:24.806 UTC INFO [1] Shutting down node 1(1)
+2015-12-17 03:34:24.807 UTC INFO [1] Refreshed 0 monitors.
+2015-12-17 03:34:24.807 UTC INFO [1] Elections shutdown initiated
+2015-12-17 03:34:24.808 UTC INFO [1] Acceptor Thread 1 soft shutdown initiated.
+2015-12-17 03:34:24.808 UTC INFO [1] Learner Thread 1 soft shutdown initiated.
+2015-12-17 03:34:24.809 UTC INFO [1] ElectionThread_1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env soft shutdown initiated.
+2015-12-17 03:34:24.809 UTC INFO [1] Elections shutdown completed
+2015-12-17 03:34:24.809 UTC INFO [1] Feeder manager soft shutdown.
+2015-12-17 03:34:24.809 UTC INFO [1] MASTER 1(1) soft shutdown initiated.
+2015-12-17 03:34:24.809 UTC INFO [1] Feeder manager exited. CurrentTxnEnd VLSN: 825
+2015-12-17 03:34:24.810 UTC INFO [1] RepNode main thread shutting down.
+2015-12-17 03:34:24.811 UTC INFO [1] RepNode main thread: DETACHED 1(1) exited.
+2015-12-17 03:34:24.811 UTC INFO [1] Feeder Manager node: 1 soft shutdown initiated.
+2015-12-17 03:34:24.812 UTC INFO [1] ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-17 03:34:24.812 UTC INFO [1] ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-17 03:34:24.813 UTC INFO [1] ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-17 03:34:24.813 UTC INFO [1] 1(1) shutdown completed.
+2015-12-17 03:38:08.061 UTC INFO [1] Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-17 03:38:08.062 UTC INFO [1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-17 03:38:08.164 UTC INFO [1] Current group size: 1
+2015-12-17 03:38:08.165 UTC INFO [1] Existing node 1 querying for a current master.
+2015-12-17 03:38:08.296 UTC INFO [1] Node 1 started
+2015-12-17 03:38:08.296 UTC INFO [1] Election initiated; election #1
+2015-12-17 03:38:08.300 UTC INFO [1] Started election thread Wed Dec 16 21:38:08 CST 2015
+2015-12-17 03:38:10.306 UTC INFO [1] Winning proposal: Proposal(00000151ae0435fc:b419e9b7f6b3effc9ade6e081a571575:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-17 03:38:10.307 UTC INFO [1] Master changed to 1
+2015-12-17 03:38:10.308 UTC INFO [1] Election finished. Elapsed time: 2012ms
+2015-12-17 03:38:10.308 UTC INFO [1] Election thread exited. Group master: 1(1)
+2015-12-17 03:38:10.309 UTC INFO [1] Feeder manager accepting requests.
+2015-12-17 03:38:10.320 UTC INFO [1] Joining group as master
+2015-12-17 03:38:10.322 UTC INFO [1] Refreshed 0 monitors.
+2015-12-18 03:01:34.981 UTC INFO [1] Started ServiceDispatcher. HostPort=localhost:5010
+2015-12-18 03:01:35.038 UTC INFO [1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2015-12-18 03:01:35.086 UTC INFO [1] Current group size: 1
+2015-12-18 03:01:35.087 UTC INFO [1] Existing node 1 querying for a current master.
+2015-12-18 03:01:35.219 UTC INFO [1] Node 1 started
+2015-12-18 03:01:35.221 UTC INFO [1] Election initiated; election #1
+2015-12-18 03:01:35.224 UTC INFO [1] Started election thread Thu Dec 17 21:01:35 CST 2015
+2015-12-18 03:01:37.237 UTC INFO [1] Winning proposal: Proposal(00000151b3091b49:49c2d6c925bad8e8fe516c9a1409a14e:00000001) Value: Value:localhost$$$5010$$$1$$$1
+2015-12-18 03:01:37.239 UTC INFO [1] Master changed to 1
+2015-12-18 03:01:37.240 UTC INFO [1] Election finished. Elapsed time: 2020ms
+2015-12-18 03:01:37.240 UTC INFO [1] Election thread exited. Group master: 1(1)
+2015-12-18 03:01:37.241 UTC INFO [1] Feeder manager accepting requests.
+2015-12-18 03:01:37.248 UTC INFO [1] Joining group as master
+2015-12-18 03:01:37.250 UTC INFO [1] Refreshed 0 monitors.
+2015-12-18 03:35:59.202 UTC INFO [1] Shutting down node 1(1)
+2015-12-18 03:35:59.287 UTC INFO [1] Refreshed 0 monitors.
+2015-12-18 03:35:59.288 UTC INFO [1] Elections shutdown initiated
+2015-12-18 03:35:59.289 UTC INFO [1] Acceptor Thread 1 soft shutdown initiated.
+2015-12-18 03:35:59.290 UTC INFO [1] Learner Thread 1 soft shutdown initiated.
+2015-12-18 03:35:59.290 UTC INFO [1] ElectionThread_1(1):/Users/pcannata/Mine/Carnot/CarnotDE/WDB/./STORE/WDB/sn1/admin1/env soft shutdown initiated.
+2015-12-18 03:35:59.290 UTC INFO [1] Elections shutdown completed
+2015-12-18 03:35:59.290 UTC INFO [1] Feeder manager soft shutdown.
+2015-12-18 03:35:59.291 UTC INFO [1] MASTER 1(1) soft shutdown initiated.
+2015-12-18 03:35:59.291 UTC INFO [1] Feeder manager exited. CurrentTxnEnd VLSN: 971
+2015-12-18 03:35:59.291 UTC INFO [1] RepNode main thread shutting down.
+2015-12-18 03:35:59.293 UTC INFO [1] RepNode main thread: DETACHED 1(1) exited.
+2015-12-18 03:35:59.293 UTC INFO [1] Feeder Manager node: 1 soft shutdown initiated.
+2015-12-18 03:35:59.293 UTC INFO [1] ServiceDispatcher shutdown starting. HostPort=localhost:5010 Registered services: []
+2015-12-18 03:35:59.294 UTC INFO [1] ServiceDispatcher-localhost:5010 soft shutdown initiated.
+2015-12-18 03:35:59.294 UTC INFO [1] ServiceDispatcher shutdown completed. HostPort=localhost:5010
+2015-12-18 03:35:59.294 UTC INFO [1] 1(1) shutdown completed.
