@@ -1,0 +1,4 @@
+Implementation-Vendor-Id: oracle.com
+Implementation-Version: 2.0.15_20130412
+Specification-Version: 2.0.15
+Implementation-Vendor: Oracle Corporation
